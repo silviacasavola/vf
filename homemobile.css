@@ -1,0 +1,145 @@
+/* INTRO */
+#intro-logotype {
+  width: 100%;
+}
+
+#intro-logomark {
+  display: none;
+}
+
+/* CAROUSELS */
+/* .carousel {cursor: pointer}
+.carousel div {height: 100%}
+.carousel img {height: 100%} */
+
+.carousel-item span {
+  /* position: absolute;
+  right: var(--margin);
+  bottom: var(--margin);
+  color: white; */
+  display: none;
+}
+
+/* SECTION1 */
+
+#section1 span {
+  display: none;
+}
+
+#hidden-header {
+  display: none;
+}
+
+/* SECTION2 */
+#section2 .col-12 {
+  height: 50vh;
+}
+
+#section2 .col-md-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#section2 .m-text {
+padding: var(--margin);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+#section2 img {
+  width: 100%
+}
+
+#section2 .m-text img {
+/* width: 100%; */
+height: 10vh;
+object-fit: scale-down;
+}
+
+
+
+/* SECTION 3 & 4 */
+.sect-outerbox, .carousel {
+  height: 50vh;
+}
+
+.sect-innerbox{
+  justify-content: space-between;
+  gap: var(--margin);
+}
+
+.carousel div {
+  height: 100%;
+}
+
+.carousel img {
+  height: 100%;
+}
+
+#section5 {
+  justify-content: space-between;
+}
+
+/* SECTION 5 & 6 */
+
+#section5 .flex-column, #section6 .flex-column {
+  height: 50vh;
+  padding: var(--margin);
+}
+
+#sectext {
+  height: 100%;
+  align-content: center;
+}
+
+#outerbox-link {display: none}
+
+
+#section5 .sect-outerbox, #section6 .sect-outerbox {
+padding: var(--margin);
+}
+
+/* SECTION 7 */
+#section7 {
+  flex-wrap: wrap;
+  height: 40vh;
+  padding: var(--margin);
+}
+
+#section7 .col-6 {
+  align-self: flex-start;
+}
+
+#section7 img {
+  content: url('assets/img/logomark.svg');
+  object-fit: contain;
+  width: 90%;
+}
+
+#jobssect {
+  position: absolute;
+  transform:translate(0, -30%)
+}
+
+#jobssect #arrow {
+  display: none;
+}
+
+/* SECTION 8 */
+#section8 {
+  height: 60vh;
+  padding: var(--margin);
+  justify-content: space-between;
+}
+
+#sec8bottom {
+  height: 40vh;
+  justify-content: space-between;
+}
+
+
+#indentfooter {
+  transform:translate(-3.5vw, 0)
+}

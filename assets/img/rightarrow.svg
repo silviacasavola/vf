@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16.5 16.5" style="enable-background:new 0 0 16.5 16.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000059273881642318423710000000698748990468214151_);fill:none;stroke:#BF2E2E;}
+	.st1{clip-path:url(#SVGID_00000059267996210215557120000002736930102150762112_);fill:none;stroke:#BF2E2E;stroke-width:1.26;}
+	.st2{fill:#BF2E2E;}
+</style>
+<g>
+	<g>
+		<g>
+			<g>
+				<defs>
+					<rect id="SVGID_1_" y="4.2" width="16.5" height="8.1"/>
+				</defs>
+				<clipPath id="SVGID_00000055692397959969629970000014356662490415152029_">
+					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+				</clipPath>
+				
+					<line style="clip-path:url(#SVGID_00000055692397959969629970000014356662490415152029_);fill:none;stroke:#BF2E2E;" x1="0.6" y1="8.2" x2="12.6" y2="8.2"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<defs>
+					<rect id="SVGID_00000024710457271349008260000015337604418846096793_" y="4.2" width="16.5" height="8.1"/>
+				</defs>
+				<clipPath id="SVGID_00000153707163407409147770000003962645210282704028_">
+					<use xlink:href="#SVGID_00000024710457271349008260000015337604418846096793_"  style="overflow:visible;"/>
+				</clipPath>
+				
+					<line style="clip-path:url(#SVGID_00000153707163407409147770000003962645210282704028_);fill:none;stroke:#BF2E2E;stroke-width:1.26;" x1="0.6" y1="11.1" x2="0.6" y2="5.4"/>
+			</g>
+		</g>
+	</g>
+	<polygon class="st2" points="16.5,8.2 12.2,12.3 12.2,4.2 	"/>
+</g>
+</svg>
