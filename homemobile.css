@@ -110,6 +110,7 @@ padding: var(--margin);
 
 #section7 .col-6 {
   align-self: flex-start;
+  padding-top: var(--margin);
 }
 
 #section7 img {
