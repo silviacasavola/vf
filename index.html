@@ -38,8 +38,8 @@
 <body>
 
 <!-- HEADER -->
-<!-- justify-content-between -->
-<header class="d-flex align-items-middle justify-content-end s-text m-t-mob flex-column flex-md-row">
+
+<header class="d-flex align-items-center justify-content-end s-text m-t-mob flex-column flex-md-row">
 <a href="index.html" id="header-active">Home</a>
 <a href="ambienti.html">Ambienti</a>
 <a href="storia.html">Storia</a>
@@ -49,15 +49,17 @@
 <a href="eventi.html">Matrimoni ed eventi</a>
 </header>
 
+
+<img src="assets/img/white-logotype.svg" id="header-logotype">
+
 <!-- HIDDEN HEADER -->
-<div id="hidden-header" class="bg-red standard-margin"><img src="assets/img/white-logotype.svg"></div>
+<!-- <div id="hidden-header" class="bg-red standard-margin"><img src="assets/img/white-logotype.svg"></div> -->
 
 <main>
 
 <!-- SECTION 1 -->
 
 <section style="background-image: url('assets/img/home/1.jpg')" id="section1">
-<img src="assets/img/white-logotype.svg" id="intro-logotype" class="standard-margin">
 <span class="s-text m-t-mob" style="color: var(--cream); position: absolute; bottom: var(--margin); left: var(--margin)">Ruvo di Puglia (BA)</span>
 <img src="assets/img/white-logomark.svg" id="intro-logomark" style="width: 10vw; position: absolute; bottom: var(--margin); right: var(--margin)">
 </section>
@@ -297,10 +299,13 @@
 $("main").scroll(function () {
 
 if ($("main").scrollTop() == 0) {
-  $("#hidden-header").css("top", "-3.7vw");
+  // $("#hidden-header").css("top", "-3.7vw");
+  $("header").css("background-color", "rgba(191, 46, 46, 0)")
+
 } else
   if ($("main").scrollTop() > 0) {
-  $("#hidden-header").css("top", "0");
+  // $("#hidden-header").css("top", "0");
+  $("header").css("background-color", "rgba(191, 46, 46, 1)")
 }
 })
 </script>

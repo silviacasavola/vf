@@ -4,10 +4,8 @@
 
 /* MARGINS */
   --margin: 1.3vw;
-  --margin-wider: 2.5vw;
-  --top-header: 5vw;
-  --top-header-wider: 6vw;
-  --header-margin: 5vw 1.3vw 1.3vw 1.3vw;
+  --top-header: 6.4vw;
+  --header-margin: 6.4vw 1.3vw 1.3vw 1.3vw;
 
   /* COLORS */
   --red: #bf2e2e;
@@ -74,9 +72,9 @@ img {
 
 
 /* TEXT */
-.s-text {font-size: 1.1vw; line-height: 1.3vw;}
-.m-text {font-size: 1.4vw; line-height: 1.7vw;}
-.l-text {font-size: 2.2vw; line-height: 2.4vw;}
+.s-text {font-size: 1.05vw; line-height: 1.3vw;}
+.m-text {font-size: 1.35vw; line-height: 1.7vw;}
+.l-text {font-size: 2.15vw; line-height: 2.4vw;}
 .xl-text {font-size: 55pt; line-height: 1.2vw;}
 
 
@@ -87,11 +85,14 @@ header {
   width: 100%;
   z-index: 10;
   /* gap: 2vw; */
+  background-color: rgba(191, 46, 46, 0);
+  transition: background-color 0.3s;
+  height: 5.1vw;
 }
 
 header a {
   color: var(--cream);
-  padding: var(--margin);
+  padding: 1vw;
 }
 
 a {
@@ -106,7 +107,7 @@ header a:hover {
 background-color: var(--cream);
 color: var(--red);
 padding: 0.5vw;
-margin: 0.8vw;
+margin: 0.5vw;
 }
 
 #header-active:hover {
@@ -117,19 +118,15 @@ a:hover {
   text-decoration: underline;
 }
 
-#hidden-header {
+/* INTRO */
+#header-logotype {
+  height: 5.1vw;
   position: fixed;
-  height: 3.7vw;
-  width: 100%;
-  margin: 0;
-  z-index: 5;
-  top: -3.7vw;
-  transition: top 0.3s;
-}
-
-#hidden-header img {
-  object-fit: contain;
-  height: 1.1vw;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 1.1vw;
+  /* margin: var(--margin); */
 }
 
 
