@@ -61,8 +61,8 @@ img {
 
 
 /* TEXT */
-.s-t-mob {font-size: 2.5vw; line-height: 2.8vw;}
-.m-t-mob, .m-text {font-size: 5vw; line-height: 5.2vw;}
+.s-t-mob {font-size: 3.2vw; line-height: 3.5vw;}
+.m-t-mob, .m-text {font-size: 4.5vw; line-height: 4.8vw;}
 .l-text {font-size: 5vw; line-height: 5.2vw;}
 .xl-text {font-size: 55pt; line-height: 1.2vw;}
 
@@ -71,12 +71,15 @@ img {
 /* HEADER */
 header {
   position: fixed;
-  bottom: 0;
-  left: -55vw;
+  top: 50vh;
+  /* left: -55vw; */
+  /* transform:translate(-100%, 0); */
   background-color: var(--red);
   z-index: 10;
   gap: var(--margin);
-  padding: var(--margin);
+  /* padding: var(--margin); */
+  padding: 6vw;
+  transition: transform 0.3s;
 }
 
 header a {
@@ -105,7 +108,27 @@ a:focus {
   text-decoration: underline;
 }
 
+#hamburger-icon {
+  width: 10vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s;
+}
 
+
+.menu-closed {
+  transform:translate(-100%, 0)
+}
+
+.menu-closed img {
+  transform:translate(+99%, 0)
+}
+
+
+.opened {
+  transform: none;
+}
 
 /* BACKGROUNDS */
 
@@ -138,4 +161,9 @@ color: var(--red)
 #arrow {
   width: 3.1vw;
   padding: 0.4vw;
+}
+
+.mobile-centered {
+  position: absolute;
+  width: 94vw;
 }

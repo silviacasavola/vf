@@ -32,6 +32,7 @@
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
   </head>
 
 
@@ -39,7 +40,8 @@
 
 <!-- HEADER -->
 
-<header class="d-flex align-items-center justify-content-end s-text m-t-mob flex-column flex-md-row">
+<header class="menu-closed d-flex align-items-center justify-content-end s-text m-t-mob flex-column flex-md-row">
+<img id="hamburger-icon" src="assets/img/hamburger.svg">
 <a href="index.html" id="header-active">Home</a>
 <a href="ambienti.html">Ambienti</a>
 <a href="storia.html">Storia</a>
@@ -50,7 +52,7 @@
 </header>
 
 
-<img src="assets/img/white-logotype.svg" id="header-logotype">
+
 
 <!-- HIDDEN HEADER -->
 <!-- <div id="hidden-header" class="bg-red standard-margin"><img src="assets/img/white-logotype.svg"></div> -->
@@ -60,6 +62,9 @@
 <!-- SECTION 1 -->
 
 <section style="background-image: url('assets/img/home/1.jpg')" id="section1">
+
+  <img src="assets/img/white-logotype.svg" id="header-logotype">
+
 <span class="s-text m-t-mob" style="color: var(--cream); position: absolute; bottom: var(--margin); left: var(--margin)">Ruvo di Puglia (BA)</span>
 <img src="assets/img/white-logomark.svg" id="intro-logomark" style="width: 10vw; position: absolute; bottom: var(--margin); right: var(--margin)">
 </section>
@@ -101,7 +106,7 @@
 
   <div class="bg-cream-dt bg-red-mob d-flex flex-wrap standard-margin sect-innerbox" style="width: 100%; height: 100%">
   <div class="col-md-6 m-text">Ambienti</div>
-  <div class="col-md-6 m-text text-md-end text-center">(01)</div>
+  <div class="col-md-6 m-text text-md-end text-center mobile-centered">(01)</div>
   <div class="d-md-none text-end m-text"><a href="ambienti.html">Read more</a></div>
   <div class="d-none d-md-inline col-12 text-center"><img src="assets/img/home/3.jpg" style="width: 60%"></div>
   <div class="col-12 s-text m-t-mob">Phasellus ultrices quis enim sit amet imperdiet. Etiam facilisis dui nec dolor aliquam, quis auctor tortor rutrum.</div>
@@ -120,7 +125,7 @@
 
   <div class="bg-red-dt bg-cream-mob d-flex flex-wrap standard-margin sect-innerbox" style="width: 100%; height: 100%">
   <div class="col-md-9 col-3 m-text">Cucina etnobotanica</div>
-  <div class="col-md-3 text-md-end m-text text-center">(02)</div>
+  <div class="col-md-3 text-md-end m-text text-center mobile-centered">(02)</div>
   <div class="d-md-none text-end m-text"><a href="cucina.html">Read more</a></div>
   <div class="d-none d-md-inline col-12 text-center"><img src="assets/img/home/5.jpg" style="width: 60%"></div>
   <div class="col-12 s-text m-t-mob">Phasellus ultrices quis enim sit amet imperdiet. Etiam facilisis dui nec dolor aliquam, quis auctor tortor rutrum.</div>
@@ -175,7 +180,7 @@
 
   <div class="d-inline-flex justify-content-between flex-row-reverse flex-md-column" style="width:100%">
 <div class="d-md-none text-end m-text text-end"><a href="bb.html">Read more</a></div>
-<div class="col-md-12 m-text text-center">(03)</div>
+<div class="col-md-12 m-text text-center mobile-centered">(03)</div>
 <div class="col-md-12 l-text text-md-center text-start">B&B Service</div>
 </div>
 
@@ -202,7 +207,7 @@
 
     <div class="d-inline-flex justify-content-between flex-row-reverse flex-md-column" style="width:100%">
   <div class="d-md-none text-end m-text text-end"><a href="bb.html">Read more</a></div>
-  <div class="col-md-12 m-text text-center">(04)</div>
+  <div class="col-md-12 m-text text-center mobile-centered">(04)</div>
   <div class="col-md-12 l-text text-md-center text-start">Experiences</div>
   </div>
 
@@ -242,8 +247,8 @@
 
 <section class="d-flex bg-red-dt bg-cream-mob align-items-center justify-content-between standard-margin" id="section7">
   <div class="order-md-2 col-md-4 col-12 text-center"><img src="assets/img/white-logomark.svg"></div>
-  <div class="order-md-1 col-md-4 col-6 s-text s-t-mob">Villa Fenicia - Ruvo di Puglia SP 86 Ruvo<br>Bisceglie, km 2, 70037 Ruvo di Puglia BA</div>
-   <div class="order-md-3 col-md-4 col-6 s-text s-t-mob text-end">Info and bookings: (+39) 340 736 4832<br>email: <a href="mailto:info@villafenicia.com">info@villafenicia.com</a></div>
+  <div class="order-md-1 col-md-4 col-12 s-text s-t-mob text-center text-md-start">Villa Fenicia - Ruvo di Puglia SP 86 Ruvo<br>Bisceglie, km 2, 70037 Ruvo di Puglia BA</div>
+   <div class="order-md-3 col-md-4 col-12 s-text s-t-mob text-center text-md-end">Info and bookings: (+39) 340 736 4832<br>email: <a href="mailto:info@villafenicia.com">info@villafenicia.com</a></div>
 </section>
 
 
@@ -277,7 +282,7 @@
 
   <div id="indentfooter"><br><img src="assets/img/rightarrow.svg" id="arrow"> Instagram: <a href="https://www.instagram.com/villafenicia_/">Villa_Fenicia</a><br></div>
   Facebook: <a href="https://www.facebook.com/villafeniciaricevimenti">Villa_Fenicia</a><br>Booking: <a href="https://www.booking.com/hotel/it/villa-fenicia-ruvo-di-puglia1.it.html">Villa_Fenicia</a><br></div>
-  <div class="col-5 col-md-3 align-self-end m-text" id="jobssect"><img src="assets/img/rightarrow.svg" id="arrow"> <a href="jobs.html" class="bg-red" style="color:var(--cream); padding:0.5vw">Lavora con noi</a></div>
+  <div class="col-5 col-md-3 align-self-end m-text" id="jobssect"><img src="assets/img/rightarrow.svg" id="arrow"> <a href="jobs.html" class="s-t-mob bg-red" style="color:var(--cream); padding:0.5vw">Lavora con noi</a></div>
 </div>
 
 <div class="d-inline-flex flex-row" style="height: min-content">
@@ -295,20 +300,10 @@
 <!-- BOOTSTRAP bundle with popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
-<script>
-$("main").scroll(function () {
 
-if ($("main").scrollTop() == 0) {
-  // $("#hidden-header").css("top", "-3.7vw");
-  $("header").css("background-color", "rgba(191, 46, 46, 0)")
+  <!-- GLOBAL SCRIPT -->
+  <script src="global.js"></script>
 
-} else
-  if ($("main").scrollTop() > 0) {
-  // $("#hidden-header").css("top", "0");
-  $("header").css("background-color", "rgba(191, 46, 46, 1)")
-}
-})
-</script>
 
 <script language="JavaScript" type="text/javascript">
 var carousel = new bootstrap.Carousel($('.carousel'))

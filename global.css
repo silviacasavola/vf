@@ -77,6 +77,13 @@ img {
 .l-text {font-size: 2.15vw; line-height: 2.4vw;}
 .xl-text {font-size: 55pt; line-height: 1.2vw;}
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 
 /* HEADER */
@@ -95,9 +102,6 @@ header a {
   padding: 1vw;
 }
 
-a {
-  text-decoration: none;
-}
 
 header a:hover {
   color: var(--cream);
@@ -114,9 +118,10 @@ margin: 0.5vw;
   color: red;
 }
 
-a:hover {
-  text-decoration: underline;
+#hamburger-icon {
+  display: none;
 }
+
 
 /* INTRO */
 #header-logotype {

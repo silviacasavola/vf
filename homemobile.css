@@ -1,6 +1,9 @@
 /* INTRO */
 #header-logotype {
   width: 100%;
+  position: absolute;
+  padding: var(--margin);
+  z-index: 10;
 }
 
 #intro-logomark {
@@ -115,8 +118,9 @@ padding: var(--margin);
 
 #section7 img {
   content: url('assets/img/logomark.svg');
-  object-fit: contain;
-  width: 90%;
+  object-fit: scale-down;
+  width: 70%;
+  padding-bottom: var(--margin);
 }
 
 #jobssect {
@@ -132,12 +136,19 @@ padding: var(--margin);
 #section8 {
   height: 60vh;
   padding: var(--margin);
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
+
 #sec8bottom {
-  height: 40vh;
+  /* height: 40vh; */
   justify-content: space-between;
+  gap: var(--margin);
+}
+
+
+#sec8bottom .col-12 {
+  gap: var(--margin);
 }
 
 
