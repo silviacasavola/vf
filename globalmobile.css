@@ -79,13 +79,15 @@ header {
   position: fixed;
   /* top: 50vh; */
   bottom: 0;
+  width: 50vw;
   /* left: -55vw; */
   /* transform:translate(-100%, 0); */
   background-color: var(--red);
   z-index: 10;
   gap: var(--margin);
   /* padding: var(--margin); */
-  padding: 4vw 4vw 12vw 4vw;
+  padding-top: 4vw;
+  padding-bottom: 14vw;
   transition: transform 0.3s;
 }
 
@@ -116,7 +118,7 @@ a:focus {
 }
 
 #hamburger-icon {
-  width: 10vw;
+  width: 12vw;
   position: absolute;
   /* top: 0; */
   bottom: 0;
