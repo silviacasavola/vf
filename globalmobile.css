@@ -39,9 +39,9 @@ main {
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
-  /* height: calc(100vh - env(safe-area-inset-bottom)); */
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
+  /* height: calc(100vh - env(safe-area-inset-bottom)); */
 }
 
 main::-webkit-scrollbar {
@@ -53,6 +53,8 @@ width: 100vw;
 /* height: 100vh; */
 /* height: calc(100vh - env(safe-area-inset-bottom)); */
 height: 100%;
+padding-top: env(safe-area-inset-top);
+padding-bottom: env(safe-area-inset-bottom);
 overflow: hidden;
 background-size: cover;
 background-repeat: no-repeat;
@@ -81,7 +83,8 @@ img {
 header {
   position: fixed;
   /* top: 50vh; */
-  bottom: 0;
+  /* bottom: 0; */
+  bottom: env(safe-area-inset-bottom);
   width: 50vw;
   /* left: -55vw; */
   /* transform:translate(-100%, 0); */
