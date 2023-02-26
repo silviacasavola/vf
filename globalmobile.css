@@ -30,11 +30,16 @@ body {
   scrollbar-width: none;
 }
 
+/* html, body {
+  height: calc(100vh - env(safe-area-inset-bottom));
+} */
+
 main {
-  height: 100vh;
+  /* height: 100vh; */
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
+  height: calc(100vh - env(safe-area-inset-bottom));
 }
 
 main::-webkit-scrollbar {
@@ -43,7 +48,8 @@ main::-webkit-scrollbar {
 
 section {
 width: 100vw;
-height: 100vh;
+/* height: 100vh; */
+height: calc(100vh - env(safe-area-inset-bottom));
 overflow: hidden;
 background-size: cover;
 background-repeat: no-repeat;
@@ -71,7 +77,8 @@ img {
 /* HEADER */
 header {
   position: fixed;
-  top: 50vh;
+  /* top: 50vh; */
+  bottom: 0;
   /* left: -55vw; */
   /* transform:translate(-100%, 0); */
   background-color: var(--red);
@@ -111,7 +118,8 @@ a:focus {
 #hamburger-icon {
   width: 10vw;
   position: absolute;
-  top: 0;
+  /* top: 0; */
+  bottom: 0;
   right: 0;
   transition: transform 0.3s;
 }
