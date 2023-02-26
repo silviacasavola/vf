@@ -35,13 +35,13 @@ body {
 } */
 
 main {
-  height: 100vh;
+  /* height: 100vh; */
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
-  /* height: calc(100vh - env(safe-area-inset-bottom)); */
+  height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));
 }
 
 main::-webkit-scrollbar {
@@ -66,9 +66,9 @@ position:relative;
   padding: var(--margin);
 }
 
-section .standard-margin {
+/* section .standard-margin {
   padding: env(safe-area-inset-top) var(--margin) env(safe-area-inset-bottom) var(--margin);
-}
+} */
 
 img {
   object-fit: cover;
