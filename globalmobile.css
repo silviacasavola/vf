@@ -85,7 +85,7 @@ header {
   z-index: 10;
   gap: var(--margin);
   /* padding: var(--margin); */
-  padding: 6vw;
+  padding: 4vw 4vw 12vw 4vw;
   transition: transform 0.3s;
 }
 
