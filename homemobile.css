@@ -162,3 +162,12 @@ padding: var(--margin);
 #indentfooter {
   transform:translate(-3.5vw, 0)
 }
+
+
+#section9 {
+  height: 25vh;
+}
+
+#section9 img {
+  height: 40%;
+}
