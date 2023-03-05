@@ -1,0 +1,130 @@
+/* CAROUSELS */
+.carousel {cursor: pointer}
+.carousel div {height: 100%}
+.carousel img {height: 100%}
+
+.carousel-item span {
+  position: absolute;
+  color: var(--cream);
+}
+
+
+#section1 {
+background-image: url('../assets/img/home/1.jpg');
+background-position-x: center;
+}
+
+
+#section3 .carousel-item span {
+  right: var(--margin);
+  bottom: var(--margin);
+}
+
+#section4 .carousel-item span {
+  left: var(--margin);
+  top: var(--top-header);
+}
+
+#section5 .carousel-item span {
+  left: var(--margin);
+  top: var(--margin);
+}
+
+#section6 .carousel-item span {
+  right: var(--margin);
+  top: var(--margin);
+}
+
+
+
+/* SECTION 2 */
+#section2 .col-md-3 img {
+  height: 40vh; width: 100%; padding: 2.5vw; object-fit: cover;
+}
+
+#section2 .m-text img {
+  display: none;
+}
+
+.sect-outerbox {
+  padding: 18vh 13vw 14vh 13vw;
+}
+
+
+
+/* SECTION 5 */
+
+#section5 .col-md-4 div {
+gap: var(--margin)
+}
+
+#section5 .carousel {
+  padding: var(--top-header) 0 var(--margin) var(--margin);
+}
+
+#section5 .col-md-4 {
+  padding: var(--top-header) var(--margin) var(--margin) var(--margin);
+}
+
+
+/* SECTION 6 */
+
+#section6 .col-md-4 div {
+gap: var(--margin)
+}
+
+#section6 .carousel {
+  padding: var(--top-header) var(--margin) var(--margin) 0;
+}
+
+#section6 .col-md-4 {
+  padding: var(--top-header) var(--margin) var(--margin) var(--margin);
+}
+
+/* SECTION 7 */
+#section7 img {
+  width: 100%;
+}
+
+/* SECTION 8 */
+#section8 {
+  padding: var(--top-header) var(--margin) var(--margin) var(--margin);
+    /* padding-top: var(--top-header); */
+    /* gap: var(--margin); */
+}
+
+#section8 .col-md-9 .col-12 {
+  padding-left: var(--margin);
+  height: 100%;
+}
+
+#sec8bottom {
+  height: 100%;
+}
+
+#sec8bottomright {
+  height: min-content;
+  padding-left: var(--margin)
+}
+
+#arrow {
+  width: 1.1vw;
+  padding: 0.2vw;
+}
+
+#jobssect a{
+  padding: calc(var(--margin)/2.2);
+}
+
+#indentfooter {
+  transform:translate(-1.37vw, 0)
+}
+
+
+#section9 {
+  height: 40vh;
+}
+
+#section9 img {
+  height: 70%;
+}

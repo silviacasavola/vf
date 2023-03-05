@@ -1,0 +1,205 @@
+/* INTRO */
+#header-logotype {
+  width: 100%;
+  position: absolute;
+  padding: var(--margin);
+  z-index: 10;
+}
+
+#intro-logomark {
+  display: none;
+}
+
+/* CAROUSELS */
+/* .carousel {cursor: pointer}
+.carousel div {height: 100%}
+.carousel img {height: 100%} */
+
+.carousel-item span {
+  /* position: absolute;
+  right: var(--margin);
+  bottom: var(--margin);
+  color: white; */
+  display: none;
+}
+
+/* SECTION1 */
+
+#section1 span {
+  display: none;
+}
+
+#hidden-header {
+  display: none;
+}
+
+#section1 {
+background-image: url('../assets/img/home/1mob.jpg');
+background-position-x: center;
+}
+
+/* SECTION2 */
+#section2 .col-12 {
+  /* height: 50%; */
+  /* height: calc((100vh - env(safe-area-inset-bottom))/2); */
+
+  height: calc((100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top))/2);
+}
+
+#section2 .col-md-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#section2 .m-text {
+padding: var(--margin) var(--margin) 0 var(--margin);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+#section2 img {
+  height: 100%;
+  width: 100%;
+}
+
+#section2 .m-text img {
+/* width: 100%; */
+height: 10vh;
+object-fit: scale-down;
+}
+
+#section2 .s-text .m-t-mob {
+  text-align: center;
+}
+
+
+/* SECTION 3 & 4 */
+.sect-outerbox, .carousel {
+  /* height: 50%; */
+  /* height: calc((100vh - env(safe-area-inset-bottom))/2); */
+
+  height: calc((100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top))/2);
+}
+
+.sect-innerbox{
+  justify-content: space-between;
+  gap: var(--margin);
+}
+
+.carousel div {
+  height: 100%;
+}
+
+.carousel img {
+  height: 100%;
+}
+
+#section3 .s-text, #section4 .s-text {
+  text-align: center;
+}
+
+/* SECTION 5 & 6 */
+
+
+#section5 {
+  justify-content: space-between;
+}
+
+#section5 .flex-column, #section6 .flex-column {
+  /* height: 50%; */
+  height: calc((100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top))/2);
+  padding: var(--margin);
+}
+
+
+#section5 .col-12, #section6 .col-12 {
+  text-align: center;
+}
+
+#sectext {
+  height: 100%;
+  align-content: center;
+}
+
+#outerbox-link {display: none}
+
+
+#section5 .sect-outerbox, #section6 .sect-outerbox {
+padding: var(--margin);
+}
+
+/* SECTION 7 */
+#section7 {
+  flex-wrap: wrap;
+  height: min-content;
+  padding: var(--margin);
+}
+
+#section7 .col-6 {
+  align-self: flex-start;
+  padding-top: var(--margin);
+}
+
+#section7 img {
+  /* content: url('assets/img/logomark.svg'); */
+  object-fit: fill;
+  width: 100%;
+  /* width: 60%; */
+  padding: var(--margin);
+}
+
+#jobssect {
+  position: absolute;
+  transform:translate(0, -30%)
+}
+
+#jobssect #arrow {
+  display: none;
+}
+
+/* SECTION 8 */
+#section8 {
+height: min-content;
+padding: var(--margin);
+  /* justify-content: space-between; */
+}
+
+
+#sec8bottom {
+  /* height: 40vh; */
+  justify-content: space-between;
+  gap: calc(var(--margin)*1.5);
+}
+
+#sec8bottom {
+  /* height: 40vh; */
+  justify-content: space-between;
+  gap: calc(var(--margin)*2);
+  margin-top: var(--margin);
+}
+
+
+#sec8bottom .col-12 {
+gap: calc(var(--margin)*2);
+  /* gap: var(--margin); */
+}
+
+
+#jobssect a {
+  padding: calc(var(--margin)/2.6);
+}
+
+#indentfooter {
+  transform:translate(-3.5vw, 0)
+}
+
+
+#section9 {
+  height: 25vh;
+}
+
+#section9 img {
+  height: 50%;
+}

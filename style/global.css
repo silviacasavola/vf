@@ -1,0 +1,164 @@
+:root {
+/* LAYERS Z-INDEX */
+  --bottom-layer: 0;
+
+/* MARGINS */
+  --margin: 1.3vw;
+  --top-header: 6.4vw;
+  --header-margin: 6.4vw 1.3vw 1.3vw 1.3vw;
+
+  /* COLORS */
+  --red: #bf2e2e;
+  --cream: #fff9f8;
+}
+
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+/* GLOBAL */
+body {
+  max-width: 100vw;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
+  box-sizing: content-box;
+  scrollbar-width: none;
+}
+
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+background-size: cover;
+background-repeat: no-repeat;
+scroll-snap-align: start;
+position:relative;
+}
+
+.standard-margin {
+  padding: var(--margin);
+}
+
+.top-header-margin {
+  /* padding-top: var(--header-margin); */
+  padding: var(--header-margin);
+}
+
+
+img {
+  object-fit: cover;
+}
+
+
+/* TEXT */
+.s-text {font-size: 1.05vw; line-height: 1.3vw;}
+.m-text {font-size: 1.35vw; line-height: 1.7vw;}
+.l-text {font-size: 2.15vw; line-height: 2.4vw;}
+.xl-text {font-size: 55pt; line-height: 1.2vw;}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  /* gap: 2vw; */
+  background-color: rgba(191, 46, 46, 0);
+  transition: background-color 0.3s;
+  height: 5.1vw;
+}
+
+header a {
+  color: var(--cream);
+  padding: 1vw;
+}
+
+
+header a:hover {
+  color: var(--cream);
+}
+
+#header-active {
+background-color: var(--cream);
+color: var(--red);
+padding: 0.5vw;
+margin: 0.5vw;
+}
+
+#header-active:hover {
+  color: red;
+}
+
+#hamburger-icon {
+  display: none;
+}
+
+
+/* INTRO */
+#header-logotype {
+  height: 5.1vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 1.1vw;
+  /* margin: var(--margin); */
+}
+
+
+/* BACKGROUNDS */
+
+.bg-red, .bg-red-dt {
+  background-color: var(--red);
+  color: var(--cream)
+}
+
+.bg-red a, .bg-red-dt a {
+color: var(--cream)
+}
+
+.bg-red a:hover, .bg-red-dt a:hover {
+color: var(--cream)
+}
+
+.bg-cream, .bg-cream-dt {
+  background-color: var(--cream);
+  color: var(--red)
+}
+
+.bg-cream a, .bg-cream-dt a{
+color: var(--red)
+}
+
+.bg-cream a:hover, .bg-cream-dt a:hover {
+color: var(--red)
+}
