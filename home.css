@@ -112,6 +112,10 @@ gap: var(--margin)
   padding: 0.2vw;
 }
 
+#jobssect a{
+  padding: calc(var(--margin)/2.2);
+}
+
 #indentfooter {
   transform:translate(-1.37vw, 0)
 }

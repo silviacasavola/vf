@@ -70,6 +70,9 @@ height: 10vh;
 object-fit: scale-down;
 }
 
+#section2 .s-text .m-t-mob {
+  text-align: center;
+}
 
 
 /* SECTION 3 & 4 */
@@ -93,16 +96,26 @@ object-fit: scale-down;
   height: 100%;
 }
 
-#section5 {
-  justify-content: space-between;
+#section3 .s-text, #section4 .s-text {
+  text-align: center;
 }
 
 /* SECTION 5 & 6 */
+
+
+#section5 {
+  justify-content: space-between;
+}
 
 #section5 .flex-column, #section6 .flex-column {
   /* height: 50%; */
   height: calc((100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top))/2);
   padding: var(--margin);
+}
+
+
+#section5 .col-12, #section6 .col-12 {
+  text-align: center;
 }
 
 #sectext {
@@ -120,7 +133,7 @@ padding: var(--margin);
 /* SECTION 7 */
 #section7 {
   flex-wrap: wrap;
-  height: 30vh;
+  height: min-content;
   padding: var(--margin);
 }
 
@@ -147,8 +160,8 @@ padding: var(--margin);
 
 /* SECTION 8 */
 #section8 {
-  height: 70vh;
-  padding: var(--margin);
+height: min-content;
+padding: var(--margin);
   /* justify-content: space-between; */
 }
 
@@ -156,14 +169,26 @@ padding: var(--margin);
 #sec8bottom {
   /* height: 40vh; */
   justify-content: space-between;
-  gap: var(--margin);
+  gap: calc(var(--margin)*1.5);
+}
+
+#sec8bottom {
+  /* height: 40vh; */
+  justify-content: space-between;
+  gap: calc(var(--margin)*2);
+  margin-top: var(--margin);
 }
 
 
 #sec8bottom .col-12 {
-  gap: var(--margin);
+gap: calc(var(--margin)*2);
+  /* gap: var(--margin); */
 }
 
+
+#jobssect a {
+  padding: calc(var(--margin)/2.6);
+}
 
 #indentfooter {
   transform:translate(-3.5vw, 0)
@@ -171,7 +196,7 @@ padding: var(--margin);
 
 
 #section9 {
-  height: 25vh;
+  height: 20vh;
 }
 
 #section9 img {
