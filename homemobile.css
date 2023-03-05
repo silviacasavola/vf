@@ -144,7 +144,7 @@ padding: var(--margin);
 
 #section7 img {
   /* content: url('assets/img/logomark.svg'); */
-  /* object-fit: scale-down; */
+  object-fit: contain;
   /* width: 60%; */
   padding: var(--margin);
 }
