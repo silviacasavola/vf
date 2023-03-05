@@ -89,7 +89,7 @@ header {
   /* top: 50vh; */
   /* bottom: 0; */
   bottom: env(safe-area-inset-bottom);
-  width: 70vw;
+  width: 60vw;
   /* left: -55vw; */
   /* transform:translate(-100%, 0); */
   background-color: var(--red);
