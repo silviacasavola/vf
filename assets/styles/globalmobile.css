@@ -185,3 +185,16 @@ color: var(--red)
   position: absolute;
   width: 94vw;
 }
+
+
+/* CLOSING SECTION */
+
+
+
+#closingsection {
+  height: 25vh;
+}
+
+#closingsection img {
+  height: 50%;
+}

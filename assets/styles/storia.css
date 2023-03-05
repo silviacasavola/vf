@@ -1,0 +1,53 @@
+/* CAROUSELS */
+.carousel {cursor: pointer}
+.carousel-item {height: 100%}
+.carousel img {height: 100%}
+
+
+.carousel-item {
+}
+
+.carousel-inner-line {
+  position: absolute;
+  bottom: var(--margin);
+  color: var(--cream);
+  left: var(--margin);
+  right: var(--margin);
+}
+
+
+.sect-outerbox {
+  height: 100%;
+  padding: var(--top-header) 13vw var(--margin) 13vw;
+  /* padding: 15vw 13vw 10vw 13vw; */
+  gap: calc(var(--margin)*3);
+}
+
+/* SECTION 1 */
+#section1 {
+background-image: url('../img/ambienti/1.jpg');
+background-position-x: center;
+}
+
+
+/* SECTION 2 */
+#section2 img {
+  height: 21vh;
+  margin-bottom: calc(var(--margin)*2);
+}
+
+
+/* SECTION 4 */
+
+#section4 {
+  padding: var(--header-margin)
+}
+
+#section4 .d-flex {
+  height: 100%;
+  background-image: url('../img/ambienti/3.jpg');
+  background-size: cover;
+  color: var(--cream);
+  margin: auto;
+  padding: var(--margin);
+}

@@ -162,3 +162,15 @@ color: var(--red)
 .bg-cream a:hover, .bg-cream-dt a:hover {
 color: var(--red)
 }
+
+
+/* CLOSING SECTION */
+
+
+#closingsection {
+  height: 40vh;
+}
+
+#closingsection img {
+  height: 70%;
+}

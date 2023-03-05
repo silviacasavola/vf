@@ -194,12 +194,3 @@ gap: calc(var(--margin)*2);
 #indentfooter {
   transform:translate(-3.5vw, 0)
 }
-
-
-#section9 {
-  height: 25vh;
-}
-
-#section9 img {
-  height: 50%;
-}
