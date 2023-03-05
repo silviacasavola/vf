@@ -25,6 +25,6 @@ $("header").click(function () {
   $("header").addClass("menu-closed");
 })
 
-$(window).scroll(function () {
+$("main").scroll(function () {
   $("header").addClass("menu-closed");
 })
