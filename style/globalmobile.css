@@ -130,7 +130,7 @@ a:focus {
 }
 
 #hamburger-icon {
-  width: 12vw;
+  width: 10vw;
   position: fixed;
   margin: var(--margin);
   /* top: 0; */
