@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- non so cosa sia  -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 
     <title>Villa Fenicia</title>
-    <!-- <link rel = "icon" href ="assets/img/clown.png" type = "image/x-icon"> -->
+    <!-- <link rel = "icon" href ="assets/img/icon.png" type = "image/x-icon"> -->
 
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
@@ -21,12 +20,12 @@
 
 
     <!-- GLOBAL -->
-    <link rel='stylesheet' type='text/css' href='style/global.css'media="screen and (min-width:992px)">
-    <link rel='stylesheet' type='text/css' href='style/globalmobile.css' media="screen and (max-width:991px)">
+    <link rel='stylesheet' type='text/css' href='assets/styles/global.css'media="screen and (min-width:992px)">
+    <link rel='stylesheet' type='text/css' href='assets/styles/globalmobile.css' media="screen and (max-width:991px)">
     <!-- Desktop stylesheet -->
-    <link rel='stylesheet' type='text/css' href='style/home.css' media="screen and (min-width:992px)">
+    <link rel='stylesheet' type='text/css' href='assets/styles/ambienti.css' media="screen and (min-width:992px)">
     <!-- Mobile portrait mode -->
-    <link rel='stylesheet' type='text/css' href='style/homemobile.css' media="screen and (max-width:991px)">
+    <link rel='stylesheet' type='text/css' href='assets/styles/homemobile.css' media="screen and (max-width:991px)">
     <!-- Mobile landscape mode -->
     <!-- <link rel='stylesheet' type='text/css' href='mobile.css' media="screen and (orientation:landscape) and (max-width:991px)"> -->
 
@@ -48,15 +47,10 @@
 <a href="bb.html">B&B</a>
 <a href="cucina.html">Cucina botanica</a>
 <a href="eventi.html">Matrimoni ed eventi</a>
-<!-- </div> -->
 </header>
 
 
 <img id="hamburger-icon" src="assets/img/hamburger.svg">
-
-
-<!-- HIDDEN HEADER -->
-<!-- <div id="hidden-header" class="bg-red standard-margin"><img src="assets/img/white-logotype.svg"></div> -->
 
 <main>
 
@@ -64,7 +58,7 @@
 
 <section id="section1">
 
-  <img src="assets/img/white-logotype.svg" id="header-logotype">
+<a href="index.html"><img src="assets/img/white-logotype.svg" id="header-logotype"></a>
 
 <img src="assets/img/white-logomark.svg" id="intro-logomark" style="width: 10vw; position: absolute; bottom: var(--margin); right: var(--margin)">
 </section>
@@ -73,10 +67,9 @@
 <!-- SECTION 2 -->
 
 <section class="top-header-margin d-flex flex-column-reverse flex-md-column justify-content-center text-center bg-cream" id="section2">
-  <div class="d-none d-md-inline col-8 mx-auto"><img src="assets/img/logotype.svg" style="width: 100%"></div>
-  <div class="col-12 col-md-8 mx-auto m-text">Phasellus ultrices quis enim sit amet imperdiet. Etiam facilisis dui nec dolor aliquam, quis auctor tortor rutrum. Nullam leo nibh, hendrerit et vestibulum a, fermentum eu nisi. Donec vestibulum rutrum justo, non blandit mi vehicula ut. Aenean elementum ante sagittis nibh ultrices blandit.
-  <img src="assets/img/logomark.svg">
-  <div class="d-block d-md-none"></div></div>
+  <div class="d-none d-md-inline col-12 mx-auto"><img src="assets/img/ambienti/ambienti.svg"></div>
+  <div class="col-12 col-md-8 mx-auto m-text">Phasellus ultrices quis enim sit amet imperdiet. Etiam facilisis dui nec dolor aliquam, quis auctor tortor rutrum. Nullam leo nibh, hendrerit et vestibulum a, fermentum eu nisi. Donec vestibulum rutrum justo, non blandit mi vehicula ut. Aenean elementum ante sagittis nibh ultrices blandit. Pellentesque odio purus, bibendum et maximus a, vulputate in nisi. sto id euismod ultricies. Suspendisse potenti.
+  </div>
 </section>
 
 
@@ -87,216 +80,103 @@
 
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="assets/img/home/4.jpg" class="d-block w-100" alt="image">
-      <span class="m-text">1/3</span>
+      <img src="assets/img/ambienti/2.jpg" class="d-block w-100" alt="image">
+      <div class="d-flex m-text justify-content-between carousel-inner-line">
+        <div class="d-inline"><span class="s-text">(01)</span> Sala Cevice</div>
+        <div class="d-inline">First floor</div>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="assets/img/home/4b.jpg" class="d-block w-100" alt="image">
+    <!-- <div class="carousel-item">
+      <img src="assets/img/ambienti/2.jpg" class="d-block w-100" alt="image">
       <span class="m-text">2/3</span>
     </div>
     <div class="carousel-item">
-      <img src="assets/img/home/4c.jpg" class="d-block w-100" alt="image">
+      <img src="assets/img/ambienti/2.jpg" class="d-block w-100" alt="image">
       <span class="m-text">3/3</span>
-    </div>
+    </div> -->
   </div>
 
 </div>
 
-  <div class="col-md-6 col-12 bg-red sect-outerbox">
+  <div class="col-md-6 col-12 bg-red sect-outerbox d-flex justify-content-center flex-column">
 
-  <div class="bg-cream-dt bg-red-mob d-flex flex-wrap standard-margin sect-innerbox" style="width: 100%; height: 100%">
-  <div class="col-md-6 m-text">Ambienti</div>
-  <div class="col-md-6 m-text text-md-end text-center mobile-centered">(01)</div>
-  <div class="d-md-none text-end m-text"><a href="ambienti.html">Read more</a></div>
-  <div class="d-none d-md-inline col-12 text-center"><img src="assets/img/home/3.jpg" style="width: 60%"></div>
-  <div class="col-12 s-text m-t-mob">Phasellus ultrices quis enim sit amet imperdiet. Etiam facilisis dui nec dolor aliquam, quis auctor tortor rutrum.</div>
+  <div>
+  <div class="d-flex justify-content-between" style="margin-bottom: var(--margin)">
+  <div class="d-inline l-text">Sala Cevice</div>
+  <div class="d-none d-md-inline m-text align-self-end">(01)</div>
+</div>
+  <div class="col-12 s-text m-t-mob">Phasellus ultrices quis enim sit amet imperdiet. Etiam facilisis dui nec dolor aliquam, quis auctor tortor rutrum. Nullam leo nibh, hendrerit et vestibulum a, fermentum eu nisi. Donec vestibulum rutrum justo, non blandit mi vehicula ut. Aenean elementum ante sagittis nibh ultrices blandit. sque arcu. Donec euismod, ipsum id sollicitudin faucibus, tortor quam efficitur ex, cursus suscipit urna neque sed purus. Curabitur feugiat ultrices libero id lacinia.</div>
   </div>
 
-  <div class="standard-margin m-text" id="outerbox-link" style="width:100%; text-align:center"><a href="ambienti.html">Read more</a></div>
+    <div>
+    <div class="d-flex justify-content-between" style="margin-bottom: var(--margin)">
+    <div class="d-inline l-text">Sala Cevice</div>
+    <div class="d-none d-md-inline m-text align-self-end">(02)</div>
+  </div>
+    <div class="col-12 s-text m-t-mob">Phasellus ultrices quis enim sit amet imperdiet. Etiam facilisis dui nec dolor aliquam, quis auctor tortor rutrum. Nullam leo nibh, hendrerit et vestibulum a, fermentum eu nisi. Donec vestibulum rutrum justo, non blandit mi vehicula ut. Aenean elementum ante sagittis nibh ultrices blandit. sque arcu. Donec euismod, ipsum id sollicitudin faucibus, tortor quam efficitur ex, cursus suscipit urna neque sed purus. Curabitur feugiat ultrices libero id lacinia.</div>
+    </div>
+
   </div>
 </section>
 
 
 <!-- SECTION 4 -->
-
-<section class="d-flex g-0 flex-column flex-md-row" id="section4">
-
-  <div class="col-md-6 col-12 bg-cream sect-outerbox">
-
-  <div class="bg-red-dt bg-cream-mob d-flex flex-wrap standard-margin sect-innerbox" style="width: 100%; height: 100%">
-  <div class="col-md-9 col-3 m-text">Cucina etnobotanica</div>
-  <div class="col-md-3 text-md-end m-text text-center mobile-centered">(02)</div>
-  <div class="d-md-none text-end m-text"><a href="cucina.html">Read more</a></div>
-  <div class="d-none d-md-inline col-12 text-center"><img src="assets/img/home/5.jpg" style="width: 60%"></div>
-  <div class="col-12 s-text m-t-mob">Phasellus ultrices quis enim sit amet imperdiet. Etiam facilisis dui nec dolor aliquam, quis auctor tortor rutrum.</div>
-  </div>
-
-  <div class="standard-margin m-text" id="outerbox-link" style="width:100%; text-align:center"><a href="cucina.html">Read more</a></div>
-  </div>
-
-
-    <div class="col-md-6 col-12 carousel slide" data-bs-ride="carousel">
-
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/img/home/6.jpg" class="d-block w-100" alt="image">
-        <span class="m-text">1/3</span>
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/home/6b.jpg" class="d-block w-100" alt="image">
-        <span class="m-text">2/3</span>
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/home/6c.jpg" class="d-block w-100" alt="image">
-        <span class="m-text">3/3</span>
-      </div>
-    </div>
-
+<section id="section4">
+  <div class="col-10 d-flex justify-content-between align-items-center d-flex m-text">
+      <div class="d-inline"><span class="s-text">(01)</span> Sala Cevice</div>
+      <div class="d-inline">First floor</div>
   </div>
 </section>
+
 
 <!-- SECTION 5 -->
-<section id="section5" class="d-flex flex-column-reverse flex-md-row bg-red">
-  <div class="col-12 col-md-8 carousel slide" data-bs-ride="carousel">
+
+<section class="d-flex g-0 flex-column-reverse flex-md-row" id="section5">
+  <div class="col-md-6 col-12 bg-red sect-outerbox d-flex justify-content-center flex-column">
+
+  <div>
+  <div class="d-flex justify-content-between" style="margin-bottom: var(--margin)">
+  <div class="d-inline l-text">Chiesetta</div>
+  <div class="d-none d-md-inline m-text align-self-end">(03)</div>
+</div>
+  <div class="col-12 s-text m-t-mob">Phasellus ultrices quis enim sit amet imperdiet. Etiam facilisis dui nec dolor aliquam, quis auctor tortor rutrum. Nullam leo nibh, hendrerit et vestibulum a, fermentum eu nisi. Donec vestibulum rutrum justo, non blandit mi vehicula ut. Aenean elementum ante sagittis nibh ultrices blandit. sque arcu. Donec euismod, ipsum id sollicitudin faucibus, tortor quam efficitur ex, cursus suscipit urna neque sed purus. Curabitur feugiat ultrices libero id lacinia.</div>
+  </div>
+
+    <div>
+    <div class="d-flex justify-content-between" style="margin-bottom: var(--margin)">
+    <div class="d-inline l-text">Sala Cevice</div>
+    <div class="d-none d-md-inline m-text align-self-end">(04)</div>
+  </div>
+    <div class="col-12 s-text m-t-mob">Phasellus ultrices quis enim sit amet imperdiet. Etiam facilisis dui nec dolor aliquam, quis auctor tortor rutrum. Nullam leo nibh, hendrerit et vestibulum a, fermentum eu nisi. Donec vestibulum rutrum justo, non blandit mi vehicula ut. Aenean elementum ante sagittis nibh ultrices blandit. sque arcu. Donec euismod, ipsum id sollicitudin faucibus, tortor quam efficitur ex, cursus suscipit urna neque sed purus. Curabitur feugiat ultrices libero id lacinia.</div>
+    </div>
+
+  </div>
+
+  <div class="col-md-6 col-12 carousel slide" data-bs-ride="carousel">
 
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="assets/img/home/7.jpg" class="d-block w-100" alt="image">
-      <span class="m-text">1/3</span>
+      <img src="assets/img/ambienti/4.jpg" class="d-block w-100" alt="image">
+      <div class="d-flex m-text justify-content-between carousel-inner-line">
+        <div class="d-inline"><span class="s-text">(03)</span> Chiesetta</div>
+        <div class="d-inline">First floor</div>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="assets/img/home/7b.jpg" class="d-block w-100" alt="image">
+    <!-- <div class="carousel-item">
+      <img src="assets/img/ambienti/2.jpg" class="d-block w-100" alt="image">
       <span class="m-text">2/3</span>
     </div>
     <div class="carousel-item">
-      <img src="assets/img/home/7c.jpg" class="d-block w-100" alt="image">
+      <img src="assets/img/ambienti/2.jpg" class="d-block w-100" alt="image">
       <span class="m-text">3/3</span>
-    </div>
+    </div> -->
   </div>
-
-</div>
-
-<div class="col-12 col-md-4 d-flex flex-column justify-content-between top-header-margin">
-
-  <div class="d-inline-flex justify-content-between flex-row-reverse flex-md-column" style="width:100%">
-<div class="d-md-none text-end m-text text-end"><a href="bb.html">Read more</a></div>
-<div class="col-md-12 m-text text-center mobile-centered">(03)</div>
-<div class="col-md-12 l-text m-t-mob text-md-center text-start">B&B Service</div>
-</div>
-
-<div class="d-none d-md-inline col-12 text-center"><img src="assets/img/home/8.jpg" style="width: 60%"></div>
-
-
-  <div class="d-inline-flex justify-content-between s-text m-t-mob flex-wrap" id="sectext" style="width:100%">
-<div class="col-12">Phasellus ultrices quis enim sit amet imperdiet. Etiam facilisis dui nec dolor aliquam, quis auctor tortor rutrum. Nullam leo nibh, hendrerit et vestibulum a, fermentum eu nisi. Donec vestibulum rutrum justo, non blandit mi vehicula ut. Aenean elementum ante sagittis nibh ultrices blanPhasellus</div>
-<div class="d-none d-md-inline col-4">Suite Federica</div>
-<div class="d-none d-md-inline text-end col-4">Suite Mariagiulia</div>
-<div class="d-none d-md-inline col-4">Suite Giuseppina</div>
-<div class="d-none d-md-inline text-end col-4">Suite Vittoria</div>
-<div class="d-none d-md-inline col-12 m-text text-center"><a href="bb.html">Read more</a></div>
-</div>
 
 </div>
 </section>
 
 
-<!-- SECTION 6 -->
-<section id="section6" class="d-flex flex-column flex-md-row bg-cream">
-
-  <div class="col-12 col-md-4 d-flex flex-column justify-content-between">
-
-    <div class="d-inline-flex justify-content-between flex-row-reverse flex-md-column" style="width:100%">
-  <div class="d-md-none text-end m-text text-end"><a href="bb.html">Read more</a></div>
-  <div class="col-md-12 m-text text-center mobile-centered">(04)</div>
-  <div class="col-md-12 l-text m-t-mob text-md-center text-start">Experiences</div>
-  </div>
-
-
-  <div class="d-none d-md-inline col-12 text-center"><img src="assets/img/home/9.jpg" style="width: 60%"></div>
-
-    <div class="d-inline-flex justify-content-between s-text m-t-mob flex-wrap" style="width:100%" id="sectext">
-  <div class="col-12">Phasellus ultrices quis enim sit amet imperdiet. Etiam facilisis dui nec dolor aliquam, quis auctor tortor rutrum. Nullam leo nibh, hendrerit et vestibulum a, fermentum eu nisi. Donec vestibulum rutrum justo, non blandit mi vehicula ut. Aenean elementum ante sagittis nibh ultrices blanPhasellus</div>
-  </div>
-
-  <div class="d-none d-md-inline col-12 m-text text-center"><a href="bb.html">Read more</a></div>
-
-  </div>
-
-  <div class="col-12 col-md-8 carousel slide" data-bs-ride="carousel">
-
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets/img/home/10.jpg" class="d-block w-100" alt="image">
-      <span class="m-text">1/3</span>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/img/home/10b.jpg" class="d-block w-100" alt="image">
-      <span class="m-text">2/3</span>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/img/home/10c.jpg" class="d-block w-100" alt="image">
-      <span class="m-text">3/3</span>
-    </div>
-  </div>
-
-</div>
-
-</section>
-
-<!-- SECTION 7 -->
-
-<section class="d-flex bg-red align-items-center justify-content-between standard-margin" id="section7">
-  <div class="order-md-2 col-md-4 col-12 text-center"><img src="assets/img/white-logomark.svg"></div>
-  <div class="order-md-1 col-md-4 col-12 s-text s-t-mob text-center text-md-start">Villa Fenicia - Ruvo di Puglia SP 86 Ruvo<br>Bisceglie, km 2, 70037 Ruvo di Puglia BA</div>
-   <div class="order-md-3 col-md-4 col-12 s-text s-t-mob text-center text-md-end">Info and bookings: (+39) 340 736 4832<br>email: <a href="mailto:info@villafenicia.com">info@villafenicia.com</a></div>
-</section>
-
-
-<!-- SECTION 8 -->
-
-<section class="d-flex bg-cream flex-column" id="section8">
-
-
-  <div class="d-inline col-md-10 col-12" style="padding-bottom: var(--margin)">
-    <img src="assets/img/logotype.svg">
-  </div>
-
-  <div class="d-inline-flex flex-row" style="width:100%" id="sec8bottom">
-
-  <div class="d-none d-md-inline col-3" style="background-image: url('assets/img/home/11.jpg'); background-size: cover">
-  </div>
-
-  <div class="col-md-9 col-12 d-inline-flex flex-column justify-content-between">
-
-  <div class="d-inline-flex flex-row" id="sec8bottomright">
-  <div class="col-md-3 col-5 l-text l-t-mob">Contatti</div>
-
-  <!-- <div class="col-7 d-inline-flex flex-wrap justify-content-between"> -->
-
-<!-- <div class="d-inline-flex" style="height:min-content"> -->
-  <div class="col-md-6 col-7 s-text s-t-mob">Per info e prenotazioni: (+39) 340 736 4832<br>
-  <div id="indentfooter"><img src="assets/img/rightarrow.svg" id="arrow"> email: <a href="mailto:info@villafenicia.com">info@villafenicia.com</a><br></div>
-
-  <div id="indentfooter"><br><img src="assets/img/rightarrow.svg" id="arrow"> Villa Fenicia - Ruvo di Puglia<br></div>
-  SP 86 Ruvo - Bisceglie, km 2, 70037 Ruvo di Puglia BA<br><a href="privacy.html">Privacy policy<a> | <a href="cookie.html">Cookie Policy</a><br>
-
-  <div id="indentfooter"><br><img src="assets/img/rightarrow.svg" id="arrow"> Instagram: <a href="https://www.instagram.com/villafenicia_/">Villa_Fenicia</a><br></div>
-  Facebook: <a href="https://www.facebook.com/villafeniciaricevimenti">Villa_Fenicia</a><br>Booking: <a href="https://www.booking.com/hotel/it/villa-fenicia-ruvo-di-puglia1.it.html">Villa_Fenicia</a><br></div>
-  <div class="col-5 col-md-3 align-self-end m-text" id="jobssect"><img src="assets/img/rightarrow.svg" id="arrow"> <a href="jobs.html" class="s-t-mob bg-red" style="color:var(--cream); ">Lavora con noi</a></div>
-</div>
-
-<div class="d-inline-flex flex-row" style="height: min-content">
-  <div class="col-md-3 col-5 offset-md-3 l-text l-t-mob">Come<br>arrivare<br><a href="https://goo.gl/maps/S752UrQCAV1Ar9N69" class="s-text s-t-mob"><br>Google Maps <img src="assets/img/leftarrow.svg" id="arrow"></a></div>
-<div class="col-md-6 col-7 s-text s-t-mob">Statale 16 bis<br>uscita Bisceglie ovest – Ruvo,<br>10 km direzione Ruvo di Puglia<br><img src="assets/img/downarrow.svg" id="arrow"><br>Provinciale 231 (ex S.S. 98)<br>uscita Ruvo – Altamura, direzione Bisceglie<br><img src="assets/img/downarrow.svg" id="arrow"><br>Villa Fenicia dista 30 km da Bari, 20 km da Trani, 25 km<br>da Castel del Monte e 60 km da Matera</div>
-</div>
-</div>
-</div>
-</section>
-
-
-  <div class="d-block col-12 d-md-none" style="background-image: url('assets/img/home/11.jpg'); background-size: cover; height: 50vh; background-position-y: 73%">
-  </div>
-
+<!-- SECTION 9 -->
 <section id="section9" style="text-align: center; " class="d-flex bg-red standard-margin align-items-center"><img src="assets/img/white-logomark.svg" style="object-fit: scale-down; width:100%"></section>
 
 </main>
@@ -322,18 +202,6 @@ $('.carousel').carousel({
 $('.carousel').click(function () {
   $('.carousel').carousel('next');
 })
-
-// $('.carousel').on('slide.bs.carousel', function () {
-//
-// const $carouselitems = $('.carousel-item');
-// let totitems = $carouselitems.length;
-// const activeIndex = $carouselitems.index($('.carousel-item.active')) + 1;
-//
-// updateCount()
-//
-//   $('.carousel span').html(activeIndex+"/"+totitems)
-// })
-
 </script>
 
 </body>
