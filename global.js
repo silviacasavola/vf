@@ -18,13 +18,13 @@ if ($("main").scrollTop() == 0) {
 
 // MOBILE MENU
 $("#hamburger-icon").click(function () {
-  // $("header").css("transform", "none");
-  // $("#hamburger-icon").css("transform", "none")
-//
-  $("header").toggleClass("menu-closed");
-//   $("header").toggleClass("opened");
-//
-//
-//   $("#hamburger-icon").toggleClass("closed");
-//   $("#hamburger-icon").toggleClass("opened");
+  $("header").removeClass("menu-closed");
+})
+
+$("header").click(function () {
+  $("header").addClass("menu-closed");
+})
+
+$(window).scroll(function () {
+  $("header").addClass("menu-closed");
 })

@@ -33,6 +33,11 @@
   display: none;
 }
 
+#section1 {
+background-image: url('assets/img/home/1mob.jpg');
+background-position-x: center;
+}
+
 /* SECTION2 */
 #section2 .col-12 {
   /* height: 50%; */
@@ -55,7 +60,8 @@ justify-content: space-between;
 }
 
 #section2 img {
-  width: 100%
+  height: 100%;
+  width: 100%;
 }
 
 #section2 .m-text img {
@@ -124,7 +130,7 @@ padding: var(--margin);
 }
 
 #section7 img {
-  content: url('assets/img/logomark.svg');
+  /* content: url('assets/img/logomark.svg'); */
   object-fit: scale-down;
   width: 60%;
   padding-bottom: var(--margin);

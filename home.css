@@ -9,6 +9,12 @@
 }
 
 
+#section1 {
+background-image: url('assets/img/home/1.jpg');
+background-position-x: center;
+}
+
+
 #section3 .carousel-item span {
   right: var(--margin);
   bottom: var(--margin);

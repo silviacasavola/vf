@@ -3,8 +3,7 @@
   --bottom-layer: 0;
 
 /* MARGINS */
-  --margin: 3vw;
-  --header-margin: 10vw;
+  --margin: 4.5vw;
 
   /* COLORS */
   --red: #bf2e2e;
@@ -38,7 +37,7 @@ main {
   /* height: 100vh; */
   overflow-y: scroll;
   overflow-x: hidden;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
   height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));
@@ -59,7 +58,7 @@ margin-bottom: env(safe-area-inset-bottom); */
 overflow: hidden;
 background-size: cover;
 background-repeat: no-repeat;
-scroll-snap-align: start;
+/* scroll-snap-align: start; */
 position:relative;
 }
 
@@ -77,10 +76,10 @@ img {
 
 
 /* TEXT */
-.s-t-mob {font-size: 3.2vw; line-height: 3.5vw;}
-.m-t-mob, .m-text {font-size: 4.5vw; line-height: 4.8vw;}
-.l-t-mob {font-size: 5vw; line-height: 5.2vw;}
-.xl-text {font-size: 55pt; line-height: 1.2vw;}
+.s-t-mob {font-size: 3.2vw; line-height: 4.4vw;}
+.m-t-mob, .m-text {font-size: 4.5vw; line-height: 6.4vw;}
+.l-t-mob {font-size: 5vw; line-height: 4.9vw;}
+/* .xl-text {font-size: 55pt; line-height: 1.2vw;} */
 
 
 
@@ -90,15 +89,17 @@ header {
   /* top: 50vh; */
   /* bottom: 0; */
   bottom: env(safe-area-inset-bottom);
-  width: 50vw;
+  width: 70vw;
   /* left: -55vw; */
   /* transform:translate(-100%, 0); */
   background-color: var(--red);
   z-index: 10;
-  gap: var(--margin);
-  /* padding: var(--margin); */
-  padding-top: 4vw;
-  padding-bottom: 14vw;
+  /* gap: var(--margin);
+  padding: var(--margin); */
+  gap: calc(var(--margin)*1.8);
+  padding: calc(var(--margin)*1.8);
+  /* padding-top: 4vw; */
+  /* padding-bottom: 14vw; */
   transition: transform 0.3s;
 }
 
@@ -130,22 +131,17 @@ a:focus {
 
 #hamburger-icon {
   width: 12vw;
-  position: absolute;
+  position: fixed;
   /* top: 0; */
-  bottom: 0;
-  right: 0;
-  transition: transform 0.3s;
+  bottom: env(safe-area-inset-bottom);
+  left: 0;
+  z-index: 5;
 }
 
 
 .menu-closed {
   transform:translate(-100%, 0)
 }
-
-.menu-closed img {
-  transform:translate(+99%, 0)
-}
-
 
 .opened {
   transform: none;
