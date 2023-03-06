@@ -91,7 +91,7 @@ img {
 
 /* TEXT */
 .s-t-mob {font-size: 3.2vw; line-height: 4.6vw;}
-.m-t-mob, .m-text {font-size: 4.3vw; line-height: 6.2vw;}
+.m-t-mob, .m-text {font-size: 4vw; line-height: 5.9vw;}
 .l-t-mob {font-size: 5vw; line-height: 4.9vw;}
 /* .xl-text {font-size: 55pt; line-height: 1.2vw;} */
 
@@ -125,7 +125,7 @@ a {
   text-decoration: none;
 }
 
-header a:focus {
+header a:active, header a:hover, header a:visited {
   color: var(--cream);
 }
 
@@ -137,10 +137,6 @@ padding: 2vw;
 
 #header-active:hover {
   color: red;
-}
-
-a:focus {
-  text-decoration: underline;
 }
 
 #hamburger-icon {
@@ -173,7 +169,7 @@ a:focus {
 color: var(--cream)
 }
 
-.bg-red a:active, .bg-red-mob a:active {
+.bg-red a:active, .bg-red-mob a:active, .bg-red a:hover, .bg-red-mob a:hover, .bg-red a:visited, .bg-red-mob a:visited {
 color: var(--cream)
 }
 
@@ -186,7 +182,7 @@ color: var(--cream)
 color: var(--red)
 }
 
-.bg-cream a:active, .bg-cream-mob a:active {
+.bg-cream a:hover, .bg-cream-mob a:hover, .bg-cream a:active, .bg-cream-mob a:active, .bg-cream a:visited, .bg-cream-mob a:visited {
 color: var(--red)
 }
 
@@ -216,4 +212,5 @@ color: var(--red)
 #section-name {
   height: 10vh;
   margin-bottom: calc(var(--margin)*2);
+  margin-bottom: var(--margin);
 }
