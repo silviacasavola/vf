@@ -119,3 +119,11 @@ gap: var(--margin)
 #indentfooter {
   transform:translate(-1.37vw, 0)
 }
+
+.s-text {
+  text-align: justify;
+}
+
+#sectext {
+  width: 90%;
+}

@@ -18,9 +18,12 @@
 
 .sect-outerbox {
   height: 100%;
-  padding: var(--top-header) 13vw var(--margin) 13vw;
-  /* padding: 15vw 13vw 10vw 13vw; */
+  padding: var(--top-header) 10vw var(--margin) 10vw;
   gap: calc(var(--margin)*3);
+}
+
+.sect-outerbox .s-text {
+  text-align: justify;
 }
 
 /* SECTION 1 */
@@ -28,6 +31,7 @@
 background-image: url('../img/ambienti/1.jpg');
 background-position-x: center;
 }
+
 
 
 /* SECTION 4 */

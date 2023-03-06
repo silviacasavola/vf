@@ -58,9 +58,9 @@ height: 10vh;
 object-fit: scale-down;
 }
 
-#section2 .s-text .m-t-mob {
+/* #section2 .s-text .m-t-mob {
   text-align: center;
-}
+} */
 
 
 /* SECTION 3 & 4 */
@@ -84,9 +84,9 @@ object-fit: scale-down;
   height: 100%;
 }
 
-#section3 .s-text, #section4 .s-text {
+/* #section3 .s-text, #section4 .s-text {
   text-align: center;
-}
+} */
 
 /* SECTION 5 & 6 */
 
@@ -102,9 +102,9 @@ object-fit: scale-down;
 }
 
 
-#section5 .col-12, #section6 .col-12 {
+/* #section5 .col-12, #section6 .col-12 {
   text-align: center;
-}
+} */
 
 #sectext {
   height: 100%;

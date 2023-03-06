@@ -66,9 +66,6 @@ position:relative;
   padding: var(--margin);
 }
 
-/* section .standard-margin {
-  padding: env(safe-area-inset-top) var(--margin) env(safe-area-inset-bottom) var(--margin);
-} */
 
 img {
   object-fit: cover;
@@ -95,7 +92,9 @@ img {
 .l-t-mob {font-size: 5vw; line-height: 4.9vw;}
 /* .xl-text {font-size: 55pt; line-height: 1.2vw;} */
 
-
+body {
+  text-align: justify;
+}
 
 /* HEADER */
 header {
@@ -214,3 +213,14 @@ color: var(--red)
   margin-bottom: calc(var(--margin)*2);
   margin-bottom: var(--margin);
 }
+
+/* CAROUSEL */
+.carousel img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* .sect-outerbox {
+  padding: var(--margin);
+  gap: var(--margin);
+} */

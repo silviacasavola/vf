@@ -1,0 +1,46 @@
+/* CAROUSELS */
+
+/* .carousel-inner-line {
+  position: absolute;
+  bottom: var(--margin);
+  color: var(--cream);
+  left: var(--margin);
+  right: var(--margin);
+} */
+
+/* SECTION 1 */
+#section1 {
+background-image: url('../img/bb/1.jpg');
+background-position-x: 80%;
+}
+
+/* SECTION 2  */
+#section2 {
+  padding: var(--margin);
+  height: 50vh;
+}
+
+
+/* SECTION 3 4  */
+#section3 .l-t-mob, #section4 .l-t-mob, {
+  margin-bottom: var(--margin);
+}
+
+#section3 .col-md-6, #section4 .col-md-6 {
+height: 50vh;
+}
+
+.sect-outerbox {
+  padding: var(--margin);
+  gap: var(--margin);
+}
+
+/* SECTION 7 */
+
+#section7 {
+  height: 50vh
+}
+
+#section7 a {
+  padding: calc(var(--margin)/2);
+}
