@@ -1,0 +1,98 @@
+/* CAROUSELS */
+.carousel {cursor: pointer}
+.carousel-item {height: 100%}
+.carousel img {height: 100%}
+
+
+.carousel-item {
+}
+
+.carousel-inner-line {
+  position: absolute;
+  bottom: var(--margin);
+  color: var(--cream);
+  left: var(--margin);
+  right: var(--margin);
+}
+
+
+.sect-outerbox {
+  height: 100%;
+  padding: var(--top-header) 13vw var(--margin) 13vw;
+  /* padding: 15vw 13vw 10vw 13vw; */
+  gap: calc(var(--margin)*3);
+}
+
+/* SECTION1 */
+#section1 .col-12 {
+  padding: var(--margin);
+}
+
+/* SECTION 2 */
+#section2 {
+  height: min-content;
+  padding: var(--margin);
+}
+
+#section2 .m-text {
+  text-align: justify;
+}
+
+/* SECTION 3 */
+#section3 {
+  background-image: url("../img/storia/2mob.png");
+  background-size: 80%;
+  background-position: center;
+  background-color: var(--red);
+  height: 50vh;
+}
+
+/* SECTION 4 */
+
+#section4 {
+  padding: var(--margin)
+}
+
+#section4 .m-text {
+  text-align: justify;
+}
+
+/* SECTION4 */
+
+#section4 {
+padding: var(--margin);
+text-align: center;
+}
+
+#section4 .s-text {
+position: absolute;
+}
+
+#section4 img {
+  width: 50vw;
+  margin: auto;
+  /* object-fit: contain; */
+}
+
+/* SECTION 5 */
+#section5 {
+    background-image: url("../img/storia/4mob.png");
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    height: 50vh;
+}
+
+
+/* SECTION 6 */
+#section6 {
+  height: min-content;
+  padding: var(--margin)
+}
+#section6 img {
+  content: url("../img/storia/5mob.png");
+    padding: var(--header-margin);
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+}

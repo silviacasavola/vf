@@ -25,13 +25,6 @@
 
 /* SECTION 1 */
 #section1 {
-background-image: url('../img/ambienti/1.jpg');
-background-position-x: center;
-}
-
-
-/* SECTION 2 */
-#section2 img {
-  height: 21vh;
-  margin-bottom: calc(var(--margin)*2);
+background-image: url('../img/esperienze/1.jpeg');
+background-position-y: center;
 }

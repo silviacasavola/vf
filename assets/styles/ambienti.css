@@ -30,13 +30,6 @@ background-position-x: center;
 }
 
 
-/* SECTION 2 */
-#section2 img {
-  height: 21vh;
-  margin-bottom: calc(var(--margin)*2);
-}
-
-
 /* SECTION 4 */
 
 #section4 {

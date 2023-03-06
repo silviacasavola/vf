@@ -28,10 +28,3 @@
 background-image: url('../img/ambienti/1.jpg');
 background-position-x: center;
 }
-
-
-/* SECTION 2 */
-#section2 img {
-  height: 21vh;
-  margin-bottom: calc(var(--margin)*2);
-}

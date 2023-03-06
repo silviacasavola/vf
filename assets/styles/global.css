@@ -174,3 +174,13 @@ color: var(--red)
 #closingsection img {
   height: 70%;
 }
+
+
+/* SECTION 2 */
+
+
+/* SECTION 2 */
+#section-name {
+  height: 21vh;
+  margin-bottom: calc(var(--margin)*2);
+}

@@ -74,10 +74,24 @@ img {
   object-fit: cover;
 }
 
+/* INTRO */
+#header-logotype {
+  width: 100%;
+  position: absolute;
+  padding: var(--margin);
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+
+#intro-logomark {
+  display: none;
+}
+
 
 /* TEXT */
 .s-t-mob {font-size: 3.2vw; line-height: 4.6vw;}
-.m-t-mob, .m-text {font-size: 4.5vw; line-height: 6.4vw;}
+.m-t-mob, .m-text {font-size: 4.3vw; line-height: 6.2vw;}
 .l-t-mob {font-size: 5vw; line-height: 4.9vw;}
 /* .xl-text {font-size: 55pt; line-height: 1.2vw;} */
 
@@ -189,12 +203,17 @@ color: var(--red)
 
 /* CLOSING SECTION */
 
-
-
 #closingsection {
   height: 25vh;
 }
 
 #closingsection img {
   height: 50%;
+}
+
+
+/* SECTION 2 */
+#section-name {
+  height: 10vh;
+  margin-bottom: calc(var(--margin)*2);
 }
