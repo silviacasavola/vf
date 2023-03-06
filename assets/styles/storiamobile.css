@@ -86,7 +86,7 @@ position: absolute;
 
 /* SECTION 6 */
 #section6 {
-  height: min-content;
+  height: fit-content;
   padding: var(--margin)
 }
 #section6 img {
