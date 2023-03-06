@@ -58,6 +58,8 @@ padding: var(--header-margin);
 
 #section4 .s-text {
 position: absolute;
+top: 0;
+padding: var(--header-margin)
 }
 
 #section4 img {
