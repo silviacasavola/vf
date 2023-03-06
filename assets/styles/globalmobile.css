@@ -173,7 +173,7 @@ a:focus {
 color: var(--cream)
 }
 
-.bg-red a:hover, .bg-red-mob a:hover {
+.bg-red a:active, .bg-red-mob a:active {
 color: var(--cream)
 }
 
@@ -186,7 +186,7 @@ color: var(--cream)
 color: var(--red)
 }
 
-.bg-cream a:hover, .bg-cream-mob a:hover {
+.bg-cream a:active, .bg-cream-mob a:active {
 color: var(--red)
 }
 
