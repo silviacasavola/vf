@@ -1,0 +1,59 @@
+/* CAROUSELS */
+.carousel {cursor: pointer}
+.carousel-item {height: 100%}
+.carousel img {height: 100%}
+
+
+.carousel-item {
+}
+
+.carousel-inner-line {
+  position: absolute;
+  bottom: var(--margin);
+  color: var(--cream);
+  left: var(--margin);
+  right: var(--margin);
+}
+
+
+.sect-outerbox {
+  height: 100%;
+  padding: var(--top-header) 10vw var(--margin) 10vw;
+  gap: calc(var(--margin)*3);
+}
+
+.sect-outerbox .s-text {
+  text-align: justify;
+}
+
+
+/* SECTION 1 */
+/* #section1 {
+background-image: url('../img/esperienze/1.jpeg');
+background-position-y: center;
+} */
+
+#section5 img {
+object-position: center 25%;
+}
+
+#section6 .s-text {
+  line-height: 2vw;
+}
+
+#section7 img {
+  padding: var(--header-margin);
+}
+
+#section8 {
+  height: 50vh;
+}
+
+#section8 a{
+  color: var(--cream);
+  padding: calc(var(--margin)/2);
+}
+
+#section8 a:hover{
+  color: var(--cream)
+}
