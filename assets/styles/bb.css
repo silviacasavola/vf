@@ -32,6 +32,13 @@ background-image: url('../img/bb/1.jpg');
 background-position-y: center;
 }
 
+
+/* SECTION2 */
+#section2 .m-text {
+  padding: 0 20vw 0 20vw;
+}
+
+/* SECTION 7 */
 #section7 img {
   padding: var(--header-margin);
 }

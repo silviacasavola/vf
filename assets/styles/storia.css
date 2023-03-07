@@ -30,7 +30,7 @@ margin-bottom: var(--margin)
 
 /* SECTION 2 */
 #section2 .m-text {
-  text-align: justify;
+  padding: 0 20vw 0 20vw;
 }
 
 /* SECTION 3 */

@@ -38,8 +38,15 @@ background-position-x: center;
 
 
 /* SECTION 2 */
-#section2 .col-md-3 img {
-  height: 40vh; width: 100%; padding: 2.5vw; object-fit: cover;
+#section2 img {
+  width: 80%; height: 30vh;
+  /* padding: 2.5vw;  */
+  object-fit: cover;
+  margin-bottom: calc(var(--margin)*2);
+}
+
+#section2 .m-text {
+  padding: 0 20vw 0 20vw;
 }
 
 #section2 .m-text img {

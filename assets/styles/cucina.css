@@ -33,17 +33,22 @@ background-image: url('../img/esperienze/1.jpeg');
 background-position-y: center;
 } */
 
+/* SECTION 2 */
+#section2 .m-text {
+  padding: 0 17.75vw 0 18.5vw;
+}
+
 /* SECTION3 */
 #mezzapagnotta {
   object-position: center 4vw;
 }
 
-/* SECTION5 */
+/* SECTION 5 */
 #piattodacentrare {
 object-position: center -9.2vw;
 }
 
-/* SECTION6 */
+/* SECTION 6 */
 #section6 .s-text {
   line-height: 2vw;
 }

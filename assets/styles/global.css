@@ -20,14 +20,13 @@
 /* FONT */
 @font-face {
     font-family: "Plakat Grotesk";
-    src: url("../font/PlakatGrotesk-Bold.otf")
-   /* url("../font/PlatakGrotesk-Regular.otf") format("embedded-opentype"),
-   url("../font/PlatakGrotesk-Regular.ttf") format("truetype"), */
+    src: url("../font/PlakatGrotesk-Bold.otf"),
+    url("../font/PlatakGrotesk-Bold.eot") format("embedded-opentype")
+   /* url("../font/PlatakGrotesk-Regular.ttf") format("truetype"), */
    /* url("./assets/font/SuisseIntl-Regular.otf") format("woff"),
    url("./assets/font/SuisseIntl-Regular.otf") format("woff2"), */
    /* url("./assets/font/SuisseIntl-Regular.otf") format("svg"), */
-   /* url("../font/PlatakGrotesk-Regular.woff2") format("woff2"),
-   url("../font/PlatakGrotesk-Regular.woff") format("woff"), */
+   /* url("../font/PlatakGrotesk-Regular.woff2") format("woff2"), */
    ;
    font-weight:normal;
     font-style: normal;
@@ -206,7 +205,10 @@ color: var(--red)
 
 /* SECTION 2 */
 #section-name {
-  height: 21vh;
+  font-family: Plakat Grotesk;
+  font-size: 10vw;
+  height: 7vw;
+  transform:translate(0, -55%);
   margin-bottom: calc(var(--margin)*2);
 }
 
