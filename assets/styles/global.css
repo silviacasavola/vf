@@ -73,8 +73,8 @@ img {
 
 /* TEXT */
 .s-text {font-size: 1.05vw; line-height: 1.4vw;}
-.m-text {font-size: 1.35vw; line-height: 1.7vw;}
-.l-text {font-size: 2.15vw; line-height: 2.4vw;}
+.m-text {font-size: 1.3vw; line-height: 1.7vw;}
+.l-text {font-size: 2.15vw; line-height: 2.2vw;}
 .xl-text {font-size: 4vw; line-height: 5vw;}
 
 a {
@@ -98,6 +98,7 @@ header {
   background-color: rgba(191, 46, 46, 0);
   transition: background-color 0.5s;
   height: 5.1vw;
+  font-size: 0.98vw;
 }
 
 header a {
@@ -113,7 +114,7 @@ header a:hover {
 #header-active {
 background-color: var(--cream);
 color: var(--red);
-padding: 0.5vw;
+padding: 0.2vw 0.5vw 0.2vw 0.5vw;
 margin: 0.5vw;
 }
 
