@@ -33,10 +33,17 @@ background-image: url('../img/esperienze/1.jpeg');
 background-position-y: center;
 } */
 
-#section5 img {
-object-position: center 25%;
+/* SECTION3 */
+#mezzapagnotta {
+  object-position: center 4vw;
 }
 
+/* SECTION5 */
+#piattodacentrare {
+object-position: center -9.2vw;
+}
+
+/* SECTION6 */
 #section6 .s-text {
   line-height: 2vw;
 }
@@ -51,7 +58,7 @@ object-position: center 25%;
 
 #section8 a{
   color: var(--cream);
-  padding: calc(var(--margin)/2);
+  padding: calc(var(--margin)/2) var(--margin) calc(var(--margin)/2) var(--margin);
 }
 
 #section8 a:hover{

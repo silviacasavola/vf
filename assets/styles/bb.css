@@ -37,5 +37,5 @@ background-position-y: center;
 }
 
 #section7 a {
-  padding: calc(var(--margin)/2);
+padding: calc(var(--margin)/2) var(--margin) calc(var(--margin)/2) var(--margin);
 }
