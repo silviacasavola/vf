@@ -135,7 +135,7 @@ padding: var(--margin);
   object-fit: fill;
   width: 100%;
   /* width: 60%; */
-  padding: var(--margin);
+  padding: var(--margin) var(--margin) calc(var(--margin)*1.5) var(--margin);
 }
 
 #jobssect {
