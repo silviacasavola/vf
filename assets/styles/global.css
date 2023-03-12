@@ -32,7 +32,7 @@
     font-style: normal;
   }
 
-.plakat {font-family: 'Plakat Grotesk'}
+/* .plakat {font-family: 'Plakat Grotesk'} */
 
 
 /* GLOBAL */
@@ -44,8 +44,8 @@ body {
   padding: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-  /* font-family: 'Source Serif Pro', serif; */
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Source Serif Pro', serif;
+  /* font-family: 'Helvetica', sans-serif; */
   font-weight: 400;
   box-sizing: content-box;
   scrollbar-width: none;
