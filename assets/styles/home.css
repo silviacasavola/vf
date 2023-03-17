@@ -37,12 +37,19 @@
   bottom: var(--margin);
   left: var(--margin);
   gap: calc(var(--margin)/2.5);
-    color: var(--cream);
+  color: var(--cream);
 }
 
 #sec1-link a {
   color: var(--cream);
   /* padding: calc(var(--margin)/2.5) calc(var(--margin)/2) calc(var(--margin)/2.5) calc(var(--margin)/2); */
+}
+
+#section1 span {
+  color: var(--cream);
+  position: absolute;
+  padding: var(--header-margin);
+  transform:translate(0, -1.3vw);
 }
 
 

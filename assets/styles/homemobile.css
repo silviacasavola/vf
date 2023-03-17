@@ -25,6 +25,19 @@
 }
 
 
+#sec1-link {
+  position: absolute;
+  bottom: calc(env(safe-area-inset-bottom) + 6vw);
+  width: 100%;
+  text-align: center;
+}
+
+#sec1-link a {
+  color: var(--cream);
+  /* padding: calc(var(--margin)/2.5) calc(var(--margin)/2) calc(var(--margin)/2.5) calc(var(--margin)/2); */
+}
+
+
 /* SECTION2 */
 #section2 .col-12 {
   /* height: 50%; */
