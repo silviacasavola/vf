@@ -12,6 +12,9 @@
 }
 
 /* SECTION1 */
+#section1 .carousel {
+  height: 100vh;
+}
 
 #section1 span {
   display: none;
@@ -21,10 +24,6 @@
   display: none;
 }
 
-#section1 {
-background-image: url('../img/home/1mob.jpg');
-background-position-x: center;
-}
 
 /* SECTION2 */
 #section2 .col-12 {

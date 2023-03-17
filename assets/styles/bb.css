@@ -39,10 +39,10 @@ background-position-y: center;
 }
 
 /* SECTION 7 */
-#section7 img {
+#section12 img {
   padding: var(--header-margin);
 }
 
-#section7 a {
+#section12 a {
 padding: calc(var(--margin)/2) var(--margin) calc(var(--margin)/2) var(--margin);
 }

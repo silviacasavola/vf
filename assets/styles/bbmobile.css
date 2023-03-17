@@ -8,6 +8,10 @@
   right: var(--margin);
 } */
 
+.carousel-item span {
+  display: none;
+}
+
 /* SECTION 1 */
 #section1 {
 background-image: url('../img/bb/1.jpg');
@@ -26,7 +30,7 @@ background-position-x: 80%;
   margin-bottom: var(--margin);
 }
 
-#section3 .col-md-6, #section4 .col-md-6 {
+.col-md-6 {
 height: 50vh;
 }
 
@@ -37,10 +41,10 @@ height: 50vh;
 
 /* SECTION 7 */
 
-#section7 {
-  height: 70vh;
+#section12 {
+  height: 75vh;
 }
 
-#section7 a {
+#section12 a {
   padding: calc(var(--margin)/2);
 }
