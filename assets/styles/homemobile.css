@@ -27,8 +27,9 @@
 
 #sec1-link {
   position: absolute;
-  bottom: calc(env(safe-area-inset-bottom) + var(--margin));
-  right: var(--margin);
+  bottom: env(safe-area-inset-bottom);
+  right: 0;
+  padding: var(--margin);
   display: flex;
   flex-direction: column;
   text-align: right;
