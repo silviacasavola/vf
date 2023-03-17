@@ -37,6 +37,7 @@
   bottom: var(--margin);
   left: var(--margin);
   gap: calc(var(--margin)/2.5);
+    color: var(--cream);
 }
 
 #sec1-link a {
