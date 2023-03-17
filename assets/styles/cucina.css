@@ -38,6 +38,12 @@ background-position-y: center;
   padding: 0 17.75vw 0 18.5vw;
 }
 
+
+#section2 a {
+  color: var(--cream);
+  padding: calc(var(--margin)/2.5) calc(var(--margin)/2) calc(var(--margin)/2.5) calc(var(--margin)/2);
+}
+
 /* SECTION3 */
 #mezzapagnotta {
   object-position: center 4vw;

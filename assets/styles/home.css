@@ -31,6 +31,18 @@
   top: var(--margin);
 }
 
+/* SECTION1 */
+#sec1-link {
+  position: absolute;
+  bottom: var(--margin);
+  left: var(--margin);
+  gap: calc(var(--margin)/2.5);
+}
+
+#sec1-link a {
+  color: var(--cream);
+  /* padding: calc(var(--margin)/2.5) calc(var(--margin)/2) calc(var(--margin)/2.5) calc(var(--margin)/2); */
+}
 
 
 /* SECTION 2 */
