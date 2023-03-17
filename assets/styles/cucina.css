@@ -40,6 +40,7 @@ background-position-y: center;
 
 
 #section2 a {
+  background-color: var(--red);
   color: var(--cream);
   padding: calc(var(--margin)/2.5) calc(var(--margin)/2) calc(var(--margin)/2.5) calc(var(--margin)/2);
 }

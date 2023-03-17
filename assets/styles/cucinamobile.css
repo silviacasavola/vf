@@ -36,17 +36,15 @@ background-position: center;
   height: 50vh;
 }
 
-
+#section2 a{
+  text-decoration: underline;
+}
 /* SECTION 3 4  */
 #section3 .l-t-mob, #section4 .l-t-mob, {
   margin-bottom: var(--margin);
 }
 
 
-#section-name {
-  max-width: 100%;
-  height: auto!important;
-}
 
 section .col-md-6 {
   height: 50vh;
