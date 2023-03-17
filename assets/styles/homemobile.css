@@ -27,7 +27,7 @@
 
 #sec1-link {
   position: absolute;
-  bottom: env(safe-area-inset-bottom, 0);
+  bottom: var(--safe-area-inset-bottom);
   right: 0;
   padding: var(--margin);
   display: flex;
