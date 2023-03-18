@@ -4,6 +4,7 @@ function safearea() {
 
   // SAFE AREA
   let safeAreaInsets;
+
 if (window.visualViewport && window.visualViewport.safeAreaInsets) {
   ({ safeAreaInsets } = window.visualViewport);
   document.documentElement.style.setProperty('--safe-area-inset-top', `${safeAreaInsets.top}px`);
@@ -17,12 +18,9 @@ $("main").scroll(function () {
 
   if ($(window).width() >= 600) {
 if ($("main").scrollTop() == 0) {
-  // $("#hidden-header").css("top", "-3.7vw");
   $("header").css("background-color", "rgba(191, 46, 46, 0)")
 
-} else
-  if ($("main").scrollTop() > 0) {
-  // $("#hidden-header").css("top", "0");
+} else if ($("main").scrollTop() > 0) {
   $("header").css("background-color", "rgba(191, 46, 46, 1)")
 }
 }
@@ -43,6 +41,4 @@ $("main").scroll(function () {
   $("header").addClass("menu-closed");
 })
 
-$(document).ready(){
-  safearea()
-}
+$(document).ready(safearea())
