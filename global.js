@@ -1,3 +1,16 @@
+// SAFE AREA
+
+function safearea() {
+
+  // SAFE AREA
+  let safeAreaInsets;
+if (window.visualViewport && window.visualViewport.safeAreaInsets) {
+  ({ safeAreaInsets } = window.visualViewport);
+  document.documentElement.style.setProperty('--safe-area-inset-top', `${safeAreaInsets.top}px`);
+  document.documentElement.style.setProperty('--safe-area-inset-bottom', `${safeAreaInsets.bottom}px`);
+}
+}
+
 // HEADER
 
 $("main").scroll(function () {
@@ -30,15 +43,6 @@ $("main").scroll(function () {
   $("header").addClass("menu-closed");
 })
 
-  let { safeAreaInsets } = 0;
-
-function safearea() {
-
-  // SAFE AREA
-  if (window.visualViewport && window.visualViewport.safeAreaInsets) {
-    { safeAreaInsets } = window.visualViewport;
-    document.documentElement.style.setProperty('--safe-area-inset-top', `${safeAreaInsets.top}px`);
-    document.documentElement.style.setProperty('--safe-area-inset-bottom', `${safeAreaInsets.bottom}px`);
-
-  }
+$(document).ready(){
+  safearea()
 }
