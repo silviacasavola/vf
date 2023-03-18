@@ -14,6 +14,14 @@ if ($("main").scrollTop() == 0) {
 }
 }
 
+
+// SAFE AREA
+if (window.visualViewport && window.visualViewport.safeAreaInsets) {
+  const { safeAreaInsets } = window.visualViewport;
+  document.documentElement.style.setProperty('--safe-area-inset-top', `${safeAreaInsets.top}px`);
+  document.documentElement.style.setProperty('--safe-area-inset-bottom', `${safeAreaInsets.bottom}px`);
+}
+
 })
 
 // MOBILE MENU
@@ -28,11 +36,3 @@ $("header").click(function () {
 $("main").scroll(function () {
   $("header").addClass("menu-closed");
 })
-
-
-// SAFE AREA
-if (window.visualViewport && window.visualViewport.safeAreaInsets) {
-  const { safeAreaInsets } = window.visualViewport;
-  document.documentElement.style.setProperty('--safe-area-inset-top', `${safeAreaInsets.top}px`);
-  document.documentElement.style.setProperty('--safe-area-inset-bottom', `${safeAreaInsets.bottom}px`);
-}
