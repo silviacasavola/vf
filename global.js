@@ -1,7 +1,6 @@
 // SAFE AREA
 
 function safearea() {
-console.log("Ok")
 
   // SAFE AREA
   let safeAreaInsets;
