@@ -27,12 +27,13 @@
 
 #sec1-link {
   position: absolute;
-  bottom: var(--safe-area-inset-bottom);
+  /* bottom: var(--safe-area-inset-bottom); */
   right: 0;
   padding: var(--margin);
   display: flex;
   flex-direction: column;
   text-align: right;
+  bottom: env(safe-area-inset-bottom);
 }
 
 #sec1-link a {
