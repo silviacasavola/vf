@@ -30,14 +30,15 @@ $("main").scroll(function () {
   $("header").addClass("menu-closed");
 })
 
+  let { safeAreaInsets } = 0;
+
 function safearea() {
-  let { safeAreaInsets };
 
   // SAFE AREA
   if (window.visualViewport && window.visualViewport.safeAreaInsets) {
     { safeAreaInsets } = window.visualViewport;
     document.documentElement.style.setProperty('--safe-area-inset-top', `${safeAreaInsets.top}px`);
     document.documentElement.style.setProperty('--safe-area-inset-bottom', `${safeAreaInsets.bottom}px`);
-    
+
   }
 }
