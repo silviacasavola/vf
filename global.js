@@ -1,6 +1,7 @@
 // SAFE AREA
 
 function safearea() {
+console.log("Ok")
 
   // SAFE AREA
   let safeAreaInsets;
@@ -9,7 +10,10 @@ if (window.visualViewport && window.visualViewport.safeAreaInsets) {
   ({ safeAreaInsets } = window.visualViewport);
   document.documentElement.style.setProperty('--safe-area-inset-top', `${safeAreaInsets.top}px`);
   document.documentElement.style.setProperty('--safe-area-inset-bottom', `${safeAreaInsets.bottom}px`);
+  $("#scrittone").html(`${safeAreaInsets}`)
 }
+
+$("#scrittone").html(safeAreaInsets)
 }
 
 // HEADER
