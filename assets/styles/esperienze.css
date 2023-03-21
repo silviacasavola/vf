@@ -33,8 +33,17 @@ background-image: url('../img/esperienze/1.jpeg');
 background-position-y: center;
 } */
 
-#fotomani {
+/* #fotomani {
   object-position: center 4vw;
+} */
+
+#section3 .carousel img {
+  object-position: center 10%;
+}
+
+
+#section4 .carousel img {
+  object-position: center 12%;
 }
 
 
