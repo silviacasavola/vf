@@ -5,12 +5,12 @@ function safearea() {
   // SAFE AREA
   let safeAreaInsets;
 
-if (window.visualViewport && window.visualViewport.safeAreaInsets) {
+// if (window.visualViewport && window.visualViewport.safeAreaInsets) {
   ({ safeAreaInsets } = window.visualViewport);
 //   document.documentElement.style.setProperty('--safe-area-inset-top', `${safeAreaInsets.top}px`);
 //   document.documentElement.style.setProperty('--safe-area-inset-bottom', `${safeAreaInsets.bottom}px`);
-  $("#scrittone").html(safeAreaInsets)
-}
+  $("#scrittone").html({ safeAreaInsets })
+// }
 
 let altra = getComputedStyle(document.documentElement).getPropertyValue("--sab");
 $("#scrittone2").html(altra)
