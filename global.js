@@ -3,7 +3,7 @@
 function safearea() {
 
   // SAFE AREA
-  let safeAreaInsets;
+  // let safeAreaInsets;
 
 // if (window.visualViewport && window.visualViewport.safeAreaInsets) {
   // ({ safeAreaInsets } = window.visualViewport);
@@ -15,12 +15,19 @@ function safearea() {
 // let altra = getComputedStyle(document.documentElement).getPropertyValue("--sab");
 // $("#scrittone2").html(altra)
 
-let hamburgerPos = $("#hamburger-icon").position();
-let margin = $("#hamburger-icon").css("margin");
-let safeArea = $(window).height() - hamburgerPos.top - $("#hamburger-icon").height() - margin*2;
+// let hamburgerPos = $("#hamburger-icon").position();
+// let margin = $("#hamburger-icon").css("margin");
+// let safeArea = $(window).height() - hamburgerPos.top - $("#hamburger-icon").height() - margin*2;
 // document.documentElement.style.setProperty('--safe-area-bottom', safeArea);
-$("#scrittone").html(safeArea)
+// $("#scrittone").html(safeArea)
+// $("#sec1-link").css("bottom", safeArea)
+
+
+hamburgerPos = $("#hamburger-icon").position();
+let safeArea = hamburgerPos.top;
+document.documentElement.style.setProperty('--safe-area', safeArea);
 $("#sec1-link").css("bottom", safeArea)
+
 }
 
 // HEADER
