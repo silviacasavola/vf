@@ -8,6 +8,8 @@
   /* COLORS */
   --red: #bf2e2e;
   --cream: #fff9f8;
+
+  --sab: env(safe-area-inset-bottom);
 }
 
 

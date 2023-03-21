@@ -3,19 +3,22 @@
 function safearea() {
 
   // SAFE AREA
-  // let safeAreaInsets;
+  let safeAreaInsets;
 
-// if (window.visualViewport && window.visualViewport.safeAreaInsets) {
-//   ({ safeAreaInsets } = window.visualViewport);
+if (window.visualViewport && window.visualViewport.safeAreaInsets) {
+  ({ safeAreaInsets } = window.visualViewport);
 //   document.documentElement.style.setProperty('--safe-area-inset-top', `${safeAreaInsets.top}px`);
 //   document.documentElement.style.setProperty('--safe-area-inset-bottom', `${safeAreaInsets.bottom}px`);
-//   $("#scrittone").html(`${safeAreaInsets}`)
-// }
+  $("#scrittone").html(safeAreaInsets)
+}
 
-let safeAreaInsets = $("#hamburger-icon").position();
+let altra = getComputedStyle(document.documentElement).getPropertyValue("--sab");
+$("#scrittone2").html(altra)
 
-$("#scrittone").html(safeAreaInsets.top)
-$("#sec1-link").css("top", safeAreaInsets.top)
+// let safeAreaInsets = $("#hamburger-icon").position();
+//
+// $("#scrittone").html(safeAreaInsets.top)
+// $("#sec1-link").css("top", safeAreaInsets.top)
 }
 
 // HEADER
