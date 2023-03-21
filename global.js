@@ -6,19 +6,20 @@ function safearea() {
   let safeAreaInsets;
 
 // if (window.visualViewport && window.visualViewport.safeAreaInsets) {
-  ({ safeAreaInsets } = window.visualViewport);
+  // ({ safeAreaInsets } = window.visualViewport);
 //   document.documentElement.style.setProperty('--safe-area-inset-top', `${safeAreaInsets.top}px`);
 //   document.documentElement.style.setProperty('--safe-area-inset-bottom', `${safeAreaInsets.bottom}px`);
-  $("#scrittone").html({ safeAreaInsets })
+  // $("#scrittone").html({ safeAreaInsets })
 // }
 
-let altra = getComputedStyle(document.documentElement).getPropertyValue("--sab");
-$("#scrittone2").html(altra)
+// let altra = getComputedStyle(document.documentElement).getPropertyValue("--sab");
+// $("#scrittone2").html(altra)
 
-// let safeAreaInsets = $("#hamburger-icon").position();
-//
+let hamburgerPos = $("#hamburger-icon").position();
+let safeArea = $(window).height() - hamburgerPos.top - $("#hamburger-icon").height();
+
 // $("#scrittone").html(safeAreaInsets.top)
-// $("#sec1-link").css("top", safeAreaInsets.top)
+$("#sec1-link").css("bottom", safeArea)
 }
 
 // HEADER
