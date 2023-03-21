@@ -18,7 +18,8 @@ function safearea() {
 let hamburgerPos = $("#hamburger-icon").position();
 let safeArea = $(window).height() - hamburgerPos.top - $("#hamburger-icon").height();
 
-// $("#scrittone").html(safeAreaInsets.top)
+// document.documentElement.style.setProperty('--safe-area-bottom', safeArea);
+$("#scrittone").html(safeArea)
 $("#sec1-link").css("bottom", safeArea)
 }
 
