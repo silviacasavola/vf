@@ -2,6 +2,7 @@
 
 function safearea() {
 
+    if ($(window).width() <= 600) {
   // SAFE AREA
   // let safeAreaInsets;
 
@@ -27,7 +28,7 @@ hamburgerPos = $("#hamburger-icon").position();
 let safeArea = hamburgerPos.top;
 // document.documentElement.style.setProperty('--safe-area', safeArea);
 $("#sec1-link").css("top", safeArea)
-
+}
 }
 
 // HEADER
