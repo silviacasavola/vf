@@ -25,8 +25,8 @@ function safearea() {
 
 hamburgerPos = $("#hamburger-icon").position();
 let safeArea = hamburgerPos.top;
-document.documentElement.style.setProperty('--safe-area', safeArea);
-$("#sec1-link").css("bottom", safeArea)
+// document.documentElement.style.setProperty('--safe-area', safeArea);
+$("#sec1-link").css("top", safeArea)
 
 }
 
