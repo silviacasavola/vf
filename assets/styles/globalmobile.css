@@ -36,32 +36,17 @@ body {
 } */
 
 main {
-  /* height: 100vh; */
+  /* height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  /* scroll-snap-type: y mandatory; */
-  /* padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom); */
-  height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));
+  scroll-snap-type: y mandatory;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top)); */
 }
 
 main::-webkit-scrollbar {
   display: none;
-}
-
-section {
-width: 100vw;
-/* height: 100vh; */
-/* height: calc(100vh - env(safe-area-inset-bottom)); */
-/* height: 100%; */
-/* height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top)); */
-/* margin-top: env(safe-area-inset-top);
-margin-bottom: env(safe-area-inset-bottom); */
-overflow: hidden;
-background-size: cover;
-background-repeat: no-repeat;
-/* scroll-snap-align: start; */
-position:relative;
 }
 
 .standard-margin {
@@ -72,6 +57,7 @@ position:relative;
 img {
   object-fit: cover;
 }
+
 
 /* INTRO */
 #header-logotype {
@@ -91,9 +77,10 @@ img {
 /* TEXT */
 .s-t-mob {font-size: 3.2vw; line-height: 4.6vw;}
 .m-t-mob, .m-text {font-size: 4vw; line-height: 5.9vw;}
-.l-t-mob {font-size: 5.5vw; line-height: 6vw;}
+.l-t-mob {font-size: 5.5vw; line-height: 6.5vw;}
 .xl-t-mob {font-size: 8vw; line-height: 10vw;}
-/* .xl-text {font-size: 55pt; line-height: 1.2vw;} */
+
+a { text-decoration: none;}
 
 body {
   text-align: justify;
@@ -114,37 +101,42 @@ body {
     font-style: normal;
   }
 
-/* HEADER */
+  .l-t-mob {
+    margin-bottom: var(--margin);
+  }
+
+/* HAMBURGER MENU */
+
+#hamburger-icon {
+  width: 10vw;
+  position: fixed;
+  margin: var(--margin);
+  /* bottom: env(safe-area-inset-bottom); */
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.menu-closed { transform:translate(-100%, 0) }
+
+.opened { transform: none; }
+
+
 header {
   position: fixed;
-  /* top: 50vh; */
-  /* bottom: 0; */
   bottom: env(safe-area-inset-bottom);
   width: 60vw;
-  /* left: -55vw; */
-  /* transform:translate(-100%, 0); */
   background-color: var(--red);
   z-index: 10;
-  /* gap: var(--margin);
-  padding: var(--margin); */
   gap: calc(var(--margin)*1.8);
   padding: calc(var(--margin)*1.8);
-  /* padding-top: 4vw; */
-  /* padding-bottom: 14vw; */
   transition: transform 0.3s;
 }
 
-header a {
-  color: var(--cream);
-}
-
-a {
-  text-decoration: none;
-}
+header a {color: var(--cream)}
 
 header a:active, header a:hover, header a:visited {
-  color: var(--cream);
-}
+  color: var(--cream) }
 
 #header-active {
 background-color: var(--cream);
@@ -152,28 +144,6 @@ color: var(--red);
 padding: 2vw;
 }
 
-#header-active:hover {
-  color: red;
-}
-
-#hamburger-icon {
-  width: 10vw;
-  position: fixed;
-  margin: var(--margin);
-  /* top: 0; */
-  bottom: env(safe-area-inset-bottom);
-  left: 0;
-  z-index: 5;
-}
-
-
-.menu-closed {
-  transform:translate(-100%, 0)
-}
-
-.opened {
-  transform: none;
-}
 
 /* BACKGROUNDS */
 
@@ -203,28 +173,45 @@ color: var(--red)
 color: var(--red)
 }
 
-#arrow {
-  width: 3.1vw;
-  padding: 0.4vw;
+
+/* CAROUSEL */
+
+.carousel {height: 50vh}
+.carousel-inner, .carousel-item, .carousel img {height: 100%;}
+.carousel-item span { display: none; }
+
+
+/* ALL SECTIONS */
+section {
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:relative;
 }
 
-.mobile-centered {
-  position: absolute;
-  width: 94vw;
+section .col-md-6 {
+  min-height: 50vh;
 }
 
-
-/* CLOSING SECTION */
-
-#closingsection {
-  height: 25vh;
+.sect-outerbox {
+  padding: var(--margin);
+  gap: var(--margin);
 }
 
-#closingsection img {
-  height: 50%;
-}
+/* SECTION 1 */
+
+#section1 .carousel {  height: 100vh }
+
 
 /* SECTION 2 */
+
+#section2 {
+  height: auto;
+  min-height: 50vh;
+  padding: var(--margin);
+}
 
 #section-name {
   font-family: Plakat Grotesk;
@@ -234,17 +221,25 @@ color: var(--red)
   margin-bottom: calc(var(--margin)*2);
 }
 
-/* CAROUSEL */
-.carousel img {
-  object-fit: cover;
-  height: 100%;
+
+/* CLOSING SECTION */
+
+#closingsection {
+  min-height: 0;
+  height: 25vh;
 }
 
-.carousel-inner {
-  height: 100%;
+#closingsection img {
+  height: 50%;
 }
 
-/* .sect-outerbox {
-  padding: var(--margin);
-  gap: var(--margin);
+/* NON SO COS'ERA */
+
+/*
+.carousel-inner-line {
+  position: absolute;
+  bottom: var(--margin);
+  color: var(--cream);
+  left: var(--margin);
+  right: var(--margin);
 } */

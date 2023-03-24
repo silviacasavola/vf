@@ -1,57 +1,9 @@
-/* CAROUSELS */
-.carousel-item {height: 100%}
-.carousel img {height: 100%}
-
-
-.carousel-item {
-}
-
-.carousel-inner-line {
-  position: absolute;
-  bottom: var(--margin);
-  color: var(--cream);
-  left: var(--margin);
-  right: var(--margin);
-}
-
-
-.sect-outerbox {
-  padding: var(--margin);
-  gap: var(--margin);
-}
-
-section {
-  height: 100vh;
-  /* height: min-content; */
-}
-
 #header-logotype {
   content: url('../img/logotype.svg')
 }
 
-/* SECTION 2  */
-#section2 {
-  padding: var(--margin);
-  max-height: 50vh;
-  min-height: 50vh;
-}
-
-section .col-md-6 {
-  min-height: 50vh;
-}
-
-#section5, #section3 {
-  height: min-content;
-}
+/* SECTION 5 */
 
 #section5 .col-md-6 {
   min-height: 0;
-}
-
-.carousel {height: 50vh}
-
-
-/* SECTION 3 4  */
-.l-t-mob, {
-  margin-bottom: var(--margin);
 }
