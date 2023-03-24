@@ -8,6 +8,8 @@ main {
   max-width: 100vw;
   overflow-x: hidden;
 }
+
+a {word-break: break-all;}
 /* main {
   padding:
 } */
