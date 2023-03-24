@@ -1,0 +1,9 @@
+#header-logotype {
+  content: url('../img/logotype.svg');
+  position: relative!Important;
+  padding: 0 0 var(--margin) 0!Important;
+}
+
+/* main {
+  padding:
+} */
