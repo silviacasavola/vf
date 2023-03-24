@@ -27,10 +27,10 @@
 }
 
 /* SECTION 1 */
-#section1 {
-background-image: url('../img/ambienti/1.jpg');
+/* #section1 {
+background-image: url('././img/luoghi/1d.jpg');
 background-position-x: center;
-}
+} */
 
 /* SECTION2 */
 #section2 .m-text {
@@ -46,8 +46,8 @@ background-position-x: center;
 
 #section4 .d-flex {
   height: 100%;
-  background-image: url('../img/ambienti/3.jpg');
-  background-size: cover;
+  background-image: url('../img/luoghi/1d.jpg');
+  background-size: 100%;
   color: var(--cream);
   margin: auto;
   padding: var(--margin);
