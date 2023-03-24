@@ -33,33 +33,29 @@ section {
 #section2 {
   padding: var(--margin);
   max-height: 50vh;
+  min-height: 50vh;
 }
 
 #section-name {
   min-height:0;
 }
 
-#section2 .col-12 {
-  min-height: 0;
-}
-
-section .col-12 {
+section .col-md-6 {
   min-height: 50vh;
 }
 
-#section5 {
+#section5, #section3 {
   height: min-content;
 }
 
-#section5 .col-12 {
+#section5 .col-md-6 {
   min-height: 0;
 }
 
 .carousel {height: 50vh}
 
-/* #section1  */
 
 /* SECTION 3 4  */
-#section3 .l-t-mob, #section4 .l-t-mob, {
+.l-t-mob, {
   margin-bottom: var(--margin);
 }
