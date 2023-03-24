@@ -1,5 +1,4 @@
 /* CAROUSELS */
-.carousel {cursor: pointer}
 .carousel-item {height: 100%}
 .carousel img {height: 100%}
 
@@ -16,20 +15,40 @@
 }
 
 
-/* SECTION 1 */
-/* #section1 {
-background-image: url('../img/esperienze/1.jpeg');
-background-position: center;
-} */
+.sect-outerbox {
+  padding: var(--margin);
+  gap: var(--margin);
+}
+
+section {
+  /* height: 100vh; */
+  /* height: min-content; */
+}
 
 /* SECTION 2  */
 #section2 {
   padding: var(--margin);
-  height: 50vh;
+  /* max-height: 50vh;
+  min-height: 50vh; */
+  height: min-content;
 }
+
+section .col-md-6 {
+  min-height: 50vh;
+}
+
+/* #section5, #section3 {
+  height: min-content;
+}
+
+#section5 .col-md-6 {
+  min-height: 0;
+} */
+
+.carousel {height: 50vh}
 
 
 /* SECTION 3 4  */
-/* #section3 .l-t-mob, #section4 .l-t-mob, {
+.l-t-mob, {
   margin-bottom: var(--margin);
-} */
+}

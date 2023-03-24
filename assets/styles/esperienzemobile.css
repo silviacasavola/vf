@@ -36,10 +36,6 @@ section {
   min-height: 50vh;
 }
 
-#section-name {
-  min-height:0;
-}
-
 section .col-md-6 {
   min-height: 50vh;
 }
