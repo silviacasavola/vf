@@ -15,6 +15,10 @@
   right: var(--margin);
 }
 
+/* header a {
+  color: var(--red)!Important
+} */
+
 
 .sect-outerbox {
   height: 100%;
