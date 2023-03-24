@@ -1,32 +1,19 @@
-/* CAROUSELS */
-.carousel {cursor: pointer}
-.carousel div {height: 100%}
-.carousel img {height: 100%}
-
-.carousel-item span {
-  position: absolute;
-  color: var(--cream);
-}
-
-
-
-
-#section3 .carousel-item span {
+#section3 .currentnum {
   right: var(--margin);
   bottom: var(--margin);
 }
 
-#section4 .carousel-item span {
+#section4 .currentnum {
   left: var(--margin);
   top: var(--top-header);
 }
 
-#section5 .carousel-item span {
+#section5 .currentnum {
   left: var(--margin);
   top: var(--margin);
 }
 
-#section6 .carousel-item span {
+#section6 .currentnum {
   right: var(--margin);
   top: var(--margin);
 }
@@ -69,7 +56,7 @@
   display: none;
 }
 
-.sect-outerbox {
+.sect-outerbox-home {
   padding: 23vh 15vw 19vh 15vw;
 }
 

@@ -45,7 +45,6 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   font-family: 'Source Serif Pro', serif;
-  /* font-family: 'Helvetica', sans-serif; */
   font-weight: 400;
   box-sizing: content-box;
   scrollbar-width: none;
@@ -58,13 +57,9 @@ main {
   scroll-snap-type: y mandatory;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
+body::-webkit-scrollbar {  display: none }
 
-main::-webkit-scrollbar {
-  display: none;
-}
+main::-webkit-scrollbar {  display: none }
 
 section {
 width: 100vw;
@@ -80,15 +75,10 @@ position:relative;
   padding: var(--margin);
 }
 
-.top-header-margin {
-  /* padding-top: var(--header-margin); */
-  padding: var(--header-margin);
-}
+.top-header-margin {  padding: var(--header-margin) }
 
 
-img {
-  object-fit: cover;
-}
+img {  object-fit: cover; }
 
 
 /* TEXT */
@@ -109,12 +99,12 @@ a:hover {
   text-align: justify;
 }
 
+
 /* HEADER */
 header {
   position: fixed;
   width: 100%;
   z-index: 10;
-  /* gap: 2vw; */
   background-color: rgba(191, 46, 46, 0);
   transition: background-color 0.5s;
   height: 5.1vw;
@@ -155,7 +145,6 @@ margin: 0.5vw;
   left: 0;
   z-index: 10;
   padding: 1.1vw;
-  /* margin: var(--margin); */
 }
 
 
@@ -190,7 +179,6 @@ color: var(--red)
 
 /* CLOSING SECTION */
 
-
 #closingsection {
   height: 30vh;
 }
@@ -212,4 +200,30 @@ color: var(--red)
 
 #section2 .m-text {
   text-align: justify;
+}
+
+/* OUTERBOX */
+.sect-outerbox {
+  height: 100%;
+  padding: var(--top-header) 10vw var(--margin) 10vw;
+  gap: calc(var(--margin)*3);
+}
+
+.sect-outerbox .s-text {
+  text-align: justify;
+}
+
+
+/* CAROUSELS */
+.carousel {cursor: pointer}
+.carousel div {height: 100%}
+.carousel img {height: 100%}
+
+.currentnum {
+  position: absolute;
+  color: var(--cream);
+}
+
+.carousel-item span {
+  display: none
 }

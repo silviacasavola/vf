@@ -132,11 +132,13 @@
       <img src="assets/img/home/3d.jpg" class="d-block w-100" alt="image">
       <span class="m-text">4/4</span>
     </div>
+
+    <span class="currentnum m-text">1/4</span>
   </div>
 
 </div>
 
-  <div class="col-sm-6 col-12 bg-red sect-outerbox">
+  <div class="col-sm-6 col-12 bg-red sect-outerbox-home">
 
   <div class="bg-cream-dt bg-red-mob d-flex flex-wrap standard-margin sect-innerbox" style="width: 100%; height: 100%">
   <div class="col-sm-6 m-text plakat">I luoghi</div>
@@ -148,7 +150,7 @@ Che sia il grande giardino mediterraneo, le stanze e saloni affrescati o le rovi
 </div>
   </div>
 
-  <div class="standard-margin m-text plakat" id="outerbox-link" style="width:100%; text-align:center"><a href="ambienti.html">Read more</a></div>
+  <div class="standard-margin m-text plakat" id="outerbox-home-link" style="width:100%; text-align:center"><a href="ambienti.html">Read more</a></div>
   </div>
 </section>
 
@@ -157,7 +159,7 @@ Che sia il grande giardino mediterraneo, le stanze e saloni affrescati o le rovi
 
 <section class="d-flex g-0 flex-column flex-sm-row" id="section4">
 
-  <div class="col-sm-6 col-12 bg-cream sect-outerbox">
+  <div class="col-sm-6 col-12 bg-cream sect-outerbox-home">
 
   <div class="bg-red-dt bg-cream-mob d-flex flex-wrap standard-margin sect-innerbox" style="width: 100%; height: 100%">
   <div class="col-sm-9 col-3 m-text">Cucina etnobotanica</div>
@@ -169,7 +171,7 @@ Scopri la cucina etnobotanica del ristorante Mezza Pagnotta, in cui il dialogo c
 </div>
   </div>
 
-  <div class="standard-margin m-text" id="outerbox-link" style="width:100%; text-align:center"><a href="cucina-botanica.html">Read more</a></div>
+  <div class="standard-margin m-text" id="outerbox-home-link" style="width:100%; text-align:center"><a href="cucina-botanica.html">Read more</a></div>
   </div>
 
 
@@ -196,6 +198,8 @@ Scopri la cucina etnobotanica del ristorante Mezza Pagnotta, in cui il dialogo c
         <img src="assets/img/home/6e.jpg" class="d-block w-100" alt="image">
         <span class="m-text">5/5</span>
       </div>
+
+    <span class="currentnum m-text">1/5</span>
     </div>
 
   </div>
@@ -222,6 +226,8 @@ Scopri la cucina etnobotanica del ristorante Mezza Pagnotta, in cui il dialogo c
       <img src="assets/img/home/7d.jpg" class="d-block w-100" alt="image">
       <span class="m-text">4/4</span>
     </div>
+
+    <span class="currentnum m-text">1/4</span>
   </div>
 
 </div>
@@ -298,6 +304,8 @@ Passione per la condivisione, esperienza e umanità ci caratterizzano da generaz
       <img src="assets/img/home/10e.jpg" class="d-block w-100" alt="image">
       <span class="m-text">5/5</span>
     </div>
+
+  <span class="currentnum m-text">1/5</span>
   </div>
 
 </div>
@@ -377,6 +385,7 @@ var carousel = new bootstrap.Carousel($('.carousel'))
 $('.carousel').carousel({
   interval: 100
 })
+
 </script>
 
 <script>
@@ -385,6 +394,11 @@ $('.carousel').click(function () {
   $('.carousel').carousel('next');
 })
 
+$('.carousel').bind('slide.bs.carousel', function (e) {
+  let number = $(this).find('.active span').html();
+  console.log(number)
+  $(this).find('.currentnum').html(number);
+})
 </script>
 
 </body>

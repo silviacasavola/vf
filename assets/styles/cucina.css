@@ -1,32 +1,3 @@
-/* CAROUSELS */
-.carousel {cursor: pointer}
-.carousel-item {height: 100%}
-.carousel img {height: 100%}
-
-
-.carousel-item {
-}
-
-.carousel-inner-line {
-  position: absolute;
-  bottom: var(--margin);
-  color: var(--cream);
-  left: var(--margin);
-  right: var(--margin);
-}
-
-
-.sect-outerbox {
-  height: 100%;
-  padding: var(--top-header) 10vw var(--margin) 10vw;
-  gap: calc(var(--margin)*3);
-}
-
-.sect-outerbox .s-text {
-  text-align: justify;
-}
-
-
 /* SECTION 1 */
  #section1 {
  background-image: url('../img/cucina/1.jpg');
