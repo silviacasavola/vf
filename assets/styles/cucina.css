@@ -1,3 +1,33 @@
+/* CURRENTNUM */
+#section3 .currentnum {
+  right: var(--margin);
+  top: var(--top-header);
+}
+
+#section4 .currentnum {
+  left: var(--margin);
+  bottom: var(--margin);
+}
+
+#section5 .currentnum {
+  right: var(--margin);
+  bottom: var(--margin);
+}
+
+/* .video-autoplay-wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+} */
+
+iframe {
+  width: 120vw;
+  height: 120vh;
+  position: absolute;
+  top: -6vh;
+  left: -10vw;
+}
+
 /* SECTION 1 */
  #section1 {
  background-image: url('../img/cucina/1.jpg');

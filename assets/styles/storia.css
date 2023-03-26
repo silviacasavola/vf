@@ -1,3 +1,25 @@
+/* CURRENTNUM */
+#section3 .currentnum {
+  right: var(--margin);
+  bottom: var(--margin);
+}
+
+#section4 .currentnum {
+  left: var(--margin);
+  top: var(--top-header);
+}
+
+#section5 .currentnum {
+  left: var(--margin);
+  top: var(--margin);
+}
+
+#section6 .currentnum {
+  right: var(--margin);
+  top: var(--margin);
+}
+
+
 /* SECTION 1 */
 #section1 img {
 margin-bottom: var(--margin)

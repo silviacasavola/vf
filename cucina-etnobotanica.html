@@ -59,11 +59,9 @@
 <!-- <section id="section1" style="background-image: url('assets/img/cucina/1.png'); background-position: center bottom"> -->
 <section id="section1">
 
-<!-- <div class="video-autoplay-wrapper" data-video-autoplay="" data-video-id="5iC5DF6dWlQ" data-video-type="youtube" style="opacity: 1;"> -->
-        <!-- <iframe id="autoplay-video-index-video" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="EB header sito MASTER DEF ALTA" width="640" height="360" src="https://www.youtube.com/embed/5iC5DF6dWlQ?cc_load_policy=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;autohide=0&amp;controls=0&amp;branding=0&amp;showinfo=0&amp;rel=0&amp;fs=0&amp;wmode=opaque&amp;enablejsapi=1&amp;origin=https%3A%2F%2Ferbabrusca.it&amp;widgetid=1"></iframe> -->
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/09IZbSoKJdQ?controls=0&showinfo=0" title="YouTube video player" id="autoplay-video-index-video" showinfo="0" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-    </div> -->
+<!-- <div class="video-autoplay-wrapper" data-video-autoplay="1" data-video-id="5iC5DF6dWlQ" data-video-type="youtube" style="opacity: 1;"> -->
+<iframe id="autoplay-video-index-video" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="EB header sito MASTER DEF ALTA" width="640" height="360" src="https://www.youtube.com/embed/5iC5DF6dWlQ?cc_load_policy=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;&autoplay=1&amp;autohide=0&amp;controls=0&amp;branding=0&amp;showinfo=0&amp;rel=0&amp;mute=1&amp;fs=0&amp;wmode=opaque&amp;enablejsapi=1&amp;origin=https%3A%2F%2Ferbabrusca.it&amp;widgetid=1"></iframe>
+<!-- </div> -->
 
 <a href="index.html"><img src="assets/img/white-logotype.svg" id="header-logotype"></a>
 
@@ -127,6 +125,7 @@ Infatti, non c’è esperienza più importante per Francesco e Vincenzo che quel
       <img src="assets/img/cucina/2e.jpg" class="d-block w-100" alt="image">
       <span class="m-text">5/5</span>
     </div>
+    <span class="currentnum m-text">1/5</span>
   </div>
 </section>
 
@@ -153,6 +152,7 @@ Infatti, non c’è esperienza più importante per Francesco e Vincenzo che quel
       <img src="assets/img/cucina/3d.jpg" class="d-block w-100" alt="image">
       <span class="m-text">4/4</span>
     </div>
+    <span class="currentnum m-text">1/4</span>
   </div>
 </div>
 
@@ -212,6 +212,8 @@ Come la miniera di conoscenza che è Ciccillo continua a stupire i fratelli, i f
       <img src="assets/img/cucina/4f.jpg" class="d-block w-100" alt="image">
       <span class="m-text">6/6</span>
     </div>
+
+    <span class="currentnum m-text">1/6</span>
   </div>
 </section>
 
@@ -273,6 +275,12 @@ $('.carousel').carousel({
 
 $('.carousel').click(function () {
   $('.carousel').carousel('next');
+})
+
+$('.carousel').bind('slide.bs.carousel', function (e) {
+  let number = $(this).find('.active span').html();
+  console.log(number)
+  $(this).find('.currentnum').html(number);
 })
 </script>
 

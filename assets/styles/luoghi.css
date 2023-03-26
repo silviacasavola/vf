@@ -1,5 +1,31 @@
-/* SECTION 4 */
+/* CURRENTNUM */
+#section3 .currentnum {
+  right: var(--margin);
+  bottom: var(--margin);
+}
 
+#section5 .currentnum {
+  left: var(--margin);
+  top: var(--top-header);
+}
+
+#section6 .currentnum {
+  left: var(--margin);
+  bottom: var(--margin);
+}
+
+#section7 .currentnum {
+  right: var(--margin);
+  top: var(--top-header);
+}
+
+#section8 .currentnum {
+  right: var(--margin);
+  bottom: var(--margin);
+}
+
+
+/* SECTION 4 */
 #section4 {
   padding: var(--header-margin)
 }

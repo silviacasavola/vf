@@ -23,9 +23,9 @@
     <link rel='stylesheet' type='text/css' href='assets/styles/global.css'media="screen and (min-width:768px)">
     <link rel='stylesheet' type='text/css' href='assets/styles/globalmobile.css' media="screen and (max-width:767px)">
     <!-- Desktop stylesheet -->
-    <link rel='stylesheet' type='text/css' href='assets/styles/bb.css' media="screen and (min-width:768px)">
+    <link rel='stylesheet' type='text/css' href='assets/styles/residenza.css' media="screen and (min-width:768px)">
     <!-- Mobile portrait mode -->
-    <link rel='stylesheet' type='text/css' href='assets/styles/bbmobile.css' media="screen and (max-width:767px)">
+    <link rel='stylesheet' type='text/css' href='assets/styles/residenzamobile.css' media="screen and (max-width:767px)">
     <!-- Mobile landscape mode -->
     <!-- <link rel='stylesheet' type='text/css' href='mobile.css' media="screen and (orientation:landscape) and (max-width:991px)"> -->
 
@@ -102,6 +102,7 @@ Durante il soggiorno la colazione il cibo è una parte fondamentale dell’esper
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="assets/img/bb/federica1.jpg" class="d-block w-100" alt="image">
+      <span class="m-text">1/3</span>
     </div>
     <div class="carousel-item">
       <img src="assets/img/bb/federica2.jpg" class="d-block w-100" alt="image">
@@ -111,6 +112,7 @@ Durante il soggiorno la colazione il cibo è una parte fondamentale dell’esper
       <img src="assets/img/bb/federica3.jpg" class="d-block w-100" alt="image">
       <span class="m-text">3/3</span>
     </div>
+    <span class="currentnum m-text">1/3</span>
   </div>
 </section>
 
@@ -123,19 +125,21 @@ Durante il soggiorno la colazione il cibo è una parte fondamentale dell’esper
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="assets/img/bb/vittoria1.jpg" class="d-block w-100" alt="image">
+      <span class="m-text">1/4</span>
     </div>
     <div class="carousel-item">
       <img src="assets/img/bb/vittoria2.jpg" class="d-block w-100" alt="image">
-      <!-- <span class="m-text">2/3</span> -->
+      <span class="m-text">2/4</span>
     </div>
     <div class="carousel-item">
       <img src="assets/img/bb/vittoria3.jpg" class="d-block w-100" alt="image">
-      <!-- <span class="m-text">3/3</span> -->
+      <span class="m-text">3/4</span>
     </div>
     <div class="carousel-item">
       <img src="assets/img/bb/vittoria4.jpg" class="d-block w-100" alt="image">
-      <!-- <span class="m-text">3/3</span> -->
+      <span class="m-text">4/4</span>
     </div>
+    <span class="currentnum m-text">1/4</span>
   </div>
 </div>
 
@@ -166,6 +170,7 @@ I suoi ospiti vivono l’intensità dei profumi degli agrumi e del gelsomino su 
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="assets/img/bb/giuseppina1.jpg" class="d-block w-100" alt="image">
+      <span class="m-text">1/3</span>
     </div>
     <div class="carousel-item">
       <img src="assets/img/bb/giuseppina2.jpg" class="d-block w-100" alt="image">
@@ -175,6 +180,7 @@ I suoi ospiti vivono l’intensità dei profumi degli agrumi e del gelsomino su 
       <img src="assets/img/bb/giuseppina3.jpg" class="d-block w-100" alt="image">
       <span class="m-text">3/3</span>
     </div>
+    <span class="currentnum m-text">1/3</span>
   </div>
 </section>
 
@@ -187,6 +193,7 @@ I suoi ospiti vivono l’intensità dei profumi degli agrumi e del gelsomino su 
   <div class="carousel-inner">
     <div class="carousel-item active" style="background-color: black">
       <img src="assets/img/bb/mariagiulia1.jpg" class="d-block w-100" alt="image">
+      <span class="m-text">1/3</span>
     </div>
     <div class="carousel-item">
       <img src="assets/img/bb/mariagiulia2.jpg" class="d-block w-100" alt="image">
@@ -196,6 +203,7 @@ I suoi ospiti vivono l’intensità dei profumi degli agrumi e del gelsomino su 
       <img src="assets/img/bb/mariagiulia3.jpg" class="d-block w-100" alt="image">
       <span class="m-text">3/3</span>
     </div>
+    <span class="currentnum m-text">1/3</span>
   </div>
 </div>
 
@@ -311,9 +319,14 @@ $('.carousel').carousel({
 $('.carousel').click(function () {
   $('.carousel').carousel('next');
 })
+
+$('.carousel').bind('slide.bs.carousel', function (e) {
+  let number = $(this).find('.active span').html();
+  console.log(number)
+  $(this).find('.currentnum').html(number);
+})
 </script>
 
 </body>
-
 
 </html>

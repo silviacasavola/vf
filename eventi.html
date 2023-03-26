@@ -107,6 +107,12 @@ $('.carousel').carousel({
 $('.carousel').click(function () {
   $('.carousel').carousel('next');
 })
+
+$('.carousel').bind('slide.bs.carousel', function (e) {
+  let number = $(this).find('.active span').html();
+  console.log(number)
+  $(this).find('.currentnum').html(number);
+})
 </script>
 
 </body>
