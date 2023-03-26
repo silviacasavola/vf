@@ -202,6 +202,11 @@ color: var(--red)
   text-align: justify;
 }
 
+#section2 .m-text {
+  padding: 0 20vw 0 20vw;
+}
+
+
 /* OUTERBOX */
 .sect-outerbox {
   height: 100%;

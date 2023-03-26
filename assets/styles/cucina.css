@@ -5,10 +5,6 @@ background-position-y: center;
 }
 
 /* SECTION 2 */
-#section2 .m-text {
-  padding: 0 17.75vw 0 18.5vw;
-}
-
 
 #section2 a {
   background-color: var(--red);
