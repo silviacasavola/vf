@@ -9,15 +9,19 @@ background-position-y: center;
 #section-name {
   font-family: Plakat Grotesk;
   line-height: 9vw!Important;
-  /* border: solid; */
-  height: 17vw;
+  height: 15.8vw;
+  position: relative;
+  white-space: pre;
 }
 
 
-#section-name .m-text {
+#section-name .duelink {
   position: absolute;
-  right: 4.5vw;
-  top: 14vw;
+  font-size: 1.3vw;
+  top: 1.8vw;
+  right: 0;
+  /* right: 4.5vw;
+  top: 14vw; */
 }
 
 #section2 a {

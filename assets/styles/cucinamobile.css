@@ -5,8 +5,14 @@ background-position: center;
 }
 
 /* SECTION 2  */
+#section-name {
+  width: 100%;
+  text-align: center;
+}
 
 #section2 a {
+ font-family: 'Source Serif Pro', serif;
+ font-size: 4vw;
   text-decoration: underline;
 }
 
