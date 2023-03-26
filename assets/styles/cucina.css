@@ -20,12 +20,24 @@
   height: 100vh;
 } */
 
+
+#overlay {
+animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 iframe {
   width: 120vw;
   height: 120vh;
   position: absolute;
   top: -6vh;
   left: -10vw;
+  z-index: 0;
 }
 
 /* SECTION 1 */
