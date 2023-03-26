@@ -6,10 +6,25 @@ background-position-y: center;
 
 /* SECTION 2 */
 
+#section-name {
+  font-family: Plakat Grotesk;
+  line-height: 9vw!Important;
+  /* border: solid; */
+  height: 17vw;
+}
+
+
+#section-name .m-text {
+  position: absolute;
+  right: 4.5vw;
+  top: 14vw;
+}
+
 #section2 a {
+ font-family: 'Source Serif Pro', serif;
   background-color: var(--red);
   color: var(--cream);
-  padding: calc(var(--margin)/2.5) calc(var(--margin)/2) calc(var(--margin)/2.5) calc(var(--margin)/2);
+  padding: calc(var(--margin)/3) calc(var(--margin)/2.7) calc(var(--margin)/3) calc(var(--margin)/2.7);
 }
 
 /* SECTION3 */

@@ -193,9 +193,7 @@ color: var(--red)
 #section-name {
   font-family: Plakat Grotesk;
   font-size: 10vw;
-  height: 7vw;
-  transform:translate(0, -55%);
-  margin-bottom: calc(var(--margin)*2);
+  line-height: 12vw;
 }
 
 #section2 .m-text {
