@@ -137,7 +137,7 @@ header {
   bottom: env(safe-area-inset-bottom);
   width: 60vw;
   background-color: var(--red);
-  z-index: 20;
+  z-index: 30;
   gap: calc(var(--margin)*1.8);
   padding: calc(var(--margin)*1.8);
   transition: transform 0.3s;
@@ -188,7 +188,7 @@ color: var(--red)
 
 .carousel {height: 50vh}
 .carousel-inner, .carousel-item, .carousel img {height: 100%;}
-.carousel-item span { display: none; }
+.carousel span { display: none; }
 
 
 /* ALL SECTIONS */
@@ -201,7 +201,7 @@ section {
   position:relative;
 }
 
-section .col-md-6 {
+.sect-outerbox, .sect-outerbox-home {
   min-height: 50vh;
 }
 
