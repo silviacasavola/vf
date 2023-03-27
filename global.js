@@ -34,10 +34,11 @@ $("main").scroll(function () {
   $("header").addClass("menu-closed");
 })
 
-$(document).ready(safearea())
-
 
 // SAFE AREA
+
+$(document).ready(safearea())
+$( window ).resize(safearea())
 
 function safearea() {
 
@@ -67,5 +68,7 @@ hamburgerPos = $("#hamburger-icon").position();
 let safeArea = hamburgerPos.top;
 // document.documentElement.style.setProperty('--safe-area', safeArea);
 $("#sec1-link").css("top", safeArea)
+} else {
+  $("#sec1-link").css("top", "")
 }
 }

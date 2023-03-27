@@ -138,9 +138,27 @@ header {
   width: 60vw;
   background-color: var(--red);
   z-index: 30;
-  gap: calc(var(--margin)*1.8);
   padding: calc(var(--margin)*1.8);
   transition: transform 0.3s;
+}
+
+@media (max-aspect-ratio: 3/4) {
+header {
+  gap: calc(var(--margin)*1.8) }
+}
+
+@media (min-aspect-ratio: 3/4) {
+header {
+  justify-content:space-between;
+  height: 100vh; }
+}
+
+
+@media (min-aspect-ratio: 3/4) {
+header {
+  /* gap: var(--margin);  */
+  justify-content:space-between;
+  height: 100vh; }
 }
 
 header a {color: var(--cream)}
@@ -153,6 +171,8 @@ background-color: var(--cream);
 color: var(--red);
 padding: 2vw;
 }
+
+
 
 
 /* BACKGROUNDS */
