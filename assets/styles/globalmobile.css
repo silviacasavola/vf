@@ -186,10 +186,19 @@ color: var(--red)
 
 /* CAROUSEL */
 
-.carousel {height: 50vh}
+/* .carousel {height: 50vh} */
 .carousel-inner, .carousel-item, .carousel img {height: 100%;}
 .carousel span { display: none; }
 
+
+@media (max-aspect-ratio: 3/4) {
+  .carousel {height: 50vh}
+}
+
+/* SQUARE OR NOT VERY LARGE */
+@media (min-aspect-ratio: 3/4) {
+  .carousel {height: 100vh}
+  }
 
 /* ALL SECTIONS */
 section {
@@ -201,8 +210,26 @@ section {
   position:relative;
 }
 
-.sect-outerbox, .sect-outerbox-home {
+/* .sect-outerbox, .sect-outerbox-home {
   min-height: 50vh;
+} */
+
+/*VERTICAL */
+@media (max-aspect-ratio: 3/4) {
+  .sect-outerbox, .sect-outerbox-home {
+    min-height: 50vh;
+  }
+}
+
+/* SQUARE OR NOT VERY LARGE */
+@media (min-aspect-ratio: 3/4) {
+  .sect-outerbox, .sect-outerbox-home {
+    min-height: 100vh;
+  }
+
+  section {
+    min-height: 100vh;
+  }
 }
 
 .sect-outerbox {
