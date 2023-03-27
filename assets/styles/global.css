@@ -18,7 +18,7 @@
 
 
 /* FONT */
-@font-face {
+/* @font-face {
     font-family: "Plakat Grotesk";
     src: url("../font/PlakatGrotesk-Regular.otf") format("opentype"),
     url("../font/PlatakGrotesk-Regular.eot") format("embedded-opentype"),
@@ -26,7 +26,7 @@
    url("../font/PlatakGrotesk-Regular.woff2") format("woff2");
    font-weight: normal;
     font-style: normal;
-  }
+  } */
 
   @font-face {
       font-family: "Plakat Grotesk";
@@ -88,10 +88,14 @@ img {  object-fit: cover; }
 /* TEXT */
 .s-text {font-size: 1.05vw; line-height: 1.4vw;}
 .m-text {font-size: 1.3vw; line-height: 1.7vw;}
-.l-text {font-family: Plakat Grotesk; font-weight: normal; font-size: 2.3vw; line-height: 2.2vw;}
+.l-text {font-family: Plakat Grotesk;
+  /* font-weight: normal; */
+font-size: 2.3vw; line-height: 2.2vw;}
 .xl-text {font-size: 4vw; line-height: 5vw;}
 
-.plakat {font-family: Plakat Grotesk; font-weight: normal}
+.plakat {font-family: Plakat Grotesk;
+  /* font-weight: normal */
+}
 .m-text.plakat {font-size: 1.4vw; line-height: 1.7vw;}
 .l-text.plakat {font-size: 2.3vw; line-height: 2.2vw;}
 
