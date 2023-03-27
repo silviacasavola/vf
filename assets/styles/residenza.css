@@ -21,10 +21,11 @@
 
 
 /* SECTION 7 */
-#section12 img {
+#section13 img {
   padding: var(--header-margin);
 }
 
-#section12 a {
+#section13 a {
 padding: calc(var(--margin)/2) var(--margin) calc(var(--margin)/2) var(--margin);
+color: var(--red);
 }
