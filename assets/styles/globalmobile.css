@@ -77,7 +77,8 @@ img {
 /* TEXT */
 .s-t-mob {font-size: 3.2vw; line-height: 4.6vw;}
 .m-t-mob, .m-text {font-size: 4vw; line-height: 5.9vw;}
-.l-t-mob {font-size: 5.5vw; line-height: 6.5vw;}
+/* .l-t-mob {font-size: 5.5vw; line-height: 6.5vw;} */
+.l-t-mob {font-size: 6vw; line-height: 6.5vw;}
 .xl-t-mob {font-size: 8vw; line-height: 10vw;}
 
 a { text-decoration: none;}
@@ -87,22 +88,31 @@ body {
 }
 
 
+
 @font-face {
     font-family: "Plakat Grotesk";
-    src: url("../font/PlakatGrotesk-Bold.otf"),
-    url("../font/PlatakGrotesk-Bold.eot") format("embedded-opentype")
-   /* url("../font/PlatakGrotesk-Regular.ttf") format("truetype"), */
-   /* url("./assets/font/SuisseIntl-Regular.otf") format("woff"),
-   url("./assets/font/SuisseIntl-Regular.otf") format("woff2"), */
-   /* url("./assets/font/SuisseIntl-Regular.otf") format("svg"), */
-   /* url("../font/PlatakGrotesk-Regular.woff2") format("woff2"), */
-   ;
-   font-weight:normal;
+    src: url("../font/PlakatGrotesk-Regular.otf") format("opentype"),
+    url("../font/PlatakGrotesk-Regular.eot") format("embedded-opentype"),
+   url("../font/PlatakGrotesk-Regular.woff") format("woff"),
+   url("../font/PlatakGrotesk-Regular.woff2") format("woff2");
+   font-weight: normal;
     font-style: normal;
   }
 
+  @font-face {
+      font-family: "Plakat Grotesk";
+      src: url("../font/PlakatGrotesk-Bold.otf") format("opentype"),
+      url("../font/PlatakGrotesk-Bold.eot") format("embedded-opentype"),
+     url("../font/PlatakGrotesk-Bold.woff") format("woff"),
+     url("../font/PlatakGrotesk-Bold.woff2") format("woff2");
+     font-weight: bold;
+      font-style: normal;
+    }
+
   .l-t-mob {
-    margin-bottom: var(--margin);
+    /* margin-bottom: var(--margin); */
+    font-family: "Plakat Grotesk";
+    font-style: normal;
   }
 
 /* HAMBURGER MENU */

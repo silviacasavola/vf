@@ -20,19 +20,23 @@
 /* FONT */
 @font-face {
     font-family: "Plakat Grotesk";
-    src: url("../font/PlakatGrotesk-Bold.otf"),
-    url("../font/PlatakGrotesk-Bold.eot") format("embedded-opentype")
-   /* url("../font/PlatakGrotesk-Regular.ttf") format("truetype"), */
-   /* url("./assets/font/SuisseIntl-Regular.otf") format("woff"),
-   url("./assets/font/SuisseIntl-Regular.otf") format("woff2"), */
-   /* url("./assets/font/SuisseIntl-Regular.otf") format("svg"), */
-   /* url("../font/PlatakGrotesk-Regular.woff2") format("woff2"), */
-   ;
-   font-weight:normal;
+    src: url("../font/PlakatGrotesk-Regular.otf") format("opentype"),
+    url("../font/PlatakGrotesk-Regular.eot") format("embedded-opentype"),
+   url("../font/PlatakGrotesk-Regular.woff") format("woff"),
+   url("../font/PlatakGrotesk-Regular.woff2") format("woff2");
+   font-weight: normal;
     font-style: normal;
   }
 
-/* .plakat {font-family: 'Plakat Grotesk'} */
+  @font-face {
+      font-family: "Plakat Grotesk";
+      src: url("../font/PlakatGrotesk-Bold.otf") format("opentype"),
+      url("../font/PlatakGrotesk-Bold.eot") format("embedded-opentype"),
+     url("../font/PlatakGrotesk-Bold.woff") format("woff"),
+     url("../font/PlatakGrotesk-Bold.woff2") format("woff2");
+     font-weight: bold;
+      font-style: normal;
+    }
 
 
 /* GLOBAL */
@@ -84,8 +88,12 @@ img {  object-fit: cover; }
 /* TEXT */
 .s-text {font-size: 1.05vw; line-height: 1.4vw;}
 .m-text {font-size: 1.3vw; line-height: 1.7vw;}
-.l-text {font-size: 2.15vw; line-height: 2.2vw;}
+.l-text {font-family: Plakat Grotesk; font-weight: normal; font-size: 2.3vw; line-height: 2.2vw;}
 .xl-text {font-size: 4vw; line-height: 5vw;}
+
+.plakat {font-family: Plakat Grotesk; font-weight: normal}
+.m-text.plakat {font-size: 1.4vw; line-height: 1.7vw;}
+.l-text.plakat {font-size: 2.3vw; line-height: 2.2vw;}
 
 a {
   text-decoration: none;
@@ -192,6 +200,7 @@ color: var(--red)
 
 #section-name {
   font-family: Plakat Grotesk;
+  font-weight: bold;
   font-size: 10vw;
   line-height: 12vw;
 }
