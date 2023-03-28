@@ -42,7 +42,7 @@ $( window ).resize(safearea())
 
 function safearea() {
 
-    if ($(window).width() <= 600 && $(document).scrollTop() <= 10 ) {
+    if ($(window).width() <= 600 && $("body").scrollTop() <= 10 ) {
   // SAFE AREA
   // let safeAreaInsets;
 
