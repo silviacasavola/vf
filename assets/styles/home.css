@@ -58,6 +58,9 @@
   padding: 23vh 15vw 19vh 15vw;
 }
 
+@media (max-aspect-ratio: 3/2) { .sect-outerbox-home {  padding: 23vh 10vw 19vh 10vw } }
+@media (max-aspect-ratio: 1/1) { .sect-outerbox-home {  padding: 23vh 6vw 19vh 6vw } }
+
 
 .sect-outerbox-home .s-text {
   text-align: left!Important;

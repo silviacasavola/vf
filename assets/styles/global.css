@@ -88,7 +88,6 @@ font-size: 2.3vw; line-height: 2.2vw;}
 .l-text.plakat {font-size: 2.3vw; line-height: 2.2vw;}
 
 
-
 @media (max-width:992px) {
 .s-text {font-size: 1.25vw; line-height: 1.6vw;}
 .m-text {font-size: 1.6vw; line-height: 1.9vw;}
@@ -99,6 +98,19 @@ font-size: 2.5vw; line-height: 2.4vw;}
 .plakat {font-family: Plakat Grotesk}
 .m-text.plakat {font-size: 1.6vw; line-height: 1.9vw;}
 .l-text.plakat {font-size: 2.5vw; line-height: 2.4vw;}
+}
+
+
+@media (max-width: 767.9px) {
+.s-text {font-size: 1.55vw; line-height: 1.9vw;}
+.m-text {font-size: 1.9vw; line-height: 2.2vw;}
+.l-text {font-family: Plakat Grotesk;
+font-size: 2.8vw; line-height: 2.7vw;}
+.xl-text {font-size: 4.5vw; line-height: 5.5vw;}
+
+.plakat {font-family: Plakat Grotesk}
+.m-text.plakat {font-size: 1.9vw; line-height: 2.2vw;}
+.l-text.plakat {font-size: 2.8vw; line-height: 2.7vw;}
 }
 
 
@@ -150,9 +162,8 @@ margin: 0.5vw;
   display: none;
 }
 
-@media (max-width:992px) {
-header {font-size: 1.1vw}
-}
+@media (max-width:992px) {header {font-size: 1.1vw}}
+@media (max-width: 767.9px) { header {font-size: 1.4vw}}
 
 
 /* INTRO */
@@ -227,9 +238,11 @@ color: var(--red)
     font-size: 11vw;
     line-height: 13vw;
   }
+}
 
+@media (max-aspect-ratio: 1.1/1) {
   #section2 .m-text {
-    padding: 0 15vw 0 15vw;
+    padding: 0 10vw 0 10vw;
   }
 }
 
@@ -240,8 +253,10 @@ color: var(--red)
   gap: calc(var(--margin)*3);
 }
 
-@media (max-width:992px) {
-.sect-outerbox {  padding: var(--top-header) 7vw var(--margin) 7vw; }
+@media (max-aspect-ratio: 1.1/1) {
+.sect-outerbox {
+  padding: var(--top-header) 5vw var(--margin) 5vw;
+}
 }
 
 .sect-outerbox .s-text {

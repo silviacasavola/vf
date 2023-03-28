@@ -8,7 +8,7 @@ $( document ).load(function() {
 
 $("main").scroll(function () {
 
-  if ($(window).width() >= 600) {
+  if ($(window).width() >= 575.8) {
 if ($("main").scrollTop() == 0) {
   $("header").css("background-color", "rgba(191, 46, 46, 0)")
 
@@ -42,7 +42,7 @@ $( window ).resize(function() {safearea()})
 
 function safearea() {
 
-    if ($(window).width() <= 600 && $("body").scrollTop() <= 10 ) {
+    if ($(window).width() <= 575.8 && $("body").scrollTop() <= 10 ) {
 
 hamburgerPos = $("#hamburger-icon").position();
 let safeArea = hamburgerPos.top;
