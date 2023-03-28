@@ -18,15 +18,6 @@
 
 
 /* FONT */
-/* @font-face {
-    font-family: "Plakat Grotesk";
-    src: url("../font/PlakatGrotesk-Regular.otf") format("opentype"),
-    url("../font/PlatakGrotesk-Regular.eot") format("embedded-opentype"),
-   url("../font/PlatakGrotesk-Regular.woff") format("woff"),
-   url("../font/PlatakGrotesk-Regular.woff2") format("woff2");
-   font-weight: normal;
-    font-style: normal;
-  } */
 
   @font-face {
       font-family: "Plakat Grotesk";
@@ -89,15 +80,27 @@ img {  object-fit: cover; }
 .s-text {font-size: 1.05vw; line-height: 1.4vw;}
 .m-text {font-size: 1.3vw; line-height: 1.7vw;}
 .l-text {font-family: Plakat Grotesk;
-  /* font-weight: normal; */
 font-size: 2.3vw; line-height: 2.2vw;}
 .xl-text {font-size: 4vw; line-height: 5vw;}
 
-.plakat {font-family: Plakat Grotesk;
-  /* font-weight: normal */
-}
+.plakat {font-family: Plakat Grotesk}
 .m-text.plakat {font-size: 1.4vw; line-height: 1.7vw;}
 .l-text.plakat {font-size: 2.3vw; line-height: 2.2vw;}
+
+
+
+@media (max-width:992px) {
+.s-text {font-size: 1.25vw; line-height: 1.6vw;}
+.m-text {font-size: 1.6vw; line-height: 1.9vw;}
+.l-text {font-family: Plakat Grotesk;
+font-size: 2.5vw; line-height: 2.4vw;}
+.xl-text {font-size: 4.2vw; line-height: 5.2vw;}
+
+.plakat {font-family: Plakat Grotesk}
+.m-text.plakat {font-size: 1.6vw; line-height: 1.9vw;}
+.l-text.plakat {font-size: 2.5vw; line-height: 2.4vw;}
+}
+
 
 a {
   text-decoration: none;
@@ -128,7 +131,6 @@ header a {
   padding: 1vw;
 }
 
-
 header a:hover {
   color: var(--cream);
 }
@@ -146,6 +148,10 @@ margin: 0.5vw;
 
 #hamburger-icon {
   display: none;
+}
+
+@media (max-width:992px) {
+header {font-size: 1.1vw}
 }
 
 
@@ -204,7 +210,6 @@ color: var(--red)
 
 #section-name {
   font-family: Plakat Grotesk;
-  /* font-weight: bold; */
   font-size: 10vw;
   line-height: 12vw;
 }
@@ -217,12 +222,26 @@ color: var(--red)
   padding: 0 20vw 0 20vw;
 }
 
+@media (max-width:992px) {
+  #section-name {
+    font-size: 11vw;
+    line-height: 13vw;
+  }
+
+  #section2 .m-text {
+    padding: 0 15vw 0 15vw;
+  }
+}
 
 /* OUTERBOX */
 .sect-outerbox {
   height: 100%;
   padding: var(--top-header) 10vw var(--margin) 10vw;
   gap: calc(var(--margin)*3);
+}
+
+@media (max-width:992px) {
+.sect-outerbox {  padding: var(--top-header) 7vw var(--margin) 7vw; }
 }
 
 .sect-outerbox .s-text {
