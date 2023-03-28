@@ -87,18 +87,6 @@ body {
   text-align: justify;
 }
 
-
-
-@font-face {
-    font-family: "Plakat Grotesk";
-    src: url("../font/PlakatGrotesk-Regular.otf") format("opentype"),
-    url("../font/PlatakGrotesk-Regular.eot") format("embedded-opentype"),
-   url("../font/PlatakGrotesk-Regular.woff") format("woff"),
-   url("../font/PlatakGrotesk-Regular.woff2") format("woff2");
-   font-weight: normal;
-    font-style: normal;
-  }
-
   @font-face {
       font-family: "Plakat Grotesk";
       src: url("../font/PlakatGrotesk-Bold.otf") format("opentype"),
@@ -112,7 +100,6 @@ body {
   .l-t-mob {
     /* margin-bottom: var(--margin); */
     font-family: "Plakat Grotesk";
-    font-style: normal;
   }
 
 /* HAMBURGER MENU */
