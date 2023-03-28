@@ -14,6 +14,12 @@
 }
 
 /* SECTION1 */
+
+/* SECTION1 */
+#section1 .l-t-mob {
+font-family: 'Source Serif Pro', serif!Important;
+}
+
 #section1 span {
   display: none;
 }
