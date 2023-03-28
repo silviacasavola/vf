@@ -26,31 +26,44 @@ $("#hamburger-icon").click(function () {
   $("header").removeClass("menu-closed");
 })
 
-$("header").click(function () {
-  $("header").addClass("menu-closed");
-})
+$("header").click(function() {closemenu()})
+$("main").click(function() {closemenu()})
+$("main").scroll(function() {closemenu()})
 
-$("main").scroll(function () {
+function closemenu() {
   $("header").addClass("menu-closed");
-})
+}
 
 
 // SAFE AREA
 
-$(document).ready(safearea())
-$( window ).resize(safearea())
+$(document).ready(function() {safearea()})
+$( window ).resize(function() {safearea()})
 
 function safearea() {
 
     if ($(window).width() <= 600 && $("body").scrollTop() <= 10 ) {
-  // SAFE AREA
-  // let safeAreaInsets;
+
+hamburgerPos = $("#hamburger-icon").position();
+let safeArea = hamburgerPos.top;
+// document.documentElement.style.setProperty('--safe-area', safeArea);
+$("#sec1-link").css("top", safeArea)
+} else {
+  $("#sec1-link").css("top", "unset")
+}
+}
+
+
+
+
+// FAIL: SAFE AREA
+// let safeAreaInsets;
 
 // if (window.visualViewport && window.visualViewport.safeAreaInsets) {
-  // ({ safeAreaInsets } = window.visualViewport);
+// ({ safeAreaInsets } = window.visualViewport);
 //   document.documentElement.style.setProperty('--safe-area-inset-top', `${safeAreaInsets.top}px`);
 //   document.documentElement.style.setProperty('--safe-area-inset-bottom', `${safeAreaInsets.bottom}px`);
-  // $("#scrittone").html({ safeAreaInsets })
+// $("#scrittone").html({ safeAreaInsets })
 // }
 
 // let altra = getComputedStyle(document.documentElement).getPropertyValue("--sab");
@@ -62,13 +75,3 @@ function safearea() {
 // document.documentElement.style.setProperty('--safe-area-bottom', safeArea);
 // $("#scrittone").html(safeArea)
 // $("#sec1-link").css("bottom", safeArea)
-
-
-hamburgerPos = $("#hamburger-icon").position();
-let safeArea = hamburgerPos.top;
-// document.documentElement.style.setProperty('--safe-area', safeArea);
-$("#sec1-link").css("top", safeArea)
-} else {
-  $("#sec1-link").css("top", "")
-}
-}
