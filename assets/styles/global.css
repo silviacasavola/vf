@@ -257,6 +257,10 @@ input, textarea {
   color: var(--red);
 }
 
+input[type="submit"] {
+color: var(--cream)
+}
+
 textarea {
   width: 20vw;
   resize: none;
@@ -264,4 +268,38 @@ textarea {
 
 input.bg-red {
   padding: calc(var(--margin)/2.5) calc(var(--margin)/2) calc(var(--margin)/2.5) calc(var(--margin)/2)
+}
+
+input[type="checkbox"] {
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--cream);
+  /* margin: 0; */
+  color: var(--red);
+  width: var(--margin);
+  height: var(--margin);
+  border: 2px solid var(--red);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  /* transform: translateY(-0.075em); */
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: var(--margin);
+  height: var(--margin);
+  transform: scale(0) translateX(-17%);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset var(--margin) var(--margin) var(--red);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(0.7) translateX(-17%);
 }
