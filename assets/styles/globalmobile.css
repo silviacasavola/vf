@@ -142,19 +142,19 @@ header {
   transition: transform 0.3s;
 }
 
-@media (max-aspect-ratio: 3/4) {
+@media (max-aspect-ratio: 1/1) {
 header {
   gap: calc(var(--margin)*1.8) }
 }
 
-@media (min-aspect-ratio: 3/4) {
+@media (min-aspect-ratio: 1/1) {
 header {
   justify-content:space-between;
   height: 100vh; }
 }
 
 
-@media (min-aspect-ratio: 3/4) {
+@media (min-aspect-ratio: 1/1) {
 header {
   /* gap: var(--margin);  */
   justify-content:space-between;
@@ -211,12 +211,12 @@ color: var(--red)
 .carousel span { display: none; }
 
 
-@media (max-aspect-ratio: 3/4) {
+@media (max-aspect-ratio: 1/1) {
   .carousel {height: 50vh}
 }
 
 /* SQUARE OR NOT VERY LARGE */
-@media (min-aspect-ratio: 3/4) {
+@media (min-aspect-ratio: 1/1) {
   .carousel {height: 100vh}
   }
 
@@ -235,14 +235,14 @@ section {
 } */
 
 /*VERTICAL */
-@media (max-aspect-ratio: 3/4) {
+@media (max-aspect-ratio: 1/1) {
   .sect-outerbox, .sect-outerbox-home {
     min-height: 50vh;
   }
 }
 
 /* SQUARE OR NOT VERY LARGE */
-@media (min-aspect-ratio: 3/4) {
+@media (min-aspect-ratio: 1/1) {
   .sect-outerbox, .sect-outerbox-home {
     min-height: 100vh;
   }
@@ -283,11 +283,12 @@ section {
 
 #closingsection {
   min-height: 0;
-  height: 25vh;
 }
 
 #closingsection img {
-  height: 50%;
+  /* height: 50%; */
+  /* width: 20vw!Important; */
+  padding: 10vw 30vw 10vw 30vw;
 }
 
 /* NON SO COS'ERA */

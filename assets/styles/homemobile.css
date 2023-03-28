@@ -41,13 +41,13 @@
 }
 
 
-@media (max-aspect-ratio: 3/4) {
-  #section2 .col-12 {  height: 50vh }
+@media (max-aspect-ratio: 1/1) {
+  #section2 .col-12 {  min-height: 50vh; gap: var(--margin) }
 }
 
 /* SQUARE OR NOT VERY LARGE */
-@media (min-aspect-ratio: 3/4) {
-  #section2 .col-12 {  height: 100vh }
+@media (min-aspect-ratio: 1/1) {
+  #section2 .col-12 {  min-height: 100vh }
   }
 
 #section2 .m-text {
@@ -83,13 +83,13 @@ object-fit: scale-down;
   padding: var(--margin);
 }
 
-@media (max-aspect-ratio: 3/4) {
+@media (max-aspect-ratio: 1/1) {
 #section5 .flex-column, #section6 .flex-column {  height: 50vh }
 }
 
 
 /* SQUARE OR NOT VERY LARGE */
-@media (min-aspect-ratio: 3/4) {
+@media (min-aspect-ratio: 1/1) {
 #section5 .flex-column, #section6 .flex-column {  height: 100vh }
   }
 
@@ -173,11 +173,11 @@ gap: calc(var(--margin)*2);
   transform:translate(-3.5vw, 0)
 }
 
-@media (max-aspect-ratio: 3/4) {
+@media (max-aspect-ratio: 2/3) {
 #flowersphoto {
 height: 50vh; background-position-y: 73% }
 }
 
-@media (min-aspect-ratio: 3/4) {
-#flowersphoto { height: 100vh!Important }
+@media (min-aspect-ratio: 2/3) {
+#flowersphoto { background-position: center; height: 100vh!Important }
 }
