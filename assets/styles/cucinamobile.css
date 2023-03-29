@@ -59,7 +59,16 @@ object-position: center;
 /* SECTION 6 */
 
 #section6 .s-t-mob {
-  line-height: 6.5vw;
+  line-height: 5vw;
+}
+
+#section6 .sect-outerbox {
+  padding: var(--margin) calc(var(--margin)/2) var(--margin) calc(var(--margin)/2);
+}
+
+#section6 .col-md-4 {
+  padding-left: calc(var(--margin)/2);
+  padding-right: calc(var(--margin)/2);
 }
 
 /* SECTION 7 */
