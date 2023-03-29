@@ -75,9 +75,6 @@ background-position-y: center;
 }
 
 /* SECTION 6 */
-#section6 .s-text {
-  line-height: 2vw;
-}
 
 #section6 .sect-outerbox {
   padding: var(--top-header) 4vw var(--margin) 4vw!Important}
