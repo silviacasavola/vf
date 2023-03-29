@@ -101,7 +101,7 @@ font-size: 2.5vw; line-height: 2.4vw;}
 }
 
 
-@media (max-width: 767.9px) {
+/* @media (max-width: 767.9px) {
 .s-text {font-size: 1.55vw; line-height: 1.9vw;}
 .m-text {font-size: 1.9vw; line-height: 2.2vw;}
 .l-text {font-family: Plakat Grotesk;
@@ -111,7 +111,7 @@ font-size: 2.8vw; line-height: 2.7vw;}
 .plakat {font-family: Plakat Grotesk}
 .m-text.plakat {font-size: 1.9vw; line-height: 2.2vw;}
 .l-text.plakat {font-size: 2.8vw; line-height: 2.7vw;}
-}
+} */
 
 
 a {
@@ -163,7 +163,7 @@ margin: 0.5vw;
 }
 
 @media (max-width:992px) {header {font-size: 1.1vw}}
-@media (max-width: 767.9px) { header {font-size: 1.4vw}}
+/* @media (max-width: 767.9px) { header {font-size: 1.4vw}} */
 
 
 /* INTRO */

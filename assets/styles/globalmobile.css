@@ -12,7 +12,6 @@
   --sab: env(safe-area-inset-bottom);
 }
 
-
 /* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
 
@@ -45,9 +44,7 @@ main {
   height: calc(100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top)); */
 }
 
-main::-webkit-scrollbar {
-  display: none;
-}
+main::-webkit-scrollbar, body::-webkit-scrollbar {  display: none; }
 
 .standard-margin {
   padding: var(--margin);
@@ -77,9 +74,15 @@ img {
 /* TEXT */
 .s-t-mob {font-size: 3.2vw; line-height: 4.6vw;}
 .m-t-mob, .m-text {font-size: 4vw; line-height: 5.9vw;}
-/* .l-t-mob {font-size: 5.5vw; line-height: 6.5vw;} */
 .l-t-mob {font-size: 6vw; line-height: 6.6vw;}
 .xl-t-mob {font-size: 8vw; line-height: 10vw;}
+
+@media (min-width:576px) {
+  .s-t-mob {font-size: 2.2vw; line-height: 3.6vw;}
+  .m-t-mob, .m-text {font-size: 3vw; line-height: 4.9vw;}
+  .l-t-mob {font-size: 5vw; line-height: 5.6vw;}
+  .xl-t-mob {font-size: 7vw; line-height: 9vw;}
+}
 
 a { text-decoration: none;}
 
@@ -108,10 +111,14 @@ body {
   width: 10vw;
   position: fixed;
   margin: var(--margin);
-  /* bottom: env(safe-area-inset-bottom); */
   bottom: 0;
   left: 0;
   z-index: 20;
+}
+
+
+@media (min-width:576px) {
+#hamburger-icon { width: 5vw;}
 }
 
 .menu-closed { transform:translate(-100%, 0) }
@@ -129,7 +136,7 @@ header {
   transition: transform 0.3s;
 }
 
-@media (max-aspect-ratio: 1/1) {
+@media (max-aspect-ratio: 0.9/1) {
 header {
   gap: calc(var(--margin)*1.8) }
 }
@@ -198,7 +205,7 @@ color: var(--red)
 .carousel span { display: none; }
 
 
-@media (max-aspect-ratio: 1/1) {
+@media (max-aspect-ratio: 0.9/1) {
   .carousel {height: 50vh}
 }
 
@@ -222,7 +229,7 @@ section {
 } */
 
 /*VERTICAL */
-@media (max-aspect-ratio: 1/1) {
+@media (max-aspect-ratio: 0.9/1) {
   .sect-outerbox, .sect-outerbox-home {
     min-height: 50vh;
   }

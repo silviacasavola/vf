@@ -8,7 +8,7 @@ $( document ).load(function() {
 
 $("main").scroll(function () {
 
-  if ($(window).width() >= 575.8) {
+  if ($(window).width() >= 766.9) {
 if ($("main").scrollTop() == 0) {
   $("header").css("background-color", "rgba(191, 46, 46, 0)")
 

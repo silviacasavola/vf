@@ -181,3 +181,11 @@ gap: var(--margin)
 #section6 #ph-c {
   object-position: center 80%;
 }
+
+
+@media (max-aspect-ratio: 3/2) {
+  #section8 .col-lg-9 { justify-content: flex-start!Important;
+    gap: var(--margin);
+  }
+  #jobssect {text-align: end; position: absolute}
+}
