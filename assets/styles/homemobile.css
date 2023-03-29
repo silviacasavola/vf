@@ -32,7 +32,8 @@ font-family: 'Source Serif Pro', serif!Important;
   flex-direction: column;
   text-align: right;
   /* bottom: env(safe-area-inset-bottom); */
-  bottom: 0;
+  bottom: var(--margin);
+  transition: top 1s bottom 1s;
 }
 
 #sec1-link a {

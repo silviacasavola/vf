@@ -400,6 +400,52 @@ $('.carousel').bind('slide.bs.carousel', function (e) {
 })
 </script>
 
+<script>
+
+// SAFE AREA
+
+$(document).ready(function() {safearea()})
+$( window ).resize(function() {safearea()})
+$(document).scroll(function() {safearea()})
+
+function safearea() {
+
+    if ($(window).width() <= 575.8 && $("body").scrollTop() <= 20 ) {
+      console.log("yeh")
+hamburgerPos = $("#hamburger-icon").position();
+let safeArea = hamburgerPos.top;
+// document.documentElement.style.setProperty('--safe-area', safeArea);
+$("#sec1-link").css("top", safeArea)
+$("#sec1-link").css("bottom", "unset")
+} else {
+  $("#sec1-link").css("top", "unset")
+  $("#sec1-link").css("bottom", "var(--margin)")
+}
+}
+
+
+
+
+// FAIL: SAFE AREA
+// let safeAreaInsets;
+
+// if (window.visualViewport && window.visualViewport.safeAreaInsets) {
+// ({ safeAreaInsets } = window.visualViewport);
+//   document.documentElement.style.setProperty('--safe-area-inset-top', `${safeAreaInsets.top}px`);
+//   document.documentElement.style.setProperty('--safe-area-inset-bottom', `${safeAreaInsets.bottom}px`);
+// $("#scrittone").html({ safeAreaInsets })
+// }
+
+// let altra = getComputedStyle(document.documentElement).getPropertyValue("--sab");
+// $("#scrittone2").html(altra)
+
+// let hamburgerPos = $("#hamburger-icon").position();
+// let margin = $("#hamburger-icon").css("margin");
+// let safeArea = $(window).height() - hamburgerPos.top - $("#hamburger-icon").height() - margin*2;
+// document.documentElement.style.setProperty('--safe-area-bottom', safeArea);
+// $("#scrittone").html(safeArea)
+// $("#sec1-link").css("bottom", safeArea)
+</script>
 </body>
 
 
