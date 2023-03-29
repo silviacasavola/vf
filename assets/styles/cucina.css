@@ -74,10 +74,25 @@ background-position-y: center;
   padding: calc(var(--margin)/3) calc(var(--margin)/2.7) calc(var(--margin)/3) calc(var(--margin)/2.7);
 }
 
+/* SECTION 5 */
+
+#section5 .sect-outerbox {
+  padding: var(--header-margin)!Important}
+
+
+#section5 .sect-outerbox .col-12.d-inline {
+padding: 0 6vw 0 6vw}
+
+#section5 .sect-outerbox .col-md-6 {
+padding-left: calc(var(--margin)/2);
+padding-right: calc(var(--margin)/2);
+}
+
 /* SECTION 6 */
 
 #section6 .sect-outerbox {
-  padding: var(--top-header) 4vw var(--margin) 4vw!Important}
+  padding: var(--header-margin)!Important}
+
 
 #section7 img {
   padding: var(--header-margin);
