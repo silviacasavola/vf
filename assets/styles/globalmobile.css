@@ -129,7 +129,7 @@ body {
 header {
   position: fixed;
   bottom: env(safe-area-inset-bottom);
-  width: 60vw;
+  min-width: 60vw;
   background-color: var(--red);
   z-index: 30;
   padding: calc(var(--margin)*1.8);
@@ -137,16 +137,14 @@ header {
 }
 
 @media (max-aspect-ratio: 0.9/1) {
-header {
-  gap: calc(var(--margin)*1.8) }
+header {  gap: calc(var(--margin)*1.8) }
 }
 
-@media (min-aspect-ratio: 1/1) {
+@media (min-aspect-ratio: 0.9/1) {
 header {
   justify-content:space-between;
   height: 100vh; }
 }
-
 
 @media (min-aspect-ratio: 1/1) {
 header {
