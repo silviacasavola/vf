@@ -1,3 +1,5 @@
-body {
-  display: none;
+/* SECTION 1 */
+#section1 {
+background-image: url('../img/eventi/1.jpg');
+background-position: center;
 }
