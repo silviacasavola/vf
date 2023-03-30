@@ -232,11 +232,11 @@ section {
 } */
 
 /*VERTICAL */
-@media (max-aspect-ratio: 0.9/1) {
+/* @media (max-aspect-ratio: 0.9/1) { */
   .sect-outerbox, .sect-outerbox-home {
     min-height: 50vh;
   }
-}
+/* } */
 
 /* SQUARE OR NOT VERY LARGE */
 @media (min-aspect-ratio: 1/1) {
