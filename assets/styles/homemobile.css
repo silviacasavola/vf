@@ -108,8 +108,8 @@ object-fit: scale-down;
   height: 50vh }
 
 
-#section5 .sect-outerbox, #section6 .sect-outerbox {
-padding: var(--margin);
+#section5 .justify-content-betweenn {
+gap: var(--margin);
 }
 
   /*SQUARE OR HORIZONTAL WINDOW */
