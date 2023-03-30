@@ -141,23 +141,13 @@ header {
   gap: calc(var(--margin)*1.8)
 }
 
-
 #language-selector span {  cursor: pointer;}
 #language-selector span:hover {text-decoration: underline}
 
-/* @media (max-aspect-ratio: 0.9/1) {
-header {  gap: calc(var(--margin)*1.8) }
-} */
 
-@media (min-aspect-ratio: 0.9/1) {
+@media (min-aspect-ratio: 9/10) {
 header {
-  justify-content:space-between;
-  height: 100vh; }
-}
-
-@media (min-aspect-ratio: 1/1) {
-header {
-  /* gap: var(--margin);  */
+  gap: unset;
   justify-content:space-between;
   height: 100vh; }
 }
