@@ -438,10 +438,8 @@ hamburgerPos = $("#hamburger-icon").position();
 let safeArea = hamburgerPos.top;
 // document.documentElement.style.setProperty('--safe-area', safeArea);
 $("#sec1-link").css("top", safeArea)
-$("#sec1-link").css("bottom", "unset")
 } else {
   $("#sec1-link").css("top", "unset")
-  $("#sec1-link").css("bottom", "var(--margin)")
 }
 }
 
