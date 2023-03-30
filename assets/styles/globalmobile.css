@@ -134,15 +134,16 @@ header {
   z-index: 30;
   padding: calc(var(--margin)*1.8);
   transition: transform 0.3s;
+  gap: calc(var(--margin)*1.8)
 }
 
 
 #language-selector span {  cursor: pointer;}
 #language-selector span:hover {text-decoration: underline}
 
-@media (max-aspect-ratio: 0.9/1) {
+/* @media (max-aspect-ratio: 0.9/1) {
 header {  gap: calc(var(--margin)*1.8) }
-}
+} */
 
 @media (min-aspect-ratio: 0.9/1) {
 header {
@@ -207,7 +208,7 @@ color: var(--red)
 .carousel span { display: none; }
 
 
-@media (max-aspect-ratio: 0.9/1) {
+@media (max-aspect-ratio: 9/10) {
   .carousel {height: 50vh}
 }
 
