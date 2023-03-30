@@ -1,7 +1,7 @@
 /* CENTERS THE NUMBERS */
 .mobile-centered {
   position: absolute;
-  width: 94vw;
+  width: 91vw;
 }
 
 .sect-outerbox .standard-margin {
@@ -10,6 +10,9 @@
 
 .flex-row-reverse .d-md-none {z-index: 10}
 
+.m-text.plakat{
+  font-size: 4.5vw!Important;
+}
 
 /* .flex-row-reverse .l-text {font-family: Plakat Grotesk; font-size: 4.5vw!Important} */
 
