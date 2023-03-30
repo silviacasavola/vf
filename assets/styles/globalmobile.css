@@ -84,6 +84,7 @@ img {
   .xl-t-mob {font-size: 7vw; line-height: 9vw;}
 }
 
+
 a { text-decoration: none;}
 
 body {
@@ -100,10 +101,13 @@ body {
       font-style: normal;
     }
 
-  .l-t-mob {
-    /* margin-bottom: var(--margin); */
-    font-family: "Plakat Grotesk";
-  }
+.l-t-mob, .plakat {
+font-family: "Plakat Grotesk";
+}
+
+.m-t-mob.plakat {
+  font-size: 4.5vw!Important;
+}
 
 /* HAMBURGER MENU */
 

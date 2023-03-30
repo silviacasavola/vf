@@ -8,3 +8,10 @@
 padding: calc(var(--margin)/2) calc(var(--margin)/3) calc(var(--margin)/2) calc(var(--margin)/3);
   color: var(--red);
 }
+
+#section7 img, #section8 img, #section9 img, #section10 img, #section11 img {height: 50vh}
+
+/* SQUARE OR NOT VERY LARGE */
+@media (min-aspect-ratio: 1/1) {
+  #section7 img, #section8 img, #section9 img, #section10 img, #section11 img {height: 100vh}
+  }
