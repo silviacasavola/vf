@@ -136,6 +136,10 @@ header {
   transition: transform 0.3s;
 }
 
+
+#language-selector span {  cursor: pointer;}
+#language-selector span:hover {text-decoration: underline}
+
 @media (max-aspect-ratio: 0.9/1) {
 header {  gap: calc(var(--margin)*1.8) }
 }
@@ -153,7 +157,7 @@ header {
   height: 100vh; }
 }
 
-header a {color: var(--cream)}
+header a, #language-selector {color: var(--cream)}
 
 header a:active, header a:hover, header a:visited {
   color: var(--cream) }

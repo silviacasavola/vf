@@ -139,7 +139,7 @@ header {
   font-size: 0.9vw;
 }
 
-header a {
+header a, #language-selector {
   color: var(--cream);
   padding: 1vw;
 }
@@ -147,6 +147,9 @@ header a {
 header a:hover {
   color: var(--cream);
 }
+
+#language-selector span {  cursor: pointer;}
+#language-selector span:hover {text-decoration: underline}
 
 #header-active {
 background-color: var(--cream);

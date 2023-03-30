@@ -8,7 +8,7 @@ $( document ).load(function() {
 
 $("main").scroll(function () {
 
-  if ($(window).width() >= 767.9) {
+  if ($(window).width() >= 767.8) {
 if ($("main").scrollTop() == 0) {
   $("header").css("background-color", "rgba(191, 46, 46, 0)")
 
@@ -31,3 +31,25 @@ $("main").scroll(function() {closemenu()})
 function closemenu() {
   $("header").addClass("menu-closed");
 }
+
+
+// LANGUAGE
+$('[lang="eng"]').hide();
+
+$("#itaselector").click(function () {
+
+$("#itaselector").css("text-decoration", "underline");
+$("#engselector").css("text-decoration", "none");
+
+$('[lang="eng"]').hide();
+$('[lang="it"]').show();
+});
+
+$("#engselector").click(function () {
+
+$("#engselector").css("text-decoration", "underline");
+$("#itaselector").css("text-decoration", "none");
+
+$('[lang="it"]').hide();
+$('[lang="eng"]').show();
+})
