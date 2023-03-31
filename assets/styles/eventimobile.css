@@ -3,3 +3,23 @@
 background-image: url('../img/eventi/1.jpg');
 background-position: center;
 }
+
+
+/* VIDEO SEC*/
+#left-bar, #right-bar {
+  position: absolute; z-index: 10; height: 100%; width: var(--margin);
+}
+
+/* @media (min-width: 992px) { #left-bar, #right-bar {width: 8.33vw} } */
+
+#bottom-bar, #top-bar {
+  height: var(--margin); position: absolute; z-index: 10; width: 100vw;
+}
+
+iframe {
+  width: 400vw;
+  height: 400vh;
+  position: absolute;
+  top: -150vh;
+  left: -150vw;
+}

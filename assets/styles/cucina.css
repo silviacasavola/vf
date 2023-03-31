@@ -23,14 +23,7 @@
 
 #overlay {
   transition: opacity 2s;
-/* animation: fadeIn 3s ease forwards; */
 }
-/*
-@keyframes fadeIn {
-  0% { opacity: 1; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
-} */
 
 iframe {
   width: 120vw;

@@ -134,7 +134,7 @@ a:hover {
 header {
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 20;
   background-color: rgba(191, 46, 46, 0);
   transition: background-color 0.5s;
   height: 5.1vw;
@@ -147,7 +147,7 @@ header a, #language-selector {
 }
 
 #language-selector {
-  font-size: 0.8vw;
+  font-size: 0.77vw;
 }
 
 header a:hover {
@@ -184,6 +184,7 @@ margin: 0.5vw;
   left: 0;
   z-index: 10;
   padding: 1.1vw;
+  z-index: 20;
 }
 
 

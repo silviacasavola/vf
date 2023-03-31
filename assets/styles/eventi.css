@@ -5,23 +5,29 @@ background-position-y: center;
 }
 
 
-/* CURRENTNUM */
-#section3 .currentnum {
-  right: var(--margin);
-  bottom: var(--margin);
+/* VIDEO */
+#overlay {
+  transition: opacity 2s;
 }
 
-#section4 .currentnum {
-  left: var(--margin);
-  top: var(--top-header);
+
+iframe {
+  width: 100vw;
+  height: 120vh;
+  position: absolute;
+  top: -10vh;
+  bottom:0;
+  z-index: 0;
 }
 
-#section5 .currentnum {
-  left: var(--margin);
-  top: var(--margin);
+
+/* VIDEO SEC*/
+#left-bar, #right-bar {
+  position: absolute; z-index: 10; height: 100%; width: 4.16vw;
 }
 
-#section6 .currentnum {
-  right: var(--margin);
-  top: var(--margin);
+@media (min-width: 992px) { #left-bar, #right-bar {width: 8.33vw} }
+
+#bottom-bar, #top-bar {
+  height: var(--top-header); position: absolute; z-index: 10; width: 100vw;
 }
