@@ -60,11 +60,12 @@ font-family: 'Source Serif Pro', serif!Important;
   padding: 0!Important;
 }
 
-#section2 .col-12 {  min-height: 50vh; gap: var(--margin) }
+#section2 .col-12 {  min-height: 50vh; gap: calc(var(--margin)*2) }
 
 
 #section2 .m-text {
-padding: var(--margin) var(--margin) 0 var(--margin);
+/* padding: var(--margin) var(--margin) 0 var(--margin); */
+padding: calc(var(--margin)*2) var(--margin) calc(var(--margin)*2) var(--margin) ;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
