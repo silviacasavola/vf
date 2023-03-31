@@ -188,8 +188,11 @@ gap: var(--margin)
   }
   }
 
+@media (min-aspect-ratio: 20/9) {
+    #section8 { min-height: 100vh; height: auto; background-color: red   }
+    }
 
-  @media (max-width:992px) and (max-aspect-ratio: 3/2) {
+  @media (max-width:992px) {
   #jobssect {position: absolute;
     right: var(--margin);
     text-align: right;}
