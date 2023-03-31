@@ -37,5 +37,7 @@ iframe {
 }
 
 #bottom-bar {
-  height: var(--margin); 
+  height: var(--margin);
 }
+
+#section3, #section4, #section5 {height: 100vh!Important}
