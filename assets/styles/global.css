@@ -10,6 +10,8 @@
   /* COLORS */
   --red: #bf2e2e;
   --cream: #fff9f8;
+
+  --s2margin: 20vw;
 }
 
 
@@ -234,7 +236,7 @@ color: var(--red)
 }
 
 #section2 .m-text {
-  padding: 0 20vw 0 20vw;
+  padding: 0 var(--s2margin) 0 var(--s2margin);
 }
 
 @media (max-width:992px) {

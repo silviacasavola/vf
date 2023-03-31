@@ -48,13 +48,13 @@ background-position-y: center;
 }
 
 /* SECTION 2 */
-
 #section-name {
   font-family: Plakat Grotesk;
   line-height: 9vw!Important;
   height: 19vw;
   position: relative;
   white-space: pre;
+  margin: 0 var(--s2margin) 0  var(--s2margin);
 }
 
 
@@ -91,7 +91,8 @@ padding-right: calc(var(--margin)/2);
 /* SECTION 6 */
 
 #section6 .sect-outerbox {
-  padding: var(--header-margin)!Important}
+  padding: var(--top-header) calc(var(--margin)*1.5) var(--margin) calc(var(--margin)*1.5)!Important
+}
 
 
 #section7 img {
