@@ -146,6 +146,10 @@ header a, #language-selector {
   padding: 1vw;
 }
 
+#language-selector {
+  font-size: 0.8vw;
+}
+
 header a:hover {
   color: var(--cream);
 }
