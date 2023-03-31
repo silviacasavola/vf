@@ -58,9 +58,8 @@
   padding: 23vh 15vw 19vh 15vw;
 }
 
-@media (max-aspect-ratio: 3/2) { .sect-outerbox-home {  padding: 23vh 10vw 19vh 10vw } }
-@media (max-aspect-ratio: 1/1) { .sect-outerbox-home {  padding: 23vh 6vw 19vh 6vw } }
-
+@media (min-aspect-ratio: 6/5) and (max-aspect-ratio: 14/10) { .sect-outerbox-home {  padding: 23vh 12vw 19vh 12vw } }
+@media (max-aspect-ratio: 6/5) { .sect-outerbox-home {  padding: 23vh 9vw 19vh 9vw }
 
 .sect-outerbox-home .s-text {
   text-align: left!Important;
@@ -185,7 +184,12 @@ gap: var(--margin)
 
 @media (max-aspect-ratio: 3/2) {
   #section8 .col-lg-9 { justify-content: flex-start!Important;
-    gap: var(--margin);
+    gap: calc(var(--margin)*3);
   }
-  #jobssect {text-align: end; position: absolute}
+
+
+  @media (max-width:992px) and (max-aspect-ratio: 3/2) {
+  #jobssect {position: absolute;
+    right: var(--margin);
+    text-align: right;}
 }
