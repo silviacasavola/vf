@@ -47,14 +47,15 @@ background-position-y: center;
 }
 
 
-#section-name .duelink {
+#section-name .link-due {
   position: absolute;
   font-size: 1.3vw;
-  top: 1.8vw;
   right: 0;
-  /* right: 4.5vw;
-  top: 14vw; */
 }
+
+#section-name #link-it {  top: 1.8vw }
+
+#section-name #link-eng {  bottom: 0; transform:translate(0, 10%)}
 
 #section2 a {
  font-family: 'Source Serif Pro', serif;
@@ -84,9 +85,16 @@ padding-right: calc(var(--margin)/2);
 }
 
 
-#section7 img {
-  padding: var(--header-margin);
+#section7 a {
+  cursor: pointer;
 }
+
+#section7 a:hover{color: var(--cream)!Important;
+  text-decoration: none;
+}
+
+#section7 span:hover{text-decoration: underline}
+
 
 #section8 {
   height: 50vh;

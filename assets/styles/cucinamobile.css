@@ -70,12 +70,6 @@ object-position: center;
   padding-right: calc(var(--margin)/2);
 }
 
-/* SECTION 7 */
-#section7 .l-t-mob {
-  padding: var(--margin);
-  white-space: pre;
-}
-
 /* SECTION 8 */
 #section8 {
   min-height: 0;
