@@ -15,6 +15,21 @@ vid[2] = {
   videoid : "20jXbEhHjA4"
 }
 
+vid[3] = {
+  playerid : "player4",
+  videoid : "5iC5DF6dWlQ"
+}
+
+vid[4] = {
+  playerid : "player5",
+  videoid : "27FswS3KESk"
+}
+
+vid[5] = {
+  playerid : "player6",
+  videoid : "20jXbEhHjA4"
+}
+
 
 var tag = document.createElement('script');
 
@@ -32,7 +47,7 @@ let videoid;
 function onYouTubeIframeAPIReady() {loadit()}
 
 function loadit() {
-for (i = 0; i<=2; i++) {
+for (i = 0; i<=5; i++) {
 playerid = vid[i].playerid;
 videoid = vid[i].videoid;
 
