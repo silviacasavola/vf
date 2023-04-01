@@ -1,19 +1,4 @@
-let vid = [];
-
-vid[0] = {
-  playerid : "player1",
-  videoid :  "5iC5DF6dWlQ"
-}
-
-vid[1] = {
-  playerid : "player2",
-  videoid : "27FswS3KESk"
-}
-
-vid[2] = {
-  playerid : "player3",
-  videoid : "20jXbEhHjA4"
-}
+let vid = ["5iC5DF6dWlQ", "27FswS3KESk", "-YBP-D6vQIA"]
 
 
 var tag = document.createElement('script');
@@ -25,21 +10,12 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 var i;
 
-let playerid;
-let videoid;
+function onYouTubeIframeAPIReady() {
 
-
-function onYouTubeIframeAPIReady() {loadit()}
-
-function loadit() {
-for (i = 0; i<=2; i++) {
-playerid = vid[i].playerid;
-videoid = vid[i].videoid;
-
-  player = new YT.Player(playerid, {
+  player = new YT.Player('player', {
     height: '360',
     width: '640',
-    videoId: videoid,
+    videoId: vid[0],
     playerVars: {
     'autoplay': 1,
     'controls': 0,
@@ -58,10 +34,15 @@ videoid = vid[i].videoid;
     }
   })
 }
-}
 
 function onStateChange(state) {
-if (state.data === YT.PlayerState.ENDED) {loadit()}
+if (state.data === YT.PlayerState.ENDED) {
+for (i = 0; i<=2; i++) {
+player.loadVideoById({
+videoId: vid[i]
+});
+}
+}
 }
 
 function onPlayerReady(event) {
