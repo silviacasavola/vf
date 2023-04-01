@@ -60,7 +60,8 @@ videoid = vid[i].videoid;
     'controls': 0,
     'mute' : 1,
     'showinfo' : 0,
-    'loop' : 1,
+    'playlist': videoid,
+    'loop': 1,
     'modestbranding' : 1,
     'fs' : 1,
     'cc_load_policy' : 0,
@@ -69,15 +70,15 @@ videoid = vid[i].videoid;
 
     events: {
       'onReady': onPlayerReady,
-      'onStateChange': onStateChange
+      // 'onStateChange': onStateChange
     }
   })
 }
 }
 
-function onStateChange(state) {
-if (state.data === YT.PlayerState.ENDED) {loadit()}
-}
+// function onStateChange(state) {
+// if (state.data === YT.PlayerState.ENDED) {player.playVideo()}
+// }
 
 function onPlayerReady(event) {
   event.target.playVideo();
