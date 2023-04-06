@@ -46,11 +46,12 @@ background-color: black;
 /* SECTION 2 */
 #section-name {
   font-family: Plakat Grotesk;
-  line-height: 9vw!Important;
+  line-height: 9.5vw!Important;
   height: 19vw;
   position: relative;
   white-space: pre;
-  margin: 0 var(--s2margin) 0  var(--s2margin);
+  /* margin: 0 var(--s2margin) 0  var(--s2margin); */
+  margin: auto;
 }
 
 
