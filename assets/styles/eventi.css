@@ -10,15 +10,18 @@ background-position-y: center;
   transition: opacity 2s;
 }
 
+@media (min-aspect-ratio: 16/9) {
+  iframe {
+  min-width: 100vw;
+  min-height: 56vw;
+  transform:translate(1vw, 0);
+}}
 
-iframe {
-  width: 100vw;
-  height: 120vh;
-  position: absolute;
-  top: -10vh;
-  bottom:0;
-  z-index: 0;
-}
+@media (max-aspect-ratio: 16/9) {
+  iframe {
+     min-width: 160vh;
+     min-height: 90vh;
+}}
 
 
 /* VIDEO SEC*/

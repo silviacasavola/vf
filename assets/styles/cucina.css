@@ -21,19 +21,26 @@
 } */
 
 
-iframe {
-  width: 120vw;
-  height: 120vh;
-  position: absolute;
-  top: -6vh;
-  left: -10vw;
-  z-index: 0;
-}
+
+@media (min-aspect-ratio: 15/9) {
+  iframe {
+  min-width: 110vw;
+  min-height: 62vw;
+  transform:translate(-5vw, -5vw);
+}}
+
+@media (max-aspect-ratio: 15/9) {
+  iframe {
+  min-width: 195.5vh;
+  min-height: 110vh;
+  transform:translate(-5vh, -5vh);
+}}
 
 /* SECTION 1 */
  #section1 {
  /* background-image: url('../img/cucina/1.jpg'); */
 background-position-y: center;
+background-color: black;
 }
 
 /* SECTION 2 */

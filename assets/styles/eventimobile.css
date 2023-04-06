@@ -15,11 +15,3 @@ background-position: center;
 /* #bottom-bar, #top-bar {
   height: var(--margin); position: absolute; z-index: 10; width: 100vw;
 } */
-
-iframe {
-  width: 400vw;
-  height: 400vh;
-  position: absolute;
-  top: -150vh;
-  left: -150vw;
-}

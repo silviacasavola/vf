@@ -292,8 +292,7 @@ section {
   right: var(--margin);
 } */
 
-
-
+/* VIDEO */
 .overlay {
   transition: opacity 2s;
   width: 100%;
@@ -301,3 +300,18 @@ section {
   position: absolute;
   z-index: 5;
 }
+
+
+@media (min-aspect-ratio: 4/3) {
+  iframe {
+  min-width: 110vw;
+  min-height: 62vw;
+  transform:translate(-5vw, -5vw);
+}}
+
+@media (max-aspect-ratio: 4/3) {
+  iframe {
+  min-width: 195.5vh;
+  min-height: 110vh;
+  transform:translate(-5vh, -5vh);
+}}

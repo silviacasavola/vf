@@ -1,13 +1,33 @@
 let vid = [];
 
-vid[1] = {
+vid[0] = {
   playerid : "player1",
-  videoid :  "7q8h8DNwawc"
+  videoid :  "5iC5DF6dWlQ"
+}
+
+vid[1] = {
+  playerid : "player2",
+  videoid : "27FswS3KESk"
 }
 
 vid[2] = {
-  playerid : "player2",
-  videoid : "7rslTlJ6FE4"
+  playerid : "player3",
+  videoid : "20jXbEhHjA4"
+}
+
+vid[3] = {
+  playerid : "player4",
+  videoid : "5iC5DF6dWlQ"
+}
+
+vid[4] = {
+  playerid : "player5",
+  videoid : "27FswS3KESk"
+}
+
+vid[5] = {
+  playerid : "player6",
+  videoid : "20jXbEhHjA4"
 }
 
 
@@ -27,16 +47,15 @@ let videoid;
 function onYouTubeIframeAPIReady() {loadit()}
 
 function loadit() {
-for (i = 1; i<=2; i++) {
+for (i = 0; i<=5; i++) {
 playerid = vid[i].playerid;
 videoid = vid[i].videoid;
 
   player = new YT.Player(playerid, {
-    height: '315',
-    width: '560',
+    height: '360',
+    width: '640',
     videoId: videoid,
     playerVars: {
-    'suggestedQuality': 'hd1080',
     'autoplay': 1,
     'controls': 0,
     'mute' : 1,
