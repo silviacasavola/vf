@@ -74,21 +74,21 @@ background-color: black;
 
 /* SECTION 5 */
 
-#section5 .sect-outerbox {
+#section6 .sect-outerbox {
   padding: var(--header-margin)!Important}
 
 
-#section5 .sect-outerbox .col-12.d-inline {
+#section6 .sect-outerbox .col-12.d-inline {
 padding: 0 6vw 0 6vw}
 
-#section5 .sect-outerbox .col-md-6 {
+#section6 .sect-outerbox .col-md-6 {
 padding-left: calc(var(--margin)/2);
 padding-right: calc(var(--margin)/2);
 }
 
 /* SECTION 6 */
 
-#section6 .sect-outerbox {
+#section7 .sect-outerbox {
   padding: var(--top-header) calc(var(--margin)*1.5) var(--margin) calc(var(--margin)*1.5)!Important
 }
 
@@ -104,28 +104,28 @@ padding-right: calc(var(--margin)/2);
 #section7 span:hover{text-decoration: underline}
 
 
-#section8 {
+/* #section8 {
   height: 50vh;
 }
 
 #section8 a{
   color: var(--cream);
   padding: calc(var(--margin)/2) var(--margin) calc(var(--margin)/2) var(--margin);
-}
+} */
 
 #section8 a:hover{
   color: var(--cream)
 }
 
 /* MASCHERE */
-#section3 #ph-b {
-  object-position: center -23%;
-}
-
-#section3 #ph-d {
-  object-position: center 80%;
+#section4 #ph-b {
+  object-position: center -10%;
 }
 
 #section4 #ph-d {
+  object-position: center 80%;
+}
+
+#section3 #ph-d {
   object-position: center 30%;
 }
