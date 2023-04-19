@@ -305,8 +305,21 @@ section {
   z-index: 5;
 }
 
+/* @media (min-aspect-ratio: 4/3) { */
+  /* iframe {
+  min-width: 160vw;
+  min-height: 110vh;
+  transform:translate(-30vw, -10vh);
+} */
 
-@media (min-aspect-ratio: 4/3) {
+/* @media (max-aspect-ratio: 4/3) {
+  iframe {
+  min-width: 195.5vh;
+  min-height: 110vh;
+  transform:translate(-5vh, -5vh);
+}}  */
+
+/* @media (min-aspect-ratio: 4/3) {
   iframe {
   min-width: 110vw;
   min-height: 62vw;
@@ -318,4 +331,4 @@ section {
   min-width: 195.5vh;
   min-height: 110vh;
   transform:translate(-5vh, -5vh);
-}}
+}} */

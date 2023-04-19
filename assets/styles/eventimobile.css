@@ -15,3 +15,12 @@ background-position: center;
 /* #bottom-bar, #top-bar {
   height: var(--margin); position: absolute; z-index: 10; width: 100vw;
 } */
+
+
+
+/* VIDEO */
+  iframe {
+  min-width: 110vw;
+  min-height: 110vh;
+  transform:translate(-4vw, -10vh);
+}

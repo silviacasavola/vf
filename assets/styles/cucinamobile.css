@@ -77,3 +77,11 @@ object-position: center;
 #section8 a:hover, #section8 a:active{
   color: var(--cream)
 }
+
+
+/* VIDEO */
+  iframe {
+  min-width: 160vw;
+  min-height: 110vh;
+  transform:translate(-30vw, -10vh);
+}

@@ -1,4 +1,6 @@
 let vid = [];
+let mob = [];
+
 
 vid[1] = {
   playerid : "player1",
@@ -8,6 +10,16 @@ vid[1] = {
 vid[2] = {
   playerid : "player2",
   videoid : "7rslTlJ6FE4"
+}
+
+mob[1] = {
+  playerid : "player1",
+  videoid :  "Kgav6jD_dn4"
+}
+
+mob[2] = {
+  playerid : "player2",
+  videoid : "_H4-gDj-aSc"
 }
 
 
@@ -27,9 +39,17 @@ let videoid;
 function onYouTubeIframeAPIReady() {loadit()}
 
 function loadit() {
+
+
 for (i = 1; i<=2; i++) {
+
+if ($(window).width() >= 767.8) {
 playerid = vid[i].playerid;
 videoid = vid[i].videoid;
+} else {
+playerid = mob[i].playerid;
+videoid = mob[i].videoid;
+}
 
   player = new YT.Player(playerid, {
     height: '315',
@@ -54,6 +74,8 @@ videoid = vid[i].videoid;
       // 'onStateChange': onStateChange
     }
   })
+
+
 }
 }
 
