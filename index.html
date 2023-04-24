@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -92,8 +93,8 @@
   <a class="d-inline" href="https://www.booking.com/hotel/it/villa-fenicia-ruvo-di-puglia1.it.html">Book your room here</a>
   <a class="d-inline" href="https://www.booking.com/hotel/it/villa-fenicia-ruvo-di-puglia1.it.html">Book your table here</a>
 </div> -->
-<div id="sec1-link" class="m-text" lang="it"><div><a class="d-inline" href="cucina-etnobotanica.html">Prenota un tavolo</a> <span> / </span> <a class="d-inline" href="residenza.html">Prenota una stanza</a></div></div>
-<div id="sec1-link" class="m-text" lang="eng"><div><a class="d-inline" href="cucina-etnobotanica.html">Book a table</a> <span> / </span> <a class="d-inline" href="residenza.html">Book a room</a></div></div>
+<div id="sec1-link" class="m-text" lang="it"><div><a class="d-inline" href="cucina-etnobotanica.html" style="opacity: 0">Prenota un tavolo</a> <span> / </span> <a class="d-inline" href="residenza.html">Prenota una stanza</a></div></div>
+<div id="sec1-link" class="m-text" lang="eng"><div><a class="d-inline" href="cucina-etnobotanica.html" style="opacity: 0">Book a table</a> <span> / </span> <a class="d-inline" href="residenza.html">Book a room</a></div></div>
 
 <img src="assets/img/white-logomark.svg" id="intro-logomark" style="width: 10vw; position: absolute; bottom: var(--margin); right: var(--margin)">
 </section>
@@ -468,13 +469,14 @@ $('.carousel').bind('slide.bs.carousel', function (e) {
 
 // SAFE AREA
 
-$(document).ready(function() {safearea()})
+$(document).ready(function() {
+$("#sec1-link").css("opacity", "1"); safearea()})
 $( window ).resize(function() {safearea()})
 $(document).scroll(function() {safearea()})
 
 function safearea() {
 
-    if ($(window).width() <= 575.9 && $("body").scrollTop() <= 10 ) {
+if ($(window).width() <= 575.9 && $("body").scrollTop() <= 10 ) {
       console.log("yeh")
 hamburgerPos = $("#hamburger-icon").position();
 let safeArea = hamburgerPos.top;

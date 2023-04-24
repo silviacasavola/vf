@@ -59,21 +59,29 @@ var lang = getCookie("lang");
 if (lang && lang === "eng") {
   $('[lang="it"]').hide();
   $('[lang="eng"]').show();
+  $("#itaselector").css("text-decoration", "none");
+  $("#engselector").css("text-decoration", "underline");
 } else {
   $('[lang="eng"]').hide();
   $('[lang="it"]').show();
+  $("#itaselector").css("text-decoration", "underline");
+  $("#engselector").css("text-decoration", "none");
 }
 
 // Update the language selection when the user clicks a button
 $("#itaselector").click(function () {
   $('[lang="eng"]').hide();
   $('[lang="it"]').show();
+  $("#itaselector").css("text-decoration", "underline");
+  $("#engselector").css("text-decoration", "none");
   setCookie("lang", "it", 365);
 });
 
 $("#engselector").click(function () {
   $('[lang="it"]').hide();
   $('[lang="eng"]').show();
+  $("#itaselector").css("text-decoration", "none");
+  $("#engselector").css("text-decoration", "underline");
   setCookie("lang", "eng", 365);
 });
 
