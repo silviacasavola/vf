@@ -34,22 +34,70 @@ function closemenu() {
 
 
 // LANGUAGE
-$('[lang="eng"]').hide();
+//
+// $("#itaselector").click(function () {
+//
+// $("#itaselector").css("text-decoration", "underline");
+// $("#engselector").css("text-decoration", "none");
+//
+// $('[lang="eng"]').hide();
+// $('[lang="it"]').show();
+// });
+//
+// $("#engselector").click(function () {
+//
+// $("#engselector").css("text-decoration", "underline");
+// $("#itaselector").css("text-decoration", "none");
+//
+// $('[lang="it"]').hide();
+// $('[lang="eng"]').show();
+// })
 
+// Check if a language preference has already been set
+var lang = getCookie("lang");
+if (lang) {
+  $('[lang]').hide();
+  $('[lang="' + lang + '"]').show();
+} else {
+  // Default to Italian if no preference has been set
+  $('[lang="eng"]').hide();
+  $('[lang="it"]').show();
+}
+
+// Update the language selection when the user clicks a button
 $("#itaselector").click(function () {
-
-$("#itaselector").css("text-decoration", "underline");
-$("#engselector").css("text-decoration", "none");
-
-$('[lang="eng"]').hide();
-$('[lang="it"]').show();
+  $('[lang="eng"]').hide();
+  $('[lang="it"]').show();
+  setCookie("lang", "it", 365);
 });
 
 $("#engselector").click(function () {
+  $('[lang="it"]').hide();
+  $('[lang="eng"]').show();
+  setCookie("lang", "eng", 365);
+});
 
-$("#engselector").css("text-decoration", "underline");
-$("#itaselector").css("text-decoration", "none");
+// Function to set a cookie
 
-$('[lang="it"]').hide();
-$('[lang="eng"]').show();
-})
+function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
+  }
+  var cookieString = name + "=" + value + expires + "; path=/; SameSite=Lax; Secure";
+  document.cookie = cookieString;
+}
+
+// Function to get the value of a cookie
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
