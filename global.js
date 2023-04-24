@@ -55,11 +55,11 @@ function closemenu() {
 
 // Check if a language preference has already been set
 var lang = getCookie("lang");
-if (lang) {
-  $('[lang]').hide();
-  $('[lang="' + lang + '"]').show();
+
+if (lang && lang === "eng") {
+  $('[lang="it"]').hide();
+  $('[lang="eng"]').show();
 } else {
-  // Default to Italian if no preference has been set
   $('[lang="eng"]').hide();
   $('[lang="it"]').show();
 }
