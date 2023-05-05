@@ -46,7 +46,7 @@
 <a href="cucina-etnobotanica.html"><nav lang="it">Cucina etnobotanica</nav> <nav lang="eng">Ethnobotanic cuisine</nav></a>
 <a href="residenza.html"><nav lang="it">Residenza</nav> <nav lang="eng">Residence</nav></a>
 <a href="esperienze.html"><nav lang="it">Esperienze</nav> <nav lang="eng">Experiences</nav></a>
-<a href="eventi.html"><nav lang="it">Matrimoni ed eventi</nav> <nav lang="eng">Events</nav></a>
+<a href="eventi.html"><nav lang="it">Eventi</span> <span lang="eng">Events</nav></a>
 <a href="storia.html"><nav lang="it">Storia</nav> <nav lang="eng">History</nav></a>
 <div id="language-selector"><span id="itaselector" style="text-decoration: underline">ITA</span> / <span id="engselector">ENG</span></div>
 </header>
@@ -193,7 +193,7 @@ Oltre le sue bellezze, il parco è parte fondamentale della produzione agricola 
 
     <div class="text-center d-inline l-text l-t-mob"><span lang="it">La Residenza</span>    <span lang="eng">The Residence</span></div>
     <div class="col-12 s-text m-t-mob">
-    <span lang="it">L’esclusiva Residenza accoglie gli ospiti nelle quattro cameresuite per gli ospiti, offrendo loro la possibilità di immergersi in spazi dagli affreschi e arredamenti unici. Gli ospiti possono godere del comnfort del grande Salone di Gala, il Soggiorno, la Sala da Pranzo, l’ampio terrazzo e della nuova piscina.</span>
+    <span lang="it">L’esclusiva Residenza accoglie gli ospiti nelle quattro suite per gli ospiti, offrendo loro la possibilità di immergersi in spazi dagli affreschi e arredamenti unici. Gli ospiti possono godere del comfort del grande Salone di Gala, il Soggiorno, la Sala da Pranzo, l’ampio terrazzo e della nuova piscina.</span>
     <span lang="eng">The exclusive Residence welcomes the guests in four suites, offering everyone the opportunity to immerse themselves in spaces with frescoes and unique furnishings. Guests can enjoy the large Gala Hall, the Living Room, the Dining Hall, the large terrace and the new swimming pool.</span>
     <div class="text-center"><br><a class="text-center" href="residenza.html"><span lang="it">Prenota una stanza</span>  <span lang="eng">Book a room</span></a></div>
 </div>
@@ -203,23 +203,34 @@ Oltre le sue bellezze, il parco è parte fondamentale della produzione agricola 
 
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="assets/img/home/7a.jpg" class="d-block w-100" alt="image">
-      <span class="m-text">1/4</span>
+      <img src="assets/img/bb/1a.jpg" class="d-block w-100" alt="image">
+      <span class="m-text">1/6</span>
     </div>
     <div class="carousel-item">
-      <img src="assets/img/home/7b.jpg" class="d-block w-100" alt="image">
-      <span class="m-text">2/4</span>
+      <img src="assets/img/bb/giuseppina1.jpg" class="d-block w-100" alt="image">
+      <span class="m-text">2/6</span>
     </div>
     <div class="carousel-item">
-      <img src="assets/img/home/7c.jpg" class="d-block w-100" alt="image">
-      <span class="m-text">3/4</span>
+      <img src="assets/img/luoghi/7a.jpg" class="d-block w-100" alt="image">
+      <span class="m-text">3/6</span>
     </div>
     <div class="carousel-item">
-      <img src="assets/img/bb/salonedigala.jpg" class="d-block w-100" alt="image">
-      <span class="m-text">4/4</span>
+      <img src="assets/img/bb/federica2.jpg" class="d-block w-100" alt="image">
+      <span class="m-text">4/6</span>
     </div>
 
-    <span class="currentnum m-text">1/4</span>
+    <div class="carousel-item">
+      <img src="assets/img/bb/saladapranzo.jpg" class="d-block w-100" alt="image">
+      <span class="m-text">5/6</span>
+    </div>
+
+
+        <div class="carousel-item">
+          <img src="assets/img/bb/salotto.jpg" class="d-block w-100" alt="image">
+          <span class="m-text">6/6</span>
+        </div>
+
+    <span class="currentnum m-text">1/6</span>
   </div>
 </section>
 
@@ -324,10 +335,16 @@ $('.carousel').click(function () {
   $('.carousel').carousel('next');
 })
 
-$('.carousel').bind('slide.bs.carousel', function (e) {
-  let number = $(this).find('.active span').html();
-  $(this).find('.currentnum').html(number);
-})
+$('.carousel').each(function () {
+  var $carousel = $(this);
+
+  $carousel.on('slid.bs.carousel', function () {
+    var number = $carousel.find('.carousel-item.active span').html();
+
+    $carousel.find('.currentnum').html(number);
+  });
+});
+
 </script>
 
 </body>

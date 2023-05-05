@@ -1,10 +1,3 @@
-/* SECTION 1 */
-#section1 {
-background-image: url('../img/eventi/1.jpg');
-background-position-y: center;
-}
-
-
 /* VIDEO */
 #overlay {
   transition: opacity 2s;
@@ -23,27 +16,4 @@ background-position-y: center;
      min-height: 90vh;
 }}
 
-
-/* VIDEO SEC*/
-#left-bar, #right-bar {
-  position: absolute; z-index: 10; height: 100%; width: 4.16vw;
-}
-
-@media (min-width: 992px) { #left-bar, #right-bar {width: 8.33vw} }
-
-#bottom-bar, #top-bar {
-  position: absolute; z-index: 10; width: 100vw;
-}
-.bg-cream #top-bar {
-  height: var(--top-header);
-}
-
-.bg-red #top-bar {
-  height: 5.4vw;
-}
-
-#bottom-bar {
-  height: var(--margin);
-}
-
-#section3, #section4, #section5 {height: 100vh!Important}
+/* #section3, #section4, #section5 {height: 100vh!Important} */

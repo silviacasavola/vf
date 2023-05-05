@@ -166,9 +166,9 @@ gap: var(--margin)
   object-position: center 10%;
 }
 
-#section4 #ph-d {
+/* #section4 #ph-d {
   object-position: center top;
-}
+} */
 
 #section5 #ph-b {
   object-position: center 80%;
@@ -178,7 +178,7 @@ gap: var(--margin)
   object-position: center bottom;
 }
 
-#section6 #ph-c {
+#section6 #ph-b {
   object-position: center 80%;
 }
 

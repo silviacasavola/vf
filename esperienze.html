@@ -46,7 +46,7 @@
   <a href="cucina-etnobotanica.html"><nav lang="it">Cucina etnobotanica</nav> <nav lang="eng">Ethnobotanic cuisine</nav></a>
   <a href="residenza.html"><nav lang="it">Residenza</nav> <nav lang="eng">Residence</nav></a>
   <a href="esperienze.html" id="header-active"><nav lang="it">Esperienze</nav> <nav lang="eng">Experiences</nav></a>
-  <a href="eventi.html"><nav lang="it">Matrimoni ed eventi</nav> <nav lang="eng">Events</nav></a>
+  <a href="eventi.html"><nav lang="it">Eventi</span> <span lang="eng">Events</nav></a>
   <a href="storia.html"><nav lang="it">Storia</nav> <nav lang="eng">History</nav></a>
   <div id="language-selector"><span id="itaselector" style="text-decoration: underline">ITA</span> / <span id="engselector">ENG</span></div>
   </header>
@@ -171,7 +171,7 @@
 
     <div class="text-center d-inline l-text l-t-mob">Home Restaurant</div>
     <div class="col-12 s-text m-t-mob"><span lang="it">Le serate più intime si possono passare nella Sala de Pranzo della Villa o nel salone affrescato della dimora sorella Masseria Arbinetto a Bari.<br>
-      In questi ambienti riservatisolitamente non aperti al pubblico  infatti, è possibile assaporare i piatti speciali dei fratelli Montaruli organizzando, dal lunedì al venerdì, cene esclusive da 8 a 12 persone.</span>
+      In questi ambienti, solitamente chiusi al pubblico, è possibile assaporare i piatti speciali dei fratelli Montaruli organizzando, dal lunedì al venerdì, cene esclusive da 8 a 12 persone.</span>
       <span lang="eng">The most intimate evenings can be spent in the Villa’s Dining Hall, or in the frescoed hall of his sister house Masseria Arbinetto, in Bari. In these environments, usually closed to the public, it is possible to taste the special dishes of the Montaruli brothers, by organizing exclusive dinners for 8 to 12 people, from Monday to Friday.</span>
     </div>
     </div>
@@ -257,10 +257,15 @@ $('.carousel').click(function () {
   $('.carousel').carousel('next');
 })
 
-$('.carousel').bind('slide.bs.carousel', function (e) {
-  let number = $(this).find('.active span').html();
-  $(this).find('.currentnum').html(number);
-})
+$('.carousel').each(function () {
+  var $carousel = $(this);
+
+  $carousel.on('slid.bs.carousel', function () {
+    var number = $carousel.find('.carousel-item.active span').html();
+
+    $carousel.find('.currentnum').html(number);
+  });
+});
 </script>
 
 </body>

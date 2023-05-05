@@ -46,7 +46,7 @@
   <a href="cucina-etnobotanica.html"><nav lang="it">Cucina etnobotanica</nav> <nav lang="eng">Ethnobotanic cuisine</nav></a>
   <a href="residenza.html"><nav lang="it">Residenza</nav> <nav lang="eng">Residence</nav></a>
   <a href="esperienze.html"><nav lang="it">Esperienze</nav> <nav lang="eng">Experiences</nav></a>
-  <a href="eventi.html" id="header-active"><nav lang="it">Matrimoni ed eventi</nav> <nav lang="eng">Events</nav></a>
+  <a href="eventi.html" id="header-active"><nav lang="it">Eventi</span> <span lang="eng">Events</nav></a>
   <a href="storia.html"><nav lang="it">Storia</nav> <nav lang="eng">History</nav></a>
   <div id="language-selector"><span id="itaselector" style="text-decoration: underline">ITA</span> / <span id="engselector">ENG</span></div>
   </header>
@@ -59,38 +59,29 @@
 <!-- SECTION 1 -->
 
 <section id="section1">
+  <div class="overlay" style="background-color: black; width: 100%; height: 100%; position: absolute; z-index: 5"></div>
+  <div id="player2"></div>
 
-<a href="index.html"><img src="assets/img/white-logotype.svg" id="header-logotype"></a>
+ <a href="index.html"><img src="assets/img/white-logotype.svg" id="header-logotype"></a>
 
-<img src="assets/img/white-logomark.svg" id="intro-logomark" style="width: 10vw; position: absolute; bottom: var(--margin); right: var(--margin)">
-</section>
+  <img src="assets/img/white-logomark.svg" id="intro-logomark" style="width: 10vw; position: absolute; bottom: var(--margin); right: var(--margin)">
+  </section>
 
 
 <!-- SECTION 2 -->
 
 <section class="top-header-margin d-flex flex-column justify-content-center bg-cream" id="section2">
-  <div class="text-center d-inline col-12 mx-auto" id="section-name"><span lang="it">Matrimoni ed eventi</span>    <span lang="eng">Weddings and events</span></div>
-  <div class="col-12 mx-auto m-text"><span lang="it">L’eleganza dei dettagli e la magnificenza della natura, che si fondono con la storia della Villa, sono la cornice di ogni momento, da vivere come a casa a propria. La famiglia Fenicia ospita matrimoni ed eventi da generazioni e lo fa in un’atmosfera familiare con un registro di stile sobrio e autentico.
+  <div class="text-center d-inline col-12 mx-auto" id="section-name"><span lang="it">Eventi</span>    <span lang="eng">Events</span></div>
+  <div class="col-12 mx-auto m-text"><span lang="it">L’eleganza dei dettagli e la magnificenza della natura, che si fondono con la storia della Villa, sono la cornice di ogni momento, da vivere come a casa a propria. La famiglia Fenicia ospita eventi da generazioni e lo fa in un’atmosfera familiare con un registro di stile sobrio e autentico.
 <br><br>Le composizioni di fiori e piante tipiche del territorio e della stagione sono realizzate dai fornitori storici della famiglia, come ogni dettaglio delle decorazioni legate alla Murgia.
 <br><br>È possibile celebrare i matrimoni con rito civile in uno dei tanti luoghi della Villa. A disposizione dei desideri degli ospiti sono il giardino e le tre grandi sale che, grazie al Giardino d’Inverno, permettono di celebrare anche al coperto, senza perdere il contatto con la bellezza del verde che le circonda. Puoi scoprirli in ogni dettaglio visitando la sezione <a href="luoghi.html" style="text-decoration:underline">Luoghi</a>. La qualificazione e la disponibilità del personale garantiscono l’efficienza del servizio fatto su misura per ogni occasione.
 <br><br>Compila il form per raccontarci come vuoi rendere realtà la tua festa da sogno.</span>
-<span lang="eng">The elegance of the details and the magnificence of the nature - which blends with the history of the Villa - are the frame for every moment, to be lived as if you are at home. The Fenicia family has been hosting weddings and events for generations and does so in a warm atmosphere, with a sober and authentic style.
+<span lang="eng">The elegance of the details and the magnificence of the nature - which blends with the history of the Villa - are the frame for every moment, to be lived as if you are at home. The Fenicia family has been hosting events for generations and does so in a warm atmosphere, with a sober and authentic style.
 <br><br>The compositions of flowers and plants, typical of the region and of the season, are made by the traditional suppliers of the family, as every detail of the decorations related to Murgia.
 <br><br>It is possible to celebrate weddings with civil ceremony in one of the many places of the Villa. At guests' disposal there are the garden and the large Three Halls that, thanks to the Winter Garden, allow you to celebrate indoors, without losing touch with the beauty of the nature. You can discover the locations in every detail by visiting the <a href="luoghi.html" style="text-decoration:underline">dedicated section</a>. The qualification and kindness of the staff guarantee the efficiency of the service, tailored to every occasion.
 <br><br>Fill in the form to tell us how you want to make your dream party come true.
 </span>
   </div>
-</section>
-
-
-<!-- SECTION 3 -->
-<section id="section3" class="justify-content-center align-items-center d-flex bg-red">
-    <div id="player2"></div>
-    <div class="overlay" style="background-color: var(--red)"></div>
-    <div id="top-bar" class="d-none d-md-block bg-red" style="top:0"></div>
-    <div id="left-bar" class="d-none d-md-block bg-red" style="left:0"></div>
-    <div id="right-bar" class="d-none d-md-block bg-red" style="right:0"></div>
-    <div id="bottom-bar" class="d-none d-md-block bg-red" style="bottom:0"></div>
 </section>
 
 
@@ -122,10 +113,15 @@ $('.carousel').click(function () {
   $('.carousel').carousel('next');
 })
 
-$('.carousel').bind('slide.bs.carousel', function (e) {
-  let number = $(this).find('.active span').html();
-  $(this).find('.currentnum').html(number);
-})
+$('.carousel').each(function () {
+  var $carousel = $(this);
+
+  $carousel.on('slid.bs.carousel', function () {
+    var number = $carousel.find('.carousel-item.active span').html();
+
+    $carousel.find('.currentnum').html(number);
+  });
+});
 </script>
 
 </body>

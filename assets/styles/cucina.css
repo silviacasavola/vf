@@ -118,14 +118,14 @@ padding-right: calc(var(--margin)/2);
 }
 
 /* MASCHERE */
-#section4 #ph-b {
+#section4 #ph-a {
   object-position: center -10%;
 }
 
-#section4 #ph-d {
+#section4 #ph-c {
   object-position: center 80%;
 }
 
-#section3 #ph-d {
+/* #section3 #ph-d {
   object-position: center 30%;
-}
+} */
