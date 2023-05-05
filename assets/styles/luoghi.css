@@ -49,6 +49,12 @@
   height: 70%;
 }
 
-#section3 #ph-4 {
+
+
+#section3 #ph-a {
+  object-position: center top;
+}
+
+#section3 #ph-d {
   object-position: center 80%;
 }

@@ -168,7 +168,7 @@ gap: var(--margin)
 
 /* #section4 #ph-d {
   object-position: center top;
-} */
+}
 
 #section5 #ph-b {
   object-position: center 80%;
@@ -176,10 +176,10 @@ gap: var(--margin)
 
 #section5 #ph-c {
   object-position: center bottom;
-}
+} */
 
 #section6 #ph-b {
-  object-position: center 80%;
+  object-position: center 75%;
 }
 
 
