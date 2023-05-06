@@ -292,7 +292,7 @@ color: var(--red)
 /* FORM */
 
 input, textarea {
-  border: none;
+  /* border: none; */
   border: 1px solid var(--red);
   /* border-radius: 2px; */
   padding-left: 5px;
@@ -321,10 +321,11 @@ input[type="checkbox"] {
   place-content: center;
 }
 
+input {background-color: var(--cream);}
+
 input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
-  background-color: var(--cream);
   /* margin: 0; */
   color: var(--red);
   width: var(--margin);

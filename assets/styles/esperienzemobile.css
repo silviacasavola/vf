@@ -15,3 +15,7 @@
 #section6 {
   padding: var(--margin)
 }
+
+#section6 img {  content: url('../img/logomark.svg'); width: 80%}
+
+input, textarea {border: solid 0.5px var(--red)!Important}

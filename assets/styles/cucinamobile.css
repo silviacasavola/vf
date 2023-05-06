@@ -3,6 +3,7 @@
 /* background-image: url('../img/cucina/1.jpg'); */
 background-color: black;
 background-position: center;
+max-height: 100vh;
 }
 
 #overlay {

@@ -75,7 +75,7 @@ background-color: black;
 /* SECTION 5 */
 
 #section6 .sect-outerbox {
-  padding: var(--header-margin)!Important}
+  padding: var(--top-header) calc(var(--margin)/1.5) var(--margin) calc(var(--margin)/1.5)!Important}
 
 
 #section6 .sect-outerbox .col-12.d-inline {

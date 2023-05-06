@@ -255,7 +255,6 @@ section {
 
 #section1 .carousel {  height: 100vh }
 
-
 /* SECTION 2 */
 
 #section2 {
@@ -334,4 +333,16 @@ section {
 }} */
 
 /* FORM */
-form input, form button {margin: calc(var(--margin)/2) 0 calc(var(--margin)/2) 0}
+form input, form button, form textarea {margin: calc(var(--margin)/2) 0 calc(var(--margin)/2) 0; border: none;}
+
+input[type="text"], input[type="tel"], textarea {min-width: 50vw;
+resize: none;}
+
+textarea {min-height: 10vh}
+
+form button {padding: calc(var(--margin)/2.5) calc(var(--margin)/2) calc(var(--margin)/2.5) calc(var(--margin)/2);
+}
+
+form button:hover {text-decoration: underline}
+
+input, textarea {background-color: var(--cream);}
