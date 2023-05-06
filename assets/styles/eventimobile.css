@@ -21,7 +21,7 @@ max-height: 100vh;
 
 /* VIDEO */
   iframe {
-  min-width: 110vw;
+  /* min-width: 110vw; */
   min-height: 110vh;
-  transform:translate(-20vw, -10vh);
+  transform:translate(-25vw, -10vh);
 }

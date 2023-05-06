@@ -3,15 +3,18 @@
   transition: opacity 2s;
 }
 
-@media (min-aspect-ratio: 16/9) {
+
+
+@media (min-aspect-ratio: 15/9) {
   iframe {
-  min-width: 100vw;
-  min-height: 56vw;
-  transform:translate(1vw, 0);
+  min-width: 110vw;
+  min-height: 62vw;
+  transform:translate(-5vw, -5vw);
 }}
 
-@media (max-aspect-ratio: 16/9) {
+@media (max-aspect-ratio: 15/9) {
   iframe {
-     min-width: 160vh;
-     min-height: 90vh;
+  min-width: 195.5vh;
+  min-height: 110vh;
+  transform:translate(-5vh, -5vh);
 }}
