@@ -460,12 +460,12 @@ $('.carousel').each(function () {
 
 // SAFE AREA
 
-$(document).ready(function() {
-$("#sec1-link").css("opacity", "1"); safearea()})
+$(document).ready(function() {safearea()})
 $( window ).resize(function() {safearea()})
 $(document).scroll(function() {safearea()})
 
 function safearea() {
+$("#sec1-link").css("opacity", "1")
 
 if ($(window).width() <= 575.9 && $("body").scrollTop() <= 5 ) {
 hamburgerPos = $("#hamburger-icon").position();
