@@ -26,7 +26,7 @@ $("#hamburger-icon").click(function () {
 
 $("header").click(function() {closemenu()})
 $("main").click(function() {closemenu()})
-$("main").scroll(function() {closemenu()})
+$(window).scroll(function() {closemenu()})
 
 function closemenu() {
   $("header").addClass("menu-closed");
