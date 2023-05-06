@@ -1,7 +1,7 @@
 // SCROLL TO THE TO
 $( document ).load(function() {
   $(window).scrollTop(0);
-  $("body").scrollTop(0);
+  window.scrollTo(0);
 })
 
 
