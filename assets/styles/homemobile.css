@@ -35,7 +35,7 @@ font-family: 'Source Serif Pro', serif!Important;
   text-align: right;
   transition: top 0.2s;
   font-size: 6vw; line-height: 6.6vw;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 #sec1-link div {
