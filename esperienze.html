@@ -247,18 +247,6 @@ var carousel = new bootstrap.Carousel($('.carousel'))
 $('.carousel').carousel({
   interval: 100
 })
-
-// $("main").scroll(function () {
-//
-//   if ($(window).width() >= 600) {
-// if ($("main").scrollTop() == 0) {
-//   $("header").css("color", "var(--red)")
-//
-// } else if ($("main").scrollTop() > 0) {
-//   $("header").css("color", "var(--cream)")
-// }
-// }
-// })
 </script>
 
 <script>
@@ -276,6 +264,27 @@ $('.carousel').each(function () {
     $carousel.find('.currentnum').html(number);
   });
 });
+</script>
+
+ <!-- FORM -->
+<script>
+function sendEmail() {
+  const name = document.getElementById("name").value;
+  const surname = document.getElementById("surname").value;
+  const phone = document.getElementById("phone").value;
+  const message = document.getElementById("message").value;
+  const agree = document.getElementById("agree").checked;
+
+  if (name && surname && phone && message && agree) {
+    const body = `${message}\n\n${name} ${surname}\n${phone}`;
+    const subject = `Request by ${name} ${surname} via website`;
+    const recipient = "info@villafenicia.com";
+    const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  } else {
+    alert("Please fill in all required fields.");
+  }
+}
 </script>
 
 </body>
