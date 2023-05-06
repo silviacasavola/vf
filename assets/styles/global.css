@@ -302,10 +302,11 @@ input, textarea {
   resize: none;
 }
 
-textarea {min height: 30vh};
+textarea {min-height: 12vh}
 
-form button {padding: calc(var(--margin)/2.5) calc(var(--margin)/2) calc(var(--margin)/2.5) calc(var(--margin)/2);
+form button {
 border: none; outline: none;
+padding: calc(var(--margin)/2.5) calc(var(--margin)/2) calc(var(--margin)/2.5) calc(var(--margin)/2);
 }
 
 form button:hover {text-decoration: underline}

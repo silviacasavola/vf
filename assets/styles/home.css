@@ -153,17 +153,9 @@ gap: var(--margin)
   object-position: left;
 }
 
-#section4 #ph-a {
+/* #section4 #ph-a {
   object-position: center 60%;
-}
-
-#section4 #ph-b {
-  object-position: center 15%;
-}
-
-#section4 #ph-c {
-  object-position: center 10%;
-}
+} */
 
 /* #section4 #ph-d {
   object-position: center top;

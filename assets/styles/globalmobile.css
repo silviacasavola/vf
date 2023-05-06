@@ -333,7 +333,7 @@ section {
 }} */
 
 /* FORM */
-form input, form button, form textarea {margin: calc(var(--margin)/2) 0 calc(var(--margin)/2) 0; border: none; outline: none;}
+form input, form button, form textarea {margin: calc(var(--margin)/2) 0 calc(var(--margin)/2) 0; border: none; outline: none; border-radius: 0}
 
 input[type="text"], input[type="tel"], textarea {min-width: 50vw;
 resize: none;}

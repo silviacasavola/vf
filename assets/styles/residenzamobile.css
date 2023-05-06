@@ -1,4 +1,7 @@
-/* SECTION 12 */
+/* SECTION 1 */
+#section1 #ph-a {object-position: 70% center}
+
+/* SECTION 13 */
 #section13 {
   min-height: 0;
   height: 75vh;
@@ -9,7 +12,7 @@ padding: calc(var(--margin)/2) calc(var(--margin)/3) calc(var(--margin)/2) calc(
   color: var(--red);
 }
 
-#section7 img, #section8 img, #section9 img, #section10 img, #section11 img {height: 50vh}
+#section7 img, #section8 img, #section9 img, #section10 img, #section11 img, #section12 img {height: 50vh}
 
 /* SQUARE OR NOT VERY LARGE */
 @media (min-aspect-ratio: 1/1) {
