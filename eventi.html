@@ -46,7 +46,7 @@
   <a href="cucina-etnobotanica.html"><nav lang="it">Cucina etnobotanica</nav> <nav lang="eng">Ethnobotanic cuisine</nav></a>
   <a href="residenza.html"><nav lang="it">Residenza</nav> <nav lang="eng">Residence</nav></a>
   <a href="esperienze.html"><nav lang="it">Esperienze</nav> <nav lang="eng">Experiences</nav></a>
-  <a href="eventi.html" id="header-active"><nav lang="it">Eventi</span> <span lang="eng">Events</nav></a>
+  <a href="eventi.html" id="header-active"><nav lang="it">Eventi</nav> <nav lang="eng">Events</nav></a>
   <a href="storia.html"><nav lang="it">Storia</nav> <nav lang="eng">History</nav></a>
   <div id="language-selector"><span id="itaselector" style="text-decoration: underline">ITA</span> / <span id="engselector">ENG</span></div>
   </header>
@@ -85,7 +85,40 @@
 </section>
 
 
-<!-- SECTION 9 -->
+<!-- SECTION 3 -->
+
+<section class="d-flex bg-cream align-items-center flex-wrap" id="section3">
+
+<div class="order-md-last bg-red bg-cream-mob col-md-6 col-12 justify-content-center top-header-margin d-inline-flex align-items-center"><img src="assets/img/white-logomark.svg"></div>
+
+<div class="col-md-6 col-12 top-header-margin d-inline-flex align-items-center justify-content-md-center">
+<form class="s-text s-t-mob d-inline-block">
+<div class="l-text l-t-mob"><span lang="it">Contattaci</span>
+<span lang="eng">Contact us</span></div>
+<!--  <form action="mailto:info@villafenicia.com" method="post" enctype="text/plain"> -->
+<br><label for="name" lang="it">Nome*:</label><label for="name" lang="eng">Name*:</label><br>
+<input type="text" id="name" name="name" required>
+<br>
+<label for="name" lang="it">Cognome*:</label><label for="name" lang="eng">Surname*:</label><br>
+<input type="text" id="surname" name="surname" required>
+<br>
+<label for="phone" lang="it">Numero di telefono*:</label><label for="phone" lang="eng">Phone number*:</label><br>
+<input type="tel" id="phone" name="phone" required>
+<br>
+<label for="message" lang="it">Messaggio*:</label><label for="message" lang="eng">Message*:</label><br>
+  <textarea id="message" name="message" required></textarea>
+<br>
+<label for="agree" lang="it">Ho preso visione della <a href="privacy-policy.html">privacy policy.</a></label>
+<label for="agree" lang="eng">I read the <a href="privacy-policy.html">privacy policy.</a></label><br>
+<input type="checkbox" id="agree" name="agree" required>
+<br>
+<button onclick="sendEmail()" class="bg-red">Invia</button>
+</form>
+</div>
+</section>
+
+
+<!-- CLOSING SECTION -->
 <section id="closingsection" style="text-align: center; " class="d-flex bg-red standard-margin align-items-center"><img src="assets/img/white-logomark.svg" style="object-fit: scale-down; width:100%"></section>
 
 </main>

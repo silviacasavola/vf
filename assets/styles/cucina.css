@@ -49,7 +49,7 @@ background-color: black;
   line-height: 9.5vw!Important;
   height: 19vw;
   position: relative;
-  white-space: pre;
+  /* white-space: pre; */
   /* margin: 0 var(--s2margin) 0  var(--s2margin); */
   margin: auto;
 }
@@ -118,7 +118,7 @@ padding-right: calc(var(--margin)/2);
 }
 
 /* MASCHERE */
-#section3 #ph-a {
+/* #section3 #ph-a {
   object-position: center bottom;
 }
 
@@ -136,7 +136,7 @@ padding-right: calc(var(--margin)/2);
 
 #section3 #ph-e {
   object-position: center 30%;
-}
+} */
 
 #section4 #ph-a {
   object-position: center -10%;

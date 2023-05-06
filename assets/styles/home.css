@@ -86,9 +86,8 @@ gap: var(--margin)
 }
 
 /* SECTION 7 */
-#section7 img {
-  width: 100%;
-}
+
+#section7 img {width: 80%}
 
 /* SECTION 8 */
 #section8 {

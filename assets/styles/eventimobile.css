@@ -16,6 +16,9 @@ background-position: center;
   height: var(--margin); position: absolute; z-index: 10; width: 100vw;
 } */
 
+#section3 img {  content: url('../img/logomark.svg'); width: 80%}
+
+#section3 {padding: var(--margin); min-height: 100vh}
 
 
 /* VIDEO */

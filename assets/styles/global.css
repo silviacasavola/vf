@@ -302,17 +302,17 @@ input, textarea {
   color: var(--red);
 }
 
-input[type="submit"] {
-color: var(--cream)
+form button {padding: calc(var(--margin)/2.5) calc(var(--margin)/2) calc(var(--margin)/2.5) calc(var(--margin)/2);
+border: none;
 }
+
+form button:hover {text-decoration: underline}
+
+
 
 textarea {
   width: 20vw;
   resize: none;
-}
-
-input.bg-red {
-  padding: calc(var(--margin)/2.5) calc(var(--margin)/2) calc(var(--margin)/2.5) calc(var(--margin)/2)
 }
 
 input[type="checkbox"] {

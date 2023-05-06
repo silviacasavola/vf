@@ -130,7 +130,10 @@ gap: var(--margin);
 
 
 /* SECTION 7 */
-#section7 {padding: var(--margin)}
+#section7 {padding: var(--margin); min-height: 100vh}
+
+#section7 img {width: 80%}
+
 /* #section7 {
   flex-wrap: wrap;
   height: min-content;

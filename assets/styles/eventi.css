@@ -16,4 +16,9 @@
      min-height: 90vh;
 }}
 
+#section3 .col-md-6 {
+  height: 100%;
+}
+
+#section3 img {width: 80%}
 /* #section3, #section4, #section5 {height: 100vh!Important} */

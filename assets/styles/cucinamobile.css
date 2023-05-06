@@ -41,11 +41,13 @@ min-height: 100vh;
 }
 }
 
+/* SECTION 4 */
+#section4 #ph-a {
+  object-position: center top;
+}
 
-/* SECTION 5 */
-
-#section5 img {
-object-position: center;
+#section4 #ph-c {
+  object-position: center 80%;
 }
 
 /* SECTION 6 */
@@ -78,6 +80,7 @@ object-position: center;
   color: var(--cream)
 }
 
+#section7 a {min-height: 100vh}
 
 /* VIDEO */
   iframe {

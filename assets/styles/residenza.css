@@ -19,6 +19,13 @@
   top: var(--top-header);
 }
 
+#section12 .sect-outerbox .s-text {
+  line-height:2.8vw;
+}
+
+#section12 img {
+  object-position: center 80%;
+}
 
 /* SECTION 7 */
 #section13 img {
