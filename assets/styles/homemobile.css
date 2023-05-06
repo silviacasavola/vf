@@ -32,7 +32,7 @@ font-family: 'Source Serif Pro', serif!Important;
   padding: 0 var(--margin) 4.4vw 0;
   bottom: 0;
   text-align: right;
-  transition: top 0.5s;
+  transition: top 120ms;
   font-size: 6vw; line-height: 6.6vw;
   opacity: 0;
 }
