@@ -199,8 +199,8 @@ color: var(--red)
 
 /* .carousel {height: 50vh} */
 .carousel-inner, .carousel-item, .carousel img {height: 100%;}
-.carousel span { display: none; }
-
+.carousel-item span { display: none; }
+.currentnum {position: absolute; bottom: var(--margin); right: var(--margin); color: var(--cream) }
 
 /* @media (max-aspect-ratio: 9/10) { */
   .carousel {height: 50vh}
