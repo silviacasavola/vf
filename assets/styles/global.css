@@ -357,7 +357,7 @@ input[type="checkbox"]::before {
 }
 
 input[type="checkbox"]:checked::before {
-  transform: scale(0.6) translate(-3.4%, -3.4%);
+  transform: scale(0.6) translate(-3.28%, -3.28%);
   transform-origin: center;
 }
 
