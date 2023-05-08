@@ -478,14 +478,14 @@ $('.carousel').each(function () {
 // }
 
 $(document).ready(function() {
-$("#sec1-link").css("opacity", "1");
+// $("#sec1-link").css("opacity", "1");
 safearea()})
 $( window ).resize(function() {safearea()})
 $(document).scroll(function() {safearea()})
 
 function safearea() {
 
-if ($(window).width() <= 575.9 && $("body").scrollTop() <= 4 ) {
+if ($(window).width() <= 575.9 && $(document).scrollTop() <= 5 ) {
       console.log("yeh")
 hamburgerPos = $("#hamburger-icon").position();
 let safeArea = hamburgerPos.top;
