@@ -71,7 +71,7 @@ videoid = mob[i].videoid;
 
     events: {
       'onReady': onPlayerReady,
-      'onStateChange': onStateChange
+      // 'onStateChange': onStateChange
     }
   })
 
@@ -79,9 +79,9 @@ videoid = mob[i].videoid;
 }
 }
 
-function onStateChange(state) {
-if (state.data === YT.PlayerState.ENDED) {player.playVideo()}
-}
+// function onStateChange(state) {
+// if (state.data === YT.PlayerState.ENDED) {player.playVideo()}
+// }
 
 function onPlayerReady(event) {
   event.target.playVideo();
