@@ -10,14 +10,5 @@
   min-height: 0;
 } */
 
-/* FORM */
-
-#section6 {
-  padding: var(--margin)
-}
-
-
-#section6 .col-12 {min-height: 50vh}
-#section6 img {  content: url('../img/logomark.svg'); width: 90%}
 
 input, textarea {border: solid 0.5px var(--red)!Important}

@@ -34,14 +34,3 @@
 /* SECTION 6 */
 #section6 #ph-a {object-position: 22% center}
 #section6 #ph-b {object-position: center 45%}
-
-
-/* SECTION 13 */
-#section13 img {
-  padding: var(--header-margin);
-}
-
-#section13 a {
-padding: calc(var(--margin)/2) var(--margin) calc(var(--margin)/2) var(--margin);
-color: var(--red);
-}

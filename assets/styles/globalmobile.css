@@ -177,7 +177,7 @@ padding: 2vw;
 color: var(--cream)
 }
 
-.bg-red a:active, .bg-red-mob a:active, .bg-red a:hover, .bg-red-mob a:hover, .bg-red a:visited, .bg-red-mob a:visited {
+.bg-red a:active, .bg-red-mob a:active, .bg-red a:hover, .bg-red-mob a:hover, .bg-red a:visited, .bg-red-mob a:visited, a.bg-red:active, a.bg-red-mob:active, a.bg-red:hover, a.bg-red-mob:hover, a.bg-red:visited, a.bg-red-mob:visited {
 color: var(--cream)
 }
 
@@ -190,7 +190,7 @@ color: var(--cream)
 color: var(--red)
 }
 
-.bg-cream a:hover, .bg-cream-mob a:hover, .bg-cream a:active, .bg-cream-mob a:active, .bg-cream a:visited, .bg-cream-mob a:visited {
+.bg-cream a:hover, .bg-cream-mob a:hover, .bg-cream a:active, .bg-cream-mob a:active, .bg-cream a:visited, .bg-cream-mob a:visited, a.bg-cream:hover, a.bg-cream-mob:hover, a.bg-cream:active, a.bg-cream-mob:active, a.bg-cream:visited, a.bg-cream-mob:visited {
 color: var(--red)
 }
 
@@ -271,6 +271,11 @@ section {
   margin-bottom: var(--margin);
 }
 
+#section2 .link-due a {
+ font-family: 'Source Serif Pro', serif;
+ font-size: 4vw;
+  text-decoration: underline;
+}
 
 /* CLOSING SECTION */
 
@@ -346,3 +351,14 @@ form button {padding: calc(var(--margin)/2.5) calc(var(--margin)/2) calc(var(--m
 form button:hover {text-decoration: underline}
 
 input, textarea {background-color: var(--cream);}
+
+
+/* FINAL-LINK */
+.final-link {
+  min-height: 0;
+  height: 75vh;
+}
+
+.final-link a {
+padding: calc(var(--margin)/2) calc(var(--margin)/3) calc(var(--margin)/2) calc(var(--margin)/3);
+}

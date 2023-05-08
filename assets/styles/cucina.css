@@ -57,20 +57,12 @@ background-color: black;
 
 #section-name .link-due {
   position: absolute;
-  font-size: 1.3vw;
   right: 0;
 }
 
 #section-name #link-it {  top: 1.8vw }
 
 #section-name #link-eng {  bottom: 0; transform:translate(0, 10%)}
-
-#section2 a {
- font-family: 'Source Serif Pro', serif;
-  background-color: var(--red);
-  color: var(--cream);
-  padding: calc(var(--margin)/3) calc(var(--margin)/2.7) calc(var(--margin)/3) calc(var(--margin)/2.7);
-}
 
 /* SECTION 5 */
 
@@ -87,7 +79,7 @@ padding-right: calc(var(--margin)/2);
 
 /* SECTION 6 */
 
-#section7 .sect-outerbox {
+/* #section7 .sect-outerbox {
   padding: var(--top-header) calc(var(--margin)*1.5) var(--margin) calc(var(--margin)*1.5)!Important
 }
 
@@ -100,7 +92,7 @@ padding-right: calc(var(--margin)/2);
   text-decoration: none;
 }
 
-#section7 span:hover{text-decoration: underline}
+#section7 span:hover{text-decoration: underline} */
 
 
 /* #section8 {

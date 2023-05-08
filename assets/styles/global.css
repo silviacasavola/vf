@@ -199,7 +199,7 @@ margin: 0.5vw;
 color: var(--cream)
 }
 
-.bg-red a:hover, .bg-red-dt a:hover {
+.bg-red a:hover, .bg-red-dt a:hover, a.bg-red:hover, a.bg-red-dt:hover {
 color: var(--cream)
 }
 
@@ -212,7 +212,7 @@ color: var(--cream)
 color: var(--red)
 }
 
-.bg-cream a:hover, .bg-cream-dt a:hover {
+.bg-cream a:hover, .bg-cream-dt a:hover, a.bg-cream:hover, a.bg-cream-dt:hover {
 color: var(--red)
 }
 
@@ -242,6 +242,19 @@ color: var(--red)
 
 #section2 .m-text {
   padding: 0 var(--s2margin) 0 var(--s2margin);
+}
+
+/* Se c'è un link nella 2 */
+
+.link-due {
+  font-size: 1.3vw;
+}
+
+.link-due a {
+ font-family: 'Source Serif Pro', serif;
+  background-color: var(--red);
+  color: var(--cream);
+  padding: calc(var(--margin)/3) calc(var(--margin)/2.7) calc(var(--margin)/3) calc(var(--margin)/2.7);
 }
 
 @media (max-width:992px) {
@@ -344,7 +357,7 @@ input[type="checkbox"]::before {
 }
 
 input[type="checkbox"]:checked::before {
-  transform: scale(0.7) translate(-3%, -1%);
+  transform: scale(0.6) translate(-3.4%, -3.4%);
   transform-origin: center;
 }
 
@@ -359,3 +372,13 @@ input[type="checkbox"]:checked::before {
 }
 
 iframe {  position: absolute;  z-index: 0;}
+
+/* FINALE LINK */
+.final-link img {
+  padding: var(--header-margin);
+}
+
+.final-link a {
+padding: calc(var(--margin)/2) var(--margin) calc(var(--margin)/2) var(--margin);
+color: var(--red);
+}

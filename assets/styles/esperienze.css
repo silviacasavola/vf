@@ -27,10 +27,6 @@
   object-position: center 12%;
 }
 
-/* SECTION 6 */
+.link-due {line-height: 3vw}
 
-#section6 .col-md-6 {
-  height: 100%;
-}
-
-#section6 img {width: 80%}
+#section-name {transform: translate(0, -10%) }
