@@ -1,11 +1,13 @@
 // SCROLL TO THE TO
-$( document ).load(function() {
-  $(window).scrollTop(0);
-  $(document).scrollTop(0);
-  $("body").scrollTop(0);
-  $("main").scrollTop(0);
-})
-
+// $( document ).load(function() {
+//   $(window).scrollTop(0);
+//   $(document).scrollTop(0);
+//   $("body").scrollTop(0);
+//   $("main").scrollTop(0);
+// })
+window.onbeforeunload = function () {
+        window.scrollTo(0,0);
+};
 
 // HEADER
 
