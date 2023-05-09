@@ -35,16 +35,6 @@ margin-bottom: var(--margin)
 /* SECTION 4 */
 
 #section4 {
-  padding: var(--header-margin)
-}
-
-#section4 .m-text {
-  text-align: justify;
-}
-
-/* SECTION4 */
-
-#section4 {
 padding: var(--header-margin);
 }
 

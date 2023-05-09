@@ -50,23 +50,13 @@
 /* SECTION 4 */
 
 #section4 {
-  padding: var(--margin)
-}
-
-#section4 .m-text {
-  text-align: justify;
-}
-
-/* SECTION4 */
-
-#section4 {
 padding: var(--margin);
 text-align: center;
 }
 
-#section4 .s-text {
+/* #section4 .s-text {
 position: absolute;
-}
+} */
 
 #section4 img {
   width: 50vw;
@@ -76,11 +66,11 @@ position: absolute;
 
 /* SECTION 5 */
 #section5 {
+  max-height: 50vh;
     background-image: url("../img/storia/4mob.jpg");
     background-size: contain;
     background-position: center;
     text-align: center;
-    height: 50vh;
 }
 
 
