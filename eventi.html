@@ -155,6 +155,28 @@ $('.carousel').each(function () {
 });
 </script>
 
+
+ <!-- FORM -->
+<script>
+function sendEmail() {
+  const name = document.getElementById("name").value;
+  const surname = document.getElementById("surname").value;
+  const phone = document.getElementById("phone").value;
+  const message = document.getElementById("message").value;
+  const agree = document.getElementById("agree").checked;
+
+  if (name && surname && phone && message && agree) {
+    const body = `${message}\n\n${name} ${surname}\n${phone}`;
+    const subject = `Request by ${name} ${surname} via website`;
+    const recipient = "info@villafenicia.com";
+    const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  } else {
+    alert("Please fill in all required fields.");
+  }
+}
+</script>
+
 </body>
 
 
