@@ -460,32 +460,14 @@ $('.carousel').each(function () {
 
 // SAFE AREA
 
-// $(document).ready(function() {safearea()})
-// $( window ).resize(function() {safearea()})
-// $(document).scroll(function() {safearea()})
-//
-// function safearea() {
-// $("#sec1-link").css("opacity", "1")
-//
-// if ($(window).width() <= 575.9 && $(document).scrollTop() <= 5 ) {
-// hamburgerPos = $("#hamburger-icon").position();
-// let safeArea = hamburgerPos.top;
-// // document.documentElement.style.setProperty('--safe-area', safeArea);
-// $("#sec1-link").css("top", safeArea)
-// } else {
-//   $("#sec1-link").css("top", "unset")
-// }
-// }
-
 $(document).ready(function() {
-// $("#sec1-link").css("opacity", "1");
-safearea()})
+$("#sec1-link").css("opacity", "1"); safearea()})
 $( window ).resize(function() {safearea()})
 $(document).scroll(function() {safearea()})
 
 function safearea() {
 
-if ($(window).width() <= 575.9 && $(document).scrollTop() <= 5 ) {
+if ($(window).width() <= 575.9 && $("body").scrollTop() <= 10 ) {
       console.log("yeh")
 hamburgerPos = $("#hamburger-icon").position();
 let safeArea = hamburgerPos.top;
@@ -495,7 +477,26 @@ $("#sec1-link").css("top", safeArea)
   $("#sec1-link").css("top", "unset")
 }
 }
-</script>
+
+// $(document).ready(function() {
+// // $("#sec1-link").css("opacity", "1");
+// safearea()})
+// $( window ).resize(function() {safearea()})
+// $(document).scroll(function() {safearea()})
+//
+// function safearea() {
+//
+// if ($(window).width() <= 575.9 && $(document).scrollTop() <= 5 ) {
+//       console.log("yeh")
+// hamburgerPos = $("#hamburger-icon").position();
+// let safeArea = hamburgerPos.top;
+// // document.documentElement.style.setProperty('--safe-area', safeArea);
+// $("#sec1-link").css("top", safeArea)
+// } else {
+//   $("#sec1-link").css("top", "unset")
+// }
+// }
+ </script>
 
  <!-- FORM -->
 <script>
