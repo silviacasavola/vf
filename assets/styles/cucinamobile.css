@@ -75,7 +75,7 @@ min-height: 100vh;
   color: var(--cream)
 }
 
-#section7 a {min-height: 100vh}
+/* #section7 a {min-height: 100vh} */
 
 /* VIDEO */
   iframe {
