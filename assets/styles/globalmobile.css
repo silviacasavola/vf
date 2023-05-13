@@ -361,4 +361,5 @@ input, textarea {background-color: var(--cream);}
 
 .final-link a {
 padding: calc(var(--margin)/2) calc(var(--margin)/3) calc(var(--margin)/2) calc(var(--margin)/3);
+color: var(--red)!Important;
 }
