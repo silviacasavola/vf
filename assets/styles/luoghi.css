@@ -38,6 +38,7 @@
   color: var(--cream);
   margin: auto;
   padding: var(--margin);
+  background-size: cover;
 }
 
 
