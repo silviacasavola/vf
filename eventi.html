@@ -94,7 +94,6 @@
   <form class="s-text m-t-mob d-inline-block">
   <div class="l-text l-t-mob"><span lang="it">Contattaci</span>
   <span lang="eng">Contact us</span></div>
-  <!--  <form action="mailto:info@villafenicia.com" method="post" enctype="text/plain"> -->
   <br><label for="name" lang="it">Nome*:</label><label for="name" lang="eng">Name*:</label><br>
   <input type="text" id="name" name="name" required>
   <br>
@@ -111,7 +110,7 @@
   <label for="agree" lang="eng">I read the <a href="privacy-policy.html">privacy policy.</a></label><br>
   <input type="checkbox" id="agree" name="agree" required>
   <br>
-  <button class="bg-red bg-cream-mob" onclick="sendEmail()">Invia</button>
+  <button class="bg-red bg-cream-mob" type="button" onclick="sendEmail()">Invia</button>
   </form>
 </div>
 </section>
@@ -125,21 +124,17 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
 
-  <!-- GLOBAL SCRIPT -->
-  <script src="global.js"></script>
-  <script src="video.js"></script>
+<!-- GLOBAL SCRIPT -->
+<script src="global.js"></script>
+<script src="video.js"></script>
 
 
 <script language="JavaScript" type="text/javascript">
 var carousel = new bootstrap.Carousel($('.carousel'))
-
-$('.carousel').carousel({
-  interval: 100
-})
+$('.carousel').carousel({interval: 100})
 </script>
 
 <script>
-
 $('.carousel').click(function () {
   $('.carousel').carousel('next');
 })
@@ -179,6 +174,4 @@ function sendEmail() {
 </script>
 
 </body>
-
-
 </html>

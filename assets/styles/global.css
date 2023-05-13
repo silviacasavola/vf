@@ -315,6 +315,11 @@ input, textarea {
   resize: none;
 }
 
+input:-internal-autofill-selected {
+      background-color: var(--cream)!Important;
+      color: var(--red)!Important
+}
+
 textarea {min-height: 12vh}
 
 form button {
