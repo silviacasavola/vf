@@ -47,7 +47,7 @@ min-height: 100vh;
 
 /* SECTION 6 */
 
-#section6 .s-t-mob {
+/* #section6 .s-t-mob {
   line-height: 5vw;
 }
 
@@ -58,7 +58,7 @@ min-height: 100vh;
 #section6 .col-md-4 {
   padding-left: calc(var(--margin)/2);
   padding-right: calc(var(--margin)/2);
-}
+} */
 
 /* SECTION 8 */
 #section8 {
