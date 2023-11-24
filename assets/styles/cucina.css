@@ -14,13 +14,7 @@
   bottom: var(--margin);
 }
 
-/* .video-autoplay-wrapper {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-} */
-
-
+/* SECTION 1: VIDEO */
 
 @media (min-aspect-ratio: 15/9) {
   iframe {
@@ -38,7 +32,6 @@
 
 /* SECTION 1 */
  #section1 {
- /* background-image: url('../img/cucina/1.jpg'); */
 background-position-y: center;
 background-color: black;
 }
@@ -49,27 +42,19 @@ background-color: black;
   line-height: 9.5vw!Important;
   height: 19vw;
   position: relative;
-  /* white-space: pre; */
-  /* margin: 0 var(--s2margin) 0  var(--s2margin); */
   margin: auto;
 }
 
+.link-due {line-height: 3vw}
+.link-due a:hover {color: var(--cream)}
 
-#section-name .link-due {
-  position: absolute;
-  right: 0;
-}
 
-#section-name #link-it {  top: 1.8vw }
-
-#section-name #link-eng {  bottom: 0; transform:translate(0, 10%)}
-
-/* SECTION 5 */
+/* SECTION 6 */
 
 #section6 .sect-outerbox {
   padding: var(--top-header) 0 var(--margin) calc(var(--margin)/1.5)!Important}
 
-
+#section6 .tighter {padding: 0 10vw 0 10vw}
 #section6 .col-md-4 {padding-right: calc(var(--margin)/1.5)}
 
 #section6 .sect-outerbox .col-md-6 {
@@ -77,57 +62,27 @@ padding-left: calc(var(--margin)/2);
 padding-right: calc(var(--margin)/2);
 }
 
-/* SECTION 6 */
-
-/* #section7 .sect-outerbox {
-  padding: var(--top-header) calc(var(--margin)*1.5) var(--margin) calc(var(--margin)*1.5)!Important
+#section6 .xs-text {
+  font-size: 0.85vw; line-height: 1vw;}
 }
 
-
-#section7 a {
-  cursor: pointer;
-}
-
-#section7 a:hover{color: var(--cream)!Important;
-  text-decoration: none;
-}
-
-#section7 span:hover{text-decoration: underline} */
-
-
-/* #section8 {
-  height: 50vh;
-}
-
-#section8 a{
-  color: var(--cream);
-  padding: calc(var(--margin)/2) var(--margin) calc(var(--margin)/2) var(--margin);
-} */
+/* SECTION 8 */
 
 #section8 a:hover{
   color: var(--cream)
 }
 
-/* MASCHERE */
-/* #section3 #ph-a {
-  object-position: center bottom;
+#section3 #ph-a {
+  object-position: center 90%;
 }
 
-#section3 #ph-b {
-  object-position: center 10%;
+#section3 #ph-g {
+  object-position: center 60%;
 }
 
-#section3 #ph-c {
-  object-position: center 55%;
+#section3 #ph-h {
+  object-position: center 70%;
 }
-
-#section3 #ph-d {
-  object-position: center 45%;
-}
-
-#section3 #ph-e {
-  object-position: center 30%;
-} */
 
 #section4 #ph-a {
   object-position: center -10%;
@@ -136,7 +91,3 @@ padding-right: calc(var(--margin)/2);
 #section4 #ph-c {
   object-position: center 80%;
 }
-
-/* #section3 #ph-d {
-  object-position: center 30%;
-} */

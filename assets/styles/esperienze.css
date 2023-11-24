@@ -28,5 +28,6 @@
 }
 
 .link-due {line-height: 3vw}
+.link-due a:hover {color: var(--cream)}
 
 #section-name {transform: translate(0, -10%) }
