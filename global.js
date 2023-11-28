@@ -1,10 +1,4 @@
-// SCROLL TO THE TO
-// $( document ).load(function() {
-//   $(window).scrollTop(0);
-//   $(document).scrollTop(0);
-//   $("body").scrollTop(0);
-//   $("main").scrollTop(0);
-// })
+// SCROLL TO THE TOP
 window.onbeforeunload = function () {
         window.scrollTo(0,0);
 };
@@ -48,11 +42,13 @@ if (lang && lang === "eng") {
   $('[lang="eng"]').show();
   $("#itaselector").css("text-decoration", "none");
   $("#engselector").css("text-decoration", "underline");
-} else {
+} else if (lang && lang === "it") {
   $('[lang="eng"]').hide();
   $('[lang="it"]').show();
   $("#itaselector").css("text-decoration", "underline");
   $("#engselector").css("text-decoration", "none");
+} else {
+setCookie("lang", "it", 365);
 }
 
 // Update the language selection when the user clicks a button
