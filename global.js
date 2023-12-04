@@ -38,7 +38,7 @@ function closemenu() {
 var lang = getCookie("lang");
 
 function langEng() {
-  $('[lang="ita"]').hide(); // Corrected language selector
+  $('[lang="ita"]').hide();
   $('[lang="eng"]').show();
   $("#itaselector").css("text-decoration", "none");
   $("#engselector").css("text-decoration", "underline");
@@ -46,7 +46,7 @@ function langEng() {
 
 function langIta() {
   $('[lang="eng"]').hide();
-  $('[lang="ita"]').show(); // Corrected language selector
+  $('[lang="ita"]').show();
   $("#engselector").css("text-decoration", "none");
   $("#itaselector").css("text-decoration", "underline");
 }
@@ -59,7 +59,6 @@ function updateLang() {
   }
 }
 
-// Use a function reference for $(document).ready
 $(document).ready(updateLang);
 
 // Update the language selection when the user clicks a button
@@ -74,7 +73,6 @@ $("#engselector").click(function() {
 });
 
 // Function to set a cookie
-
 function setCookie(name, value, days) {
   var expires = "";
   if (days) {
