@@ -43,6 +43,7 @@ if (lang && lang === "eng") {
   $("#itaselector").css("text-decoration", "none");
   $("#engselector").css("text-decoration", "underline");
 } else {
+console.log("jQuery version:", $.fn.jquery);
   // Set default to Italian
   $('[lang="eng"]').hide();
   $('[lang="it"]').show();
@@ -51,6 +52,7 @@ if (lang && lang === "eng") {
 
   // Update the language cookie to Italian as the default
   setCookie("lang", "it", 365);
+  console.log("Cookie set:", getCookie("lang"));
 }
 
 // Update the language selection when the user clicks a button
