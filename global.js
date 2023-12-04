@@ -42,13 +42,11 @@ if (lang && lang === "eng") {
   $('[lang="eng"]').show();
   $("#itaselector").css("text-decoration", "none");
   $("#engselector").css("text-decoration", "underline");
-} else if (lang && lang === "it") {
+} else {
   $('[lang="eng"]').hide();
   $('[lang="it"]').show();
   $("#itaselector").css("text-decoration", "underline");
   $("#engselector").css("text-decoration", "none");
-} else {
-setCookie("lang", "it", 365);
 }
 
 // Update the language selection when the user clicks a button
