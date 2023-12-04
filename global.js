@@ -37,36 +37,41 @@ function closemenu() {
 // Check if a language preference has already been set
 var lang = getCookie("lang");
 
-  function langEng() {
-  $('[lang="it"]').hide();
+function langEng() {
+  $('[lang="ita"]').hide(); // Corrected language selector
   $('[lang="eng"]').show();
   $("#itaselector").css("text-decoration", "none");
   $("#engselector").css("text-decoration", "underline");
-};
-
-  function langIta() {
-  $('[lang="eng"]').hide();
-  $('[lang="ita"]').show();
-  $("#engselector").css("text-decoration", "none");
-  $("#itaselector").css("text-decoration", "underline");
-};
-
-function updateLang() {
-  if (lang && lang === "eng") { langEng() } else { langIta() }
 }
 
-$(document).ready(updateLang())
+function langIta() {
+  $('[lang="eng"]').hide();
+  $('[lang="ita"]').show(); // Corrected language selector
+  $("#engselector").css("text-decoration", "none");
+  $("#itaselector").css("text-decoration", "underline");
+}
+
+function updateLang() {
+  if (lang && lang === "eng") {
+    langEng();
+  } else {
+    langIta();
+  }
+}
+
+// Use a function reference for $(document).ready
+$(document).ready(updateLang);
 
 // Update the language selection when the user clicks a button
 $("#itaselector").click(function() {
   setCookie("lang", "ita", 365);
-  updateLang()
-})
+  updateLang();
+});
 
 $("#engselector").click(function() {
   setCookie("lang", "eng", 365);
-  updateLang()
-})
+  updateLang();
+});
 
 // Function to set a cookie
 
