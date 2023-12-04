@@ -43,7 +43,6 @@ if (lang && lang === "eng") {
   $("#itaselector").css("text-decoration", "none");
   $("#engselector").css("text-decoration", "underline");
 } else {
-console.log(
   $('[lang="eng"]').hide();
   $('[lang="it"]').show();
   $("#itaselector").css("text-decoration", "underline");
