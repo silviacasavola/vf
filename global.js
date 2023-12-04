@@ -66,11 +66,12 @@ $("#engselector").click(function () {
   $('[lang="it"]').hide();
   $('[lang="eng"]').show();
   $("#itaselector").css("text-decoration", "none");
-  $("#engselector")..css("text-decoration", "underline");
+  $("#engselector").css("text-decoration", "underline");
   setCookie("lang", "eng", 365);
 });
 
 // Function to set a cookie
+
 function setCookie(name, value, days) {
   var expires = "";
   if (days) {
