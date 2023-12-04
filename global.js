@@ -43,10 +43,14 @@ if (lang && lang === "eng") {
   $("#itaselector").css("text-decoration", "none");
   $("#engselector").css("text-decoration", "underline");
 } else {
+  // Set default to Italian
   $('[lang="eng"]').hide();
   $('[lang="it"]').show();
   $("#itaselector").css("text-decoration", "underline");
   $("#engselector").css("text-decoration", "none");
+
+  // Update the language cookie to Italian as the default
+  setCookie("lang", "it", 365);
 }
 
 // Update the language selection when the user clicks a button
@@ -62,12 +66,11 @@ $("#engselector").click(function () {
   $('[lang="it"]').hide();
   $('[lang="eng"]').show();
   $("#itaselector").css("text-decoration", "none");
-  $("#engselector").css("text-decoration", "underline");
+  $("#engselector")..css("text-decoration", "underline");
   setCookie("lang", "eng", 365);
 });
 
 // Function to set a cookie
-
 function setCookie(name, value, days) {
   var expires = "";
   if (days) {
