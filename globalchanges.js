@@ -37,41 +37,42 @@ function closemenu() {
 // Check if a language preference has already been set
 var lang = getCookie("lang");
 
-if (lang && lang === "eng") {
-  $('[lang="it"]').hide();
+function langEng() {
+  $('[lang="ita"]').hide();
   $('[lang="eng"]').show();
   $("#itaselector").css("text-decoration", "none");
   $("#engselector").css("text-decoration", "underline");
-} else {
-console.log(
-  $('[lang="eng"]').hide();
-  $('[lang="it"]').show();
-  $("#itaselector").css("text-decoration", "underline");
-  $("#engselector").css("text-decoration", "none");
-
-  setCookie("lang", "it", 365);
-  console.log("Cookie set:", getCookie("lang"));
 }
 
-// Update the language selection when the user clicks a button
-$("#itaselector").click(function () {
+function langIta() {
   $('[lang="eng"]').hide();
-  $('[lang="it"]').show();
-  $("#itaselector").css("text-decoration", "underline");
+  $('[lang="ita"]').show();
   $("#engselector").css("text-decoration", "none");
-  setCookie("lang", "it", 365);
+  $("#itaselector").css("text-decoration", "underline");
+}
+
+function updateLang() {
+  if (lang && lang === "eng") {
+    langEng();
+  } else {
+    langIta();
+  }
+}
+
+$(document).ready(updateLang);
+
+// Update the language selection when the user clicks a button
+$("#itaselector").click(function() {
+  setCookie("lang", "ita", 365);
+  updateLang();
 });
 
-$("#engselector").click(function () {
-  $('[lang="it"]').hide();
-  $('[lang="eng"]').show();
-  $("#itaselector").css("text-decoration", "none");
-  $("#engselector").css("text-decoration", "underline");
+$("#engselector").click(function() {
   setCookie("lang", "eng", 365);
+  updateLang();
 });
 
 // Function to set a cookie
-
 function setCookie(name, value, days) {
   var expires = "";
   if (days) {
