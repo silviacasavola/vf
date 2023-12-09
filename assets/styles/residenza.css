@@ -27,6 +27,9 @@
   object-position: center 80%;
 }
 
+#section1 img {
+  object-position: center bottom;
+}
 
 /* SECTION5 */
 #section5 #ph-b {object-position: center top}

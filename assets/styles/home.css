@@ -145,34 +145,6 @@ gap: var(--margin)
   object-position: center 20%;
 }
 
-#section1 #ph-d {
-  object-position: center bottom;
-}
-
-#section3 #ph-b {
-  object-position: left;
-}
-
-/* #section4 #ph-a {
-  object-position: center 60%;
-} */
-
-/* #section4 #ph-d {
-  object-position: center top;
-}
-
-#section5 #ph-b {
-  object-position: center 80%;
-}
-
-#section5 #ph-c {
-  object-position: center bottom;
-} */
-
-#section6 #ph-b {
-  object-position: center 75%;
-}
-
 
 @media (max-aspect-ratio: 3/2) {
   #section8 .col-lg-9 { justify-content: flex-start!Important;

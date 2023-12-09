@@ -54,23 +54,3 @@ background-color: black;
 #section8 a:hover{
   color: var(--cream)
 }
-
-#section3 #ph-a {
-  object-position: center 90%;
-}
-
-#section3 #ph-g {
-  object-position: center 60%;
-}
-
-#section3 #ph-h {
-  object-position: center 70%;
-}
-
-#section4 #ph-a {
-  object-position: center -10%;
-}
-
-#section4 #ph-c {
-  object-position: center 80%;
-}

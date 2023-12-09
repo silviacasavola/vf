@@ -34,7 +34,7 @@
   height: 100%;
   background-image: url('../img/luoghi/3a.jpg');
   background-size: 100%;
-  background-position: center 70%;
+  background-position: center 100%;
   color: var(--cream);
   margin: auto;
   padding: var(--margin);
@@ -48,14 +48,4 @@
 
 #section9 img {
   height: 70%;
-}
-
-
-
-#section3 #ph-a {
-  object-position: center top;
-}
-
-#section3 #ph-d {
-  object-position: center 80%;
 }
