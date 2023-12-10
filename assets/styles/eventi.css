@@ -27,3 +27,27 @@
 }
 
 #section3 img {width: 80%}
+
+.currentnum {
+  top: 0; left: 0;
+  margin: var(--header-margin);
+}
+
+#ph1 {object-position: center bottom}
+#ph2 {object-position: center 60%}
+#ph3 {object-position: center 70%}
+#ph5 {object-position: center 75%}
+#ph7 {object-position: center 20%}
+#ph9 {object-position: center 70%}
+#ph11 {object-position: center 40%}
+#ph13 {object-position: center 95%}
+#ph14 {object-position: center 40%}
+#ph15 {object-position: center 40%}
+#ph16 {object-position: center 70%}
+#ph17 {object-position: center 60%}
+#ph18 {object-position: center bottom}
+#ph20 {object-position: center 27%}
+#ph22 {object-position: center 44%}
+#ph23 {object-position: center 55%}
+#ph27 {object-position: center 40%}
+#ph28 {object-position: center top}
