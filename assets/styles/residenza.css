@@ -55,3 +55,13 @@
 /* SECTION 6 */
 #section6 #ph-a {object-position: 22% center}
 #section6 #ph-b {object-position: center 45%}
+
+/* SECTION 2 */
+#section-name {
+  /* font-family: Plakat Grotesk; */
+  line-height: 9.5vw!Important;
+  /* height: 19vw; */
+  /* position: relative;
+  margin: auto; */
+  margin-bottom: 1.3vw;
+}

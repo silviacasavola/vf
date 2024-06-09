@@ -11,9 +11,13 @@
 
 #section5 .currentnum {
   left: var(--margin);
-  top: var(--top-header);
+  bottom: var(--margin);
 }
 
+#section6 .currentnum {
+  right: var(--margin);
+  top: var(--top-header);
+}
 
 /* SECTION 3 */
 #section3 .carousel img {
@@ -27,7 +31,8 @@
   object-position: center 12%;
 }
 
-.link-due {line-height: 3vw}
-.link-due a:hover {color: var(--cream)}
+#section6 #ph-c {
+  object-position: center 0%;
+}
 
 #section-name {transform: translate(0, -10%) }
