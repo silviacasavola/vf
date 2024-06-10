@@ -19,6 +19,31 @@
   top: var(--top-header);
 }
 
+#section7 .currentnum {
+  left: var(--margin);
+  top: var(--top-header);
+}
+
+#section8 .currentnum {
+  right: var(--margin);
+  bottom: var(--margin);
+}
+
+#section9 .currentnum {
+  left: var(--margin);
+  bottom: var(--margin);
+}
+
+#section10 .currentnum {
+  left: var(--margin);
+  top: var(--top-header);
+}
+
+#section11 .currentnum {
+  left: var(--margin);
+  top: var(--top-header);
+}
+
 #section12 .sect-outerbox .s-text {
   line-height:2.8vw;
 }
@@ -32,29 +57,29 @@
 }
 
 /* FEDERICA */
-#section3 #ph1 {object-position: left bottom}
+/* #section3 #ph1 {object-position: left bottom}
 #section3 #ph2 {object-position: left bottom}
 #section3 #ph6 {object-position: center 70%}
-#section3 #ph7 {object-position: center 60%}
+#section3 #ph7 {object-position: center 60%} */
 
 /* VITTORIA */
-#section4 #ph1 {object-position: center bottom}
+/* #section4 #ph1 {object-position: center bottom}
 #section4 #ph2 {object-position: right bottom}
 #section4 #ph3 {object-position: 30% bottom}
 #section4 #ph4 {object-position: center bottom}
-#section4 #ph5 {object-position: center bottom}
-#section4 #ph6 {object-position: left bottom}
-#section4 #ph7 {object-position: 80% bottom}
-#section4 #ph9 {object-position: 30% bottom}
+#section4 #ph6 {object-position: center bottom} */
+/* #section4 #ph6 {object-position: left bottom} */
+/* #section4 #ph7 {object-position: 80% bottom} */
+/* #section4 #ph9 {object-position: 30% bottom}
 #section4 #ph10 {object-position: center bottom}
-#section4 #ph11 {object-position: center 90%}
+#section4 #ph11 {object-position: center 90%} */
 
 /* SECTION5 */
-#section5 #ph-b {object-position: center top}
+/* #section5 #ph-b {object-position: center top} */
 
 /* SECTION 6 */
-#section6 #ph-a {object-position: 22% center}
-#section6 #ph-b {object-position: center 45%}
+/* #section6 #ph-a {object-position: 22% center}
+#section6 #ph-b {object-position: center 45%} */
 
 /* SECTION 2 */
 #section-name {
@@ -65,3 +90,12 @@
   margin: auto; */
   margin-bottom: 1.3vw;
 }
+
+/* #widget-container {
+  padding: var(--margin);
+} */
+
+/* #widgetContainer button {
+  background-color: var(--cream)!Important;
+  color: var(--red)!Important;
+} */

@@ -8,3 +8,8 @@
 @media (min-aspect-ratio: 1/1) {
   #section7 img, #section8 img, #section9 img, #section10 img, #section11 img, #section12 img {height: 100vh}
   }
+
+
+  /* #widget-container {
+    padding: var(--margin);
+  } */

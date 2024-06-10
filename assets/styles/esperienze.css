@@ -20,12 +20,11 @@
 }
 
 /* SECTION 3 */
-#section3 .carousel img {
-  object-position: center 10%;
-}
-
-#section3 #ph-c {
-  object-position: 45% center}
+#section3 #ph-a {object-position: center 35%;}
+#section3 #ph-b {object-position: center 27%;}
+#section3 #ph-c {object-position: center 80%;}
+#section3 #ph-d {object-position: center 27%;}
+#section3 #ph-e {object-position: center 70%;}
 
 #section4 .carousel img {
   object-position: center 12%;

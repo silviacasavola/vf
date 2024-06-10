@@ -1,6 +1,6 @@
 /* CURRENTNUM */
 #section3 .currentnum {
-  right: var(--margin);
+  left: var(--margin);
   top: var(--top-header);
 }
 

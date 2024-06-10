@@ -49,7 +49,7 @@ if (lang && lang === "eng") {
   $("#engselector").css("text-decoration", "none");
 
   setCookie("lang", "it", 365);
-  console.log("Cookie set:", getCookie("lang"));
+  // console.log("Cookie set:", getCookie("lang"));
 }
 
 // Update the language selection when the user clicks a button

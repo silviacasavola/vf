@@ -166,7 +166,7 @@ margin: 0.5vw;
 }
 
 #header-active:hover {
-  color: red;
+  color: var(--red);
 }
 
 #hamburger-icon {
