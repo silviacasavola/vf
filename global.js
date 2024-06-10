@@ -31,7 +31,6 @@ function closemenu() {
   $("header").addClass("menu-closed");
 }
 
-
 // LANGUAGE
 
 // Check if a language preference has already been set
