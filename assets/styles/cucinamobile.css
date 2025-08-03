@@ -22,6 +22,10 @@ animation: fadeIn 3s ease forwards;
   text-align: center;
 }
 
+#section2 img {
+  display: none;
+}
+
 /* SECTION3 e 6 */
 @media (max-aspect-ratio: 1/1) {
 
@@ -75,7 +79,8 @@ min-height: 100vh;
   color: var(--cream)
 }
 
-/* #section7 a {min-height: 100vh} */
+#section7 {height: 100vh}
+#section7 .l-text {margin: var(--margin)!important}
 
 /* VIDEO */
   .player {
