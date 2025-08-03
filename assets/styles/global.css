@@ -377,7 +377,7 @@ input[type="checkbox"]:checked::before {
   z-index: 5;
 }
 
-iframe {  position: absolute;  z-index: 0;}
+.player {  position: absolute;  z-index: 0;}
 
 /* FINALE LINK */
 .final-link img {

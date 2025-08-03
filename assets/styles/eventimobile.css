@@ -20,7 +20,7 @@ max-height: 100vh;
 
 
 /* VIDEO */
-  iframe {
+  .player {
   /* min-width: 110vw; */
   min-height: 110vh;
   transform:translate(-25vw, -10vh);

@@ -78,7 +78,7 @@ min-height: 100vh;
 /* #section7 a {min-height: 100vh} */
 
 /* VIDEO */
-  iframe {
+  .player {
   min-width: 160vw;
   min-height: 110vh;
   transform:translate(-30vw, -10vh);
