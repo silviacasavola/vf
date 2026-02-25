@@ -162,10 +162,6 @@ gap: var(--margin)
     text-align: right;}
 }
 
-#section3 #ph-c {
-  object-position: center 20%;
-}
-
 #section3 #ph-f {
   object-position: center bottom;
 }
